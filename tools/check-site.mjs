@@ -191,7 +191,7 @@ for (const f of html) {
 if (missionControl > 1) problems.push(`"Mission control" appears ${missionControl} times (at most once, in home-page prose)`);
 // 11. /demo (FE-S3): the audited static demo house, byte for byte, behind its own CSP
 // Clean Apps receipt includes canonical provenance, originals and the independently reproducible namespace.
-const DEMO_MANIFEST_SHA256 = '165222378f49c8255a22fb7d180a7053f05da95f1950021a65543975307a0622'; // exact refresh-2026-11-15/receipt.md, version d1437f942b271f534af6
+const DEMO_MANIFEST_SHA256 = '5ecda25ed59eb2ead52ad6e55731cf0361b646c9a79f5f3c143ee445a2e26a76'; // comment-only refresh 2026-11-16, version bb1c4064378025e1de36
 const sha = (b) => crypto.createHash('sha256').update(b).digest('hex');
 const headersText = fs.readFileSync(path.join(pub, '_headers'), 'utf8');
 const blocks = [];   // _headers rules: an unindented path pattern, then its indented header lines

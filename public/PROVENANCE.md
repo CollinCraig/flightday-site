@@ -7,7 +7,7 @@ Copied from the canonical records in demo/img/PROVENANCE.md. Only asset paths ar
   "schema": "flightday.asset-provenance/v1",
   "assets": [
     {
-      "asset": "demo/v/d1437f942b271f534af6/img/earth-day.jpg",
+      "asset": "demo/v/bb1c4064378025e1de36/img/earth-day.jpg",
       "sha256": "9b89238783cd170f558e8272e68fbd8bd14ab1c1f0256f8246c79a8c035a856d",
       "source_url": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/bmng/bmng-topography-bathymetry/december/world.topo.bathy.200412.3x5400x2700.jpg",
       "terms_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
@@ -16,7 +16,7 @@ Copied from the canonical records in demo/img/PROVENANCE.md. Only asset paths ar
       "fetched_utc": "2026-11-14T21:59:00.653800+00:00"
     },
     {
-      "asset": "demo/v/d1437f942b271f534af6/img/earth-night.webp",
+      "asset": "demo/v/bb1c4064378025e1de36/img/earth-night.webp",
       "sha256": "b7a293fcb0c36a028fae34757fd1ec814affabfb886639b71a8eb9cd2332f938",
       "source_url": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/144000/144898/BlackMarble_2016_01deg.jpg",
       "terms_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",

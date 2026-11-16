@@ -1,5 +1,5 @@
 /* House-check adapter: all receiver attributes, helper IDs and wire payloads live here.
- * Fixtures follow AI-ROADMAP §2.4. Never synthesize a result or run a check on startup. */
+ * Fixtures follow the house-check fixture format. Never synthesize a result or run a check on startup. */
 (function () {
   'use strict';
   const O=window.OW, esc=O.esc;

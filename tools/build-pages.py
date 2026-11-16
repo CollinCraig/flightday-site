@@ -33,7 +33,7 @@ DOCS = [
 ]
 DOC_LIST = [(g, slug, label) for g, items in DOCS for slug, label in items]
 def doc_url(slug): return "/docs/" if slug == "index" else f"/docs/{slug}/"
-# FE-S2 (FOR-EVERYONE plan): the app's sign-in callback, declared on the home page. Permanent; check-site.mjs requires it.
+# The app's sign-in callback, declared on the home page. Permanent; check-site.mjs requires it.
 HOME_EXTRA_HEAD = '<link rel="redirect_uri" href="flightday://auth-callback">\n'
 LASTMOD = datetime.date.today().isoformat()
 
@@ -107,8 +107,13 @@ HEAD = """<!doctype html>
 
 """
 
-# Public attribution, shared by the footer and launch kit.
-FAMILY = tuple((SRC / "shared" / "attribution.html").read_text().splitlines())
+# The family line, word for word as approved, lives in private/site-private.json ("family": two sentences). Without
+# that file the site builds without it (the public tools carry no product or personal names).
+import json as _json
+_PRIV = ROOT / "private" / "site-private.json"
+FAMILY = tuple(_json.loads(_PRIV.read_text())["family"]) if _PRIV.exists() else None
+if FAMILY is None:
+    print("private term list not found; building without the family line")
 
 FOOT = """
 <footer>
@@ -117,7 +122,8 @@ FOOT = """
       <a href="/" aria-label="Flight Day home" class="brand"><img class="logo-dark" src="/assets/brand/flightday-lockup.svg" alt="Flight Day" width="96" height="24"><img class="logo-light" src="/assets/brand/flightday-lockup-on-light.svg" alt="Flight Day" width="96" height="24"></a>
       <nav aria-label="Footer"><a href="/features/">Features</a><a href="/roadmap/">Roadmap</a><a href="/docs/">Docs</a><a href="/integrations/">Integrations</a><a href="/install/">Install</a><a href="/press/">Launch kit</a><a href="/privacy/">Privacy</a><a href="/changelog/">Mission Log</a></nav>
     </div>
-{family_html}    <p>Background imagery: NASA</p>
+{family_html}    <p>Open source · <a href="https://github.com/CollinCraig/flightday">Flight Day code</a> · <a href="https://github.com/CollinCraig/flightday-site">Website code</a></p>
+    <p>Background imagery: NASA</p>
     <p>Every day is a flight day. Launch data from Launch Library 2 (The Space Devs). Flight Day isn’t affiliated with any launch provider, Apple, Google or Home Assistant.</p>
     <p class="ver">Site {version} · <a href="/changelog/#v{version_id}">What’s new</a></p>
   </div>
@@ -162,10 +168,10 @@ def clip(m):
             f'    <button class="clip-btn" type="button" hidden data-name="{title}" aria-label="Play video: {title}">{ICON_PAUSE}{ICON_PLAY}</button>\n'
             f'  </div>\n  <figcaption><b>{title}</b><span>{line}</span><span class="rec">Recorded from the real app (sample data)</span></figcaption>\n</figure>')
 
-# Integration examples (FE-O8) are included verbatim at build time from examples/integrations/, so edits there flow
+# Integration examples (FE-O8) are included verbatim at build time from oss/examples/integrations/, so edits there flow
 # through. {{example <path>}} becomes a collapsible code block; every example shows "Staging validation: pending" until a
 # pass is reported for it (STAGING_PASSED).
-EXAMPLES = ROOT / "examples" / "integrations"
+EXAMPLES = ROOT.parent / "oss" / "examples" / "integrations"
 STAGING_PASSED = set()
 
 def example(m):
@@ -207,7 +213,12 @@ def concepts_html():
     return '<div class="g g-8 rv-kids">\n' + "\n".join(figs) + "\n</div>"
 
 def follow_html():
-    return '<div class="follow-links"><a class="btn" href="https://github.com/CollinCraig/flightday">Watch the code on GitHub</a></div>'
+    if _PRIV.exists():
+        f = _json.loads(_PRIV.read_text()).get("follow")
+        if f:
+            return (f'<div class="follow-links"><a class="btn" href="{f["x_url"]}">{f["x_text"]}</a>'
+                    '<a href="https://github.com/CollinCraig/flightday">Watch the code on GitHub</a></div>')
+    return '<div class="follow-links"><a href="https://github.com/CollinCraig/flightday">Watch the code on GitHub</a></div>'
 
 def meta(text, key):
     m = re.search(r"<!--\s*" + key + r":\s*(.*?)\s*-->", text)

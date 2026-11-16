@@ -18,7 +18,7 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="The Flight Day mark, a half sun on a horizon with an ascent trail, and the line: Every day is a flight day.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="fd-version" content="1.6.2">
+<meta name="fd-version" content="1.6.3">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -51,7 +51,7 @@
         <h1>Add what you have</h1>
         <p class="lede">The alarm clock is the core. Everything else is an integration that lights up when you have the device: a speaker, lights, a thermostat, a vacuum, cameras, AI. Missing one is never a problem.</p>
         <div class="callout">
-          <p><b>Where this stands.</b> The integrations below run in one household today, each with its status. The public extension API and Settings › Integrations arrive with Flight Day for Home Assistant at the open-source release. <span class="st st-dev">In development</span></p>
+          <p><b>Where this stands.</b> The integrations below run in one household today, each with its status. The public extension API and Settings › Integrations are being developed for Flight Day for Home Assistant. <span class="st st-dev">In development</span></p>
         </div>
         <ul class="toc g g-toc4" aria-label="On this page">
           <li><a href="#built-in">Built in</a></li>
@@ -370,6 +370,7 @@ from asyncio import Lock
 from homeassistant.config_entries import ConfigEntryState
 from homeassistant.exceptions import ServiceValidationError
 from homeassistant.components.sensor import SensorEntity
+from homeassistant.helpers import entity_registry as er
 from homeassistant.util import dt as dt_util
 
 async def async_setup_platform(hass, config, async_add_entities, discovery_info=None):
@@ -390,6 +391,13 @@ class AutomationCount(SensorEntity):
         if any(e.state is ConfigEntryState.LOADED
                for e in self.hass.config_entries.async_entries(&quot;flightday&quot;)):
             await self._on_ready(initial=True)
+
+    async def async_will_remove_from_hass(self):
+        # Deleting the entity in Settings also removes its Flight Day line.
+        # A restart or shutdown keeps the registry entry, so nothing is cleared then.
+        if er.async_get(self.hass).async_get(self.entity_id) is None:
+            await self.hass.services.async_call(&quot;flightday&quot;, &quot;unregister_integration&quot;,
+                                                {&quot;id&quot;: &quot;example_sensor&quot;}, blocking=False)
 
     async def _maybe_ready(self, event):
         if event.data.get(&quot;action&quot;) == &quot;ready&quot;:
@@ -460,9 +468,10 @@ class AutomationCount(SensorEntity):
       <nav aria-label="Footer"><a href="/features/">Features</a><a href="/roadmap/">Roadmap</a><a href="/docs/">Docs</a><a href="/integrations/">Integrations</a><a href="/install/">Install</a><a href="/press/">Launch kit</a><a href="/privacy/">Privacy</a><a href="/changelog/">Mission Log</a></nav>
     </div>
     <p class="family"><a href="https://morrowdock.app">Morrowdock</a> and Flight Day are made by Collin Craig with AI agents (Claude and Codex).<br>Morrowdock: the open learning studio. Flight Day: launch control for your home and your day.</p>
+    <p>Open source · <a href="https://github.com/CollinCraig/flightday">Flight Day code</a> · <a href="https://github.com/CollinCraig/flightday-site">Website code</a></p>
     <p>Background imagery: NASA</p>
     <p>Every day is a flight day. Launch data from Launch Library 2 (The Space Devs). Flight Day isn’t affiliated with any launch provider, Apple, Google or Home Assistant.</p>
-    <p class="ver">Site 1.6.2 · <a href="/changelog/#v1-6-2">What’s new</a></p>
+    <p class="ver">Site 1.6.3 · <a href="/changelog/#v1-6-3">What’s new</a></p>
   </div>
 </footer>
 </body>
