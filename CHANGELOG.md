@@ -4,6 +4,10 @@ Every release of the Flight Day website, newest first. It is the source of /chan
 and `tools/check-site.mjs` fails a deploy whose `public/` changed since the last release without a newer dated entry here.
 Format: Keep a Changelog (Added / Changed / Fixed under `## [version] - YYYY-MM-DD`). Batch changes into releases.
 
+## [1.6.6] - 2026-11-16
+### Changed
+- **Core and packages.** Clarified the small core, first-party package plans for Builder desk and Continue training, and AI brief, Flight Plan and Smart Comfort as built-in Labs features, off by default.
+
 ## [1.6.5] - 2026-11-16
 ### Changed
 - **Launch scope.** Fully free at launch, with web/Android and iPhone first, aiming for 8 Dec. Apple TV, Mac and Watch are coming after launch. The app remains in development.
