@@ -150,11 +150,11 @@ const privacyFile = path.join(pub, 'privacy/index.html');
 if (!fs.existsSync(privacyFile) || !/id="health"/.test(fs.readFileSync(privacyFile, 'utf8'))) problems.push('privacy/index.html: missing, or without its Apple Health section (FE-S1)');
 for (const f of html) { const footer = (fs.readFileSync(f, 'utf8').split('<footer>')[1] || ''); if (!footer.includes('href="/privacy/"')) problems.push(`${path.relative(pub, f)}: footer has no Privacy link (FE-S1)`); }
 // 8. docs: sidebar on every docs page, and every docs page in the search index
-const docsIndexFile = path.join(pub, 'assets/docs-index.js'), docsIndex = fs.existsSync(docsIndexFile) ? fs.readFileSync(docsIndexFile, 'utf8') : '';
+const docsIndexFile = path.join(pub, `assets/docs-index.v${ver}.js`), docsIndex = fs.existsSync(docsIndexFile) ? fs.readFileSync(docsIndexFile, 'utf8') : '';
 for (const f of html.filter((f) => path.relative(pub, f).startsWith('docs' + path.sep))) {
   const rel = path.relative(pub, f), url = '/' + path.dirname(rel).split(path.sep).join('/') + '/';
   const s = fs.readFileSync(f, 'utf8');
-  if (!s.includes('class="docs-nav"') || !s.includes('src="/assets/docs-index.js"')) problems.push(`${rel}: docs page without the docs sidebar or search index`);
+  if (!s.includes('class="docs-nav"') || !s.includes(`src="/assets/docs-index.v${ver}.js"`)) problems.push(`${rel}: docs page without the docs sidebar or search index`);
   if (!docsIndex.includes(`"u":"${url}"`)) problems.push(`${rel}: not in the docs search index`);
 }
 // clips: referenced, small, and their metadata clean (only the privacy patterns: binary data would trip the voice rules)
