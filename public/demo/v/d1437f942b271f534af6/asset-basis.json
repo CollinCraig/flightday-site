@@ -1,0 +1,11 @@
+{
+  "schema": "flightday.demo-hash-basis/v1",
+  "fixtureSourceSha256": "dc60775f3eb2bca54b96964972fd0eb1a1b30da76eabd6333d37b27f74e2c916",
+  "canonicalProvenanceSha256": "00b6ed403c3e8b3eab04a5cbc8759b5ca78a051d60e80a743f341c9d5ab417f4",
+  "provenanceGeneratorSha256": "14d20b17feffb0019a2a5c2a092159e7cc51558d97d5408af5604860014c717c",
+  "entityPair": {
+    "mode": "entity-info",
+    "fixtureEntityInfo": true,
+    "screenRegistryFallback": false
+  }
+}

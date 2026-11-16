@@ -1,0 +1,62 @@
+<!-- title: The launch alarm · Flight Day docs -->
+<!-- description: In development. How the launch alarm works: the ten-minute countdown, liftoff, Snooze, I’m up, Scrub, −1 min, Launch now, the must-be-up-by limit and Back to bed, on every screen. -->
+<h1>The launch alarm</h1>
+<p class="lede">A countdown while the screen brightens, liftoff at your wake time, then the morning briefing. It’s the front door to Flight Day.</p>
+{{clip alarm}}
+
+<h2 id="how-it-runs">How it runs</h2>
+<ol class="steps">
+  <li><span>Ten minutes before your wake time, the count starts on the screens set to wake you. The screen brightens like a dawn; if you have smart lights, they rise too, always in their warmest colour.</span></li>
+  <li><span>At <b>T-0</b> the rocket lifts off and the alarm rings.</span></li>
+  <li><span>The <a href="/docs/briefing/">morning briefing</a> takes over: the weather, your day and the news.</span></li>
+</ol>
+<p>The alarm sound plays on a screen: on your chosen alarm screen, starting with a quiet morning sound and a low rumble at liftoff. If a speaker is set up, the alarm raises its volume up to the alarm maximum. Other screens can provide a silent visual dawn.</p>
+
+<h2 id="controls">The controls</h2>
+<div class="tablewrap"><table class="rules">
+  <thead><tr><th scope="col">Control</th><th scope="col">What it does</th></tr></thead>
+  <tbody>
+    <tr><td>Snooze 10 min</td><td>Moves liftoff to 10 minutes from now, then runs a one-minute count. The screen goes quiet and shows “Snoozed · liftoff” with the new time.</td></tr>
+    <tr><td>I’m up</td><td>Ends the alarm and the night. The briefing stays. A tap on touch screens; on a TV remote, hold <kbd>OK</kbd> while it rings.</td></tr>
+    <tr><td>Scrub</td><td>Calls off the morning. Hold it for 1.2 seconds; a short touch does nothing. The screen says “Scrubbed · alarm off today” and goes back to night.</td></tr>
+    <tr><td>−1 min</td><td>During the count only: brings liftoff one minute closer, down to the last minute.</td></tr>
+    <tr><td>Launch now</td><td>Starts a ten-second final count instead of skipping the count.</td></tr>
+  </tbody>
+</table></div>
+<h3>On a TV remote</h3>
+<ul>
+  <li>The first key only shows the controls. It never cancels the morning by itself.</li>
+  <li><kbd>Back</kbd> and <kbd>Play/Pause</kbd> snooze.</li>
+  <li>Hold <kbd>OK</kbd> on I’m up while it rings. <kbd>Right</kbd> is −1 min during the count.</li>
+  <li>The TV’s Home key never ends the alarm.</li>
+</ul>
+
+<h2 id="up-by">Snooze and “must be up by”</h2>
+<p>Each morning has an up-by time: the earliest of the day’s <b>Up by</b>, your first timed calendar event minus a ready lead (45 minutes to start with), and your wake time plus a snooze window (30 minutes to start with). The header shows it: “liftoff 6:50 AM · up by 7:20 AM · 1 snooze”.</p>
+<ul>
+  <li>When the next liftoff would be less than 3 minutes before up-by, Snooze disappears and the screen says “No more snoozes — up by …”.</li>
+  <li>At the deadline the header reads “Final launch”. I’m up then always needs a hold.</li>
+  <li>If nobody answers, the alarm stops after 15 minutes and the header reads “Up … · no answer”.</li>
+</ul>
+<p>Snooze length, the snooze window and the ready lead can be changed in the Apple apps (Night › Crew &amp; snooze defaults). See <a href="/docs/settings/#alarm">What’s configurable</a>.</p>
+
+<h2 id="back-to-bed">Back to bed</h2>
+<p>After I’m up, until noon, the briefing offers <b>Back to bed</b>. It returns only the bedroom to night, with its sleep sound. It doesn’t set a new alarm or put the rest of the house to sleep.</p>
+{{clip snooze}}
+
+<h2 id="devices">On each device</h2>
+<div class="tablewrap"><table class="rules">
+  <thead><tr><th scope="col">Device</th><th scope="col">During the alarm</th></tr></thead>
+  <tbody>
+    <tr><td>Bedroom TV</td><td>The count, the sound and the controls. In today’s setup it’s the screen that plays the alarm.</td></tr>
+    <tr><td>Wall panel</td><td>The count and the controls; the backlight rises. No sound.</td></tr>
+    <tr><td>Other TVs</td><td>Stay out of it.</td></tr>
+    <tr><td>iPhone</td><td>A Live Activity and a notification with Snooze, I’m up and Scrub.</td></tr>
+    <tr><td>Apple Watch</td><td>A complication, with −1 min and Launch now.</td></tr>
+    <tr><td>Apple TV and iPad</td><td>Join only when set to <b>Wake room · Bedroom screen</b>.</td></tr>
+  </tbody>
+</table></div>
+<p>When only one crew member is launching, it’s a quiet launch on their phone, if it’s set up for it; otherwise the full alarm runs.</p>
+<div class="callout">
+  <p><b>Try it safely.</b> Night › Tonight › <b>Try the alarm</b> runs a 45-second local preview on that screen. A preview doesn’t prove the bedroom speaker or overnight delivery work.</p>
+</div>

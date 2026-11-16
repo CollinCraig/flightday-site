@@ -1,0 +1,77 @@
+{
+ "calendar.sam": {
+  "events": [
+   {
+    "uid": "e1",
+    "summary": "Team sync",
+    "start": "@today 09:30",
+    "end": "@today 10:00",
+    "location": "Video call"
+   },
+   {
+    "uid": "e5",
+    "summary": "Morning run",
+    "start": "@tomorrow 07:30",
+    "end": "@tomorrow 08:15",
+    "location": "Beach path"
+   },
+   {
+    "uid": "e6",
+    "summary": "Design review",
+    "start": "@tomorrow 11:00",
+    "end": "@tomorrow 12:00"
+   }
+  ]
+ },
+ "calendar.riley": {
+  "events": [
+   {
+    "uid": "e2",
+    "summary": "Dentist",
+    "start": "@today 13:15",
+    "end": "@today 14:00",
+    "location": "Main Street",
+    "travel_min": 12
+   },
+   {
+    "uid": "e4",
+    "summary": "Book club",
+    "start": "@today 19:30",
+    "end": "@today 21:00",
+    "location": "Library",
+    "travel_min": 9
+   }
+  ]
+ },
+ "calendar.family": {
+  "events": [
+   {
+    "uid": "e3",
+    "summary": "Pick up groceries",
+    "start": "@today 17:30",
+    "end": "@today 18:00"
+   },
+   {
+    "uid": "e7",
+    "summary": "Dinner with friends",
+    "start": "@tomorrow 19:00",
+    "end": "@tomorrow 21:30",
+    "travel_min": 18
+   },
+   {
+    "uid": "e8",
+    "summary": "Launch watch party",
+    "start": "@day+2 18:00",
+    "end": "@day+2 20:00",
+    "location": "Porch"
+   },
+   {
+    "uid": "e9",
+    "summary": "Recycling day",
+    "start": "@day+1",
+    "end": "@day+2",
+    "all_day": true
+   }
+  ]
+ }
+}

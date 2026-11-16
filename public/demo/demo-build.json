@@ -1,0 +1,721 @@
+{
+  "format": 2,
+  "version": "d1437f942b271f534af6",
+  "assetPrefix": "v/d1437f942b271f534af6/",
+  "assetManifest": "assets.sha256.json",
+  "entityPair": {
+    "mode": "entity-info",
+    "fixtureEntityInfo": true,
+    "screenRegistryFallback": false
+  },
+  "defaultScenario": "alarm-clock",
+  "forcedDemo": true,
+  "wallpaper": "scenes",
+  "distributionSources": {
+    "tools/capture-wallpaper.cjs": "c208590b0c24073847952227fa43a04c8ffddc8216a412c4187d95dd2d7e34e8",
+    "tools/verify-wallpaper-gated.sh": "860d541d224390b5620add6b008a4aeffc17b3738c102b1ee7ed5dfca68707f9",
+    "tools/build-stars-hyg.cjs": "bffc6b3112f001757b599cf70d5171e37de72b3c316bf5f8602472eb12cb6248",
+    "js/wallpaper/PROVENANCE.md": "56f3ab83ae099e5b53b45764e14fecd66778bbe81210e7bd31ef8ab5cadef3d8",
+    "fixtures/wallpaper/NOTICE": "d7427da2b3724d6ad52367f0c8f7a27b7cfa01a91d6eb98b8af924a7f93c0200"
+  },
+  "space": "snapshot",
+  "snapshotDate": "2026-11-14T21:28:26.883Z",
+  "csp": "default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; media-src 'self' blob:; frame-src 'none'; worker-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'",
+  "sources": {
+    "index.html": "f0255395078ef2793d96a4151bc9667e0e1a3f360b66ff4693e120fa96a9b25a",
+    "js/demo-static.js": "6ac0e37024fb060ea88bdb0843f0d9ac1fc1944887d7a9dd8c4661cb42b3727a",
+    "fonts/JetBrainsMono-Medium.woff2": "fe1c9099e3ea4123a6216d8a4a31970a2cfc6e9d80056da165012f406c83e219",
+    "css/app.css": "748f132282ae4b16a9bb59d033419aff847924e8b9765e42a6b1e8b0ffb89ec2",
+    "css/phone.css": "73f13d5f1f2a58bff2adf8bb0c7a1de3808214a81bbbe90b00ae3453e99ac6a5",
+    "js/demo-engine.js": "4a649088dff732bd12911c17037ca2fc398b1bbeadd949acd3251444bb49d04a",
+    "js/demo.js": "12da7ee194500818a3977843cd27ec2090965fff03a359711b00fb17d75d1387",
+    "js/demo-audio.js": "7f701ee167bfeffa483cd17c8771d5f3a3466b80db42987b9354265d6c40535f",
+    "js/config.js": "494dbd83e3a6fa4ab049931913eb73119b38a28c0aaccee96e0b331ed57fa2e9",
+    "js/roles.js": "91ba2a6ce2c6f67c46f1931bc8be11b6b041ea60e108250dfe6ec7cb01d50a48",
+    "js/time.js": "3b3dbd9dc94ff2d98be93741afd6d66122d06eebb802c7713b4295a69b663543",
+    "js/net.js": "b3003b778445666a68994a87422a9e80aa1299a80ede7dcc16f0f588980a457e",
+    "js/icons.js": "f38460d4517787bf3bae34fd6c6ecbc1874dec65530f3ae5bd88ea09041e583c",
+    "js/qr.js": "6edf860067cd0f7a1b52a754f8d0fb659cb3c7d777e478168b3f735795706f59",
+    "js/native.js": "2024aa54b0848958129c905b87c6895386435c13b2265050d57b95e12f13b040",
+    "js/weather-link.js": "ccbf2e0c3ca4a0528e0cfb1158b6fc1c89321add6b66617535c723e8631fd824",
+    "js/weather-source.js": "2abc56b9825154e55fbd3a220c2473772903921a98a09b816c89e06b80906858",
+    "js/rain-nowcast.js": "6cff9ccccba8349d820a25a9286c30b8a307f5468f1670bb1a24808c71cf5d63",
+    "js/sleep-schedule.js": "5ecca693b62b8eace53088abc32ed7052a798eaaf50432d45c2a27e09a37b2e7",
+    "js/hub.js": "070073c63c160c851805aa816591c324d9c56197dd050a9dac8be9ba901b70b4",
+    "js/climate.js": "a945f525ec69ca41c319ddc4d06b7385df65bb2efd469ae349dd3e5399e71fcc",
+    "js/smart-comfort.js": "705c218e683170ca8bed927ee221c4c0e4d23139294edda10a0059e046b536fa",
+    "js/robotVacuum.js": "757ec1905cd6b22152e8f2c44109061fab8ab8b42bcfb580c2ad5b0ae528bb55",
+    "js/theme-copy.js": "0a6effb8d4f909f89694ace772d595d524c1f251cf525e624222f52063bccb2d",
+    "js/house-check.js": "b0061acddd002fc756ba41448ba76bae420f1d4e3a0b01fd2793021242ed7d93",
+    "js/demo-static-lock.js": "ed2e428eb8f81def769891b88c48c95d3c98f4ced132f48b1208a3a997ce43bd",
+    "js/ha-client.js": "9803d347a2e4f958673a6e0a3262a77ccd769ac71899472b7a54a3c5aa0fe349",
+    "data.js": "5285577a6d332757008ad9341fc720fc3344971cfe6a2ed06163a7f04b1b8688",
+    "js/theme-features.js": "60e511bf5bf9d86aebf64958b8871f63bf2ee4657f07c177517a6a93df178403",
+    "js/usage.js": "b2acafde8c04f4b4668e9397398fef41276ed1bb34d43c647b877e2e22c17b79",
+    "js/flight.js": "119cfd41226512e0d4e87708326d4f172145353cadf40634addd2cc13f128ebf",
+    "js/space.js": "916febb444a984ee483c762f79b51ffd09041901e522c514f85e9cd8890a17db",
+    "js/globe.js": "ed71976ce7e30eaf59464f433d9f4e0b9de0ea2945f1c7af785b525eddc49d31",
+    "js/bgsets.js": "21bcbddf2f327342821e96c88e7c47c52e18f030a46e6172f19251e0a188ae69",
+    "backgrounds.js": "9a76861bd8b7e3ea867b110d67a2021346bf6ece36890d1666083a68a1067820",
+    "js/focus.js": "5d0c21d84faf4843a5c6d5ed12f611519838e71fea4dad2ffb06884ad9ca65ea",
+    "js/views.js": "6489dd57449267b339cf4d79d3deffd0d9b49e8132c56e2c88c1a6da743f1ff3",
+    "js/wake.js": "5417308545d6537170c57ffc70759821a9111b0eb42532b49eb6c428e38f7827",
+    "js/go-no-go.js": "12a1abbc73dd922a29096f3732eec50762e6108824c4c8e5577508a5dd31ed1f",
+    "js/go-no-go-view.js": "8d8fc5a1e5a416d0d357a65b410d9de978de7e1a114121b7583400996ae3e23a",
+    "js/wallpaper/model.js": "e10249fbce6a4cc1278682115df51f1177f70b04d92fe6e86ac04845dd71cbc7",
+    "js/wallpaper/catalog.js": "0db22f4f3d52fbd5d4397527032028519e25b81a4357a35de91cf9257b7fb660",
+    "js/wallpaper/scenes.js": "6c8bee578078b6c5bc777fddec66d866c160880c6ead011aef49f855f4a168a7",
+    "js/wallpaper/earth.js": "8f93cdf13512c8dba406821dfac0d7b6aa35aa762e54f0069c66abb2c09a9583",
+    "js/wallpaper/runtime.js": "a83c8a3abfe6c5f0d1be58ab191c75681aef3e9ee5737c2facab4a0e017b2f95",
+    "js/wallpaper/wallpaper.css": "efeb84e814325cb0ac78319354e04e8bc842f436cb2b36d219899bcce8e5f2dd",
+    "js/app.js": "f0e41bb8e824a167400f7a02d6f9ff54970dc3a357c6117e89044d408a41f278",
+    "js/wallpaper/ORIGINALS.json": "47568d0975b052ba1077e7e092084e473724e94f1856c93c27556047218ec641",
+    "js/wallpaper/earth.webp": "2bba0e48a919223e07c5d9ce2b266b17a95132620cef2984d43a31d80e01a55e",
+    "js/wallpaper/sky.webp": "9172643a35396bdc318513cb436f90e75448c51fe6f27ebd11c37736993e1236",
+    "js/wallpaper/stars.webp": "588f5c35078386a32a211f2b49d1254ee9abab84c022fe3071344cc23a719108",
+    "js/wallpaper/weather.webp": "663ce76ae01deb3430b847aefda30588f72be38ac2745487c545cdbff1ebdbd8",
+    "js/wallpaper/PROVENANCE.md": "56f3ab83ae099e5b53b45764e14fecd66778bbe81210e7bd31ef8ab5cadef3d8",
+    "vendor/globe.gl.min.js": "2c3e445c04d121215910a89688b96091c8a72071c122a4f830081a39b636c94c",
+    "img/earth-day.jpg": "9b89238783cd170f558e8272e68fbd8bd14ab1c1f0256f8246c79a8c035a856d",
+    "img/earth-night.webp": "b7a293fcb0c36a028fae34757fd1ec814affabfb886639b71a8eb9cd2332f938",
+    "audio/CREDITS.md": "0e24724fb1b67552103255c796005f18d6d849c7b1c9a4c173eeefbf39a63a32",
+    "fonts/Inter-LICENSE.txt": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a",
+    "fonts/Inter-Variable.woff2": "693b77d4f32ee9b8bfc995589b5fad5e99adf2832738661f5402f9978429a8e3",
+    "fonts/JetBrainsMono-Bold.woff2": "08863c7964612257a90bd821e3127dc5ccb0b5046f881673a1ade5809eb21d0f",
+    "fonts/JetBrainsMono-ExtraBold.woff2": "70b4312f885a27dd20fe1aee8b3433819229b0d3b81e4ae716c444e65ecafb50",
+    "fonts/JetBrainsMono-Regular.woff2": "f1a7a03672cdd494ce0d5543fac6e4360fe22403c6de297fdc2e55a815f7baff",
+    "fonts/JetBrainsMono-SemiBold.woff2": "8f20245500c375a63879b47c12560a07bcaf7a88672d272f4d8e79b68f9186ae",
+    "fonts/OFL.txt": "a76abf002c49097d146e86740a3105a5d00450b1592e820a1109a8c5680cd697",
+    "audio/demo-rain.wav": "735b89dfc40b8953011f2c68205dd4b2a955341abf45c5354ead60f2dc06d1e7",
+    "audio/demo-thunderstorm.wav": "05a20b81cc6e66c63fb7858357a83a1de42dd3a968a0195c08bd090d1e3fd951",
+    "audio/flightday-sting.m4a": "717641c4a5815b41a63c331e4fe9b71df140c970d05f75fdfea0157451c50422",
+    "audio/liftoff.m4a": "ab11c92c0f8ebb27615bba96dd069e831bc71ae7d70f3fb6f1c0b8f42f54074b",
+    "audio/morning.m4a": "822625f3a43ca613c0550000089980c6eefa24b890d6f020b2599a95a2502b57",
+    "audio/quindar.m4a": "0b162013ecb234ff3ba20d67bb4fdaed05a791b2de4626937f03af0ab50d11f2",
+    "audio/quindar.wav": "8ebb85aa9acc6f1cc2313c8840f5e39c2fcaa43672241662df00bef074d71f13",
+    "fixtures/wallpaper/LICENSE-DATA": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5",
+    "fixtures/wallpaper/NOTICE": "d7427da2b3724d6ad52367f0c8f7a27b7cfa01a91d6eb98b8af924a7f93c0200",
+    "fixtures/wallpaper/PROVENANCE.md": "4fbc52f2a3853f40dbc5dda9ed1eea95badc5bc0940e9b4ee25b6174407476d8",
+    "fixtures/wallpaper/stars-hyg-v4-mag5.json": "7dc7c7985a91d01fb05df189174aef620f0c5f19a045655c6f314da2bfccfa8b",
+    "fixtures/demo-house/calendars.json": "1c31f9f48de9b6464962c0f58569589adae27a93f69db8ce70e481cd828b2ef9",
+    "fixtures/demo-house/commands.json": "87b18e4bf3bb846bafb1ac513f7e7d549715dca3fcb4c54f5ca046ce2aea28ce",
+    "fixtures/demo-house/extensions.json": "97181bcb077cf3f5b69ec3da776a1ddb13312c90985485c600655cc1745b613c",
+    "fixtures/demo-house/ha.json": "a96840f9835da3907c059ccf31433195d490f49ee6d61129e9f5f9b06f29e9f9",
+    "fixtures/demo-house/hub.json": "52c9057b6336d2f14372a1570bd61d6c57b04d85b5d0649b051ec3d935c41292",
+    "fixtures/demo-house/manifest.json": "c10080c228175f14d7153ca26cfbc7f5f79ac7726e5003c88b1b699c938b3416",
+    "fixtures/demo-house/model.json": "82eabd7023660ea2e88285d90641ba9c4d1a20dacd5a18655ebf90aa035137f2",
+    "fixtures/demo-house/scenarios.json": "9b8b37e723995fd5d38a99318ff2e2288a5dc63f2a77bb131ed880ecca7392b5",
+    "fixtures/demo-house/simulation.json": "4b167fd4f6c3783c0cded0d5a6dc2b32ccace3d613ee6efc756fba99592ce86e",
+    "fixtures/demo-house/space/space-snapshot.json": "a60138346a42da6c4ba15c45a7db0a4178158aa8d36b49a53b913d6910aa873b",
+    "fixtures/demo-house/stills/ORIGINALS.json": "6d66e74ee2fd6be63659ee8c13b6be3f710aa4e61069011fdfa27467d1a53126",
+    "fixtures/demo-house/stills/driveway.svg": "15d188a5923d485b8a02f67e4be35f4bb8d63368c7d1e2bdbc44be5b74e8aab7",
+    "fixtures/demo-house/stills/front-door.svg": "d6805c849386f92a794343b5b3344cae7096cd50ed52ad7260230f6f1495c20a",
+    "fixtures/demo-house/stills/robot-map.svg": "efb6188f612e6136f2b250629863f221b7316ffcc0695f637097411d86bc2178",
+    "fixtures/demo-house/todo.json": "eace5bbf75b4d17b2cc6a946ecc225ba9c8c493f5d7a442379b88d95fdf84bdc",
+    "fixtures/on-this-day.json": "aeeeb04287d1c9b4d3e6210ce00a4d2f477fea97d2ad1e26f125e0c3cfa17a8e",
+    "img/PROVENANCE.md": "00b6ed403c3e8b3eab04a5cbc8759b5ca78a051d60e80a743f341c9d5ab417f4"
+  },
+  "files": [
+    {
+      "path": "_headers",
+      "logical": "_headers",
+      "bytes": 341,
+      "sha256": "16246cce441820d0a5a0bfec41b64e75035d60513d59e31470d1950aafd82fb7"
+    },
+    {
+      "path": "assets.sha256.json",
+      "logical": "assets.sha256.json",
+      "bytes": 18155,
+      "sha256": "bb6e12fec9f34c510e90ddd0de3563708ca2618e1bc3b47f026cd3f055bedb46"
+    },
+    {
+      "path": "img/PROVENANCE.md",
+      "logical": "img/PROVENANCE.md",
+      "bytes": 3307,
+      "sha256": "d18947e45ae604ac6f5fd8eb6d43f019861d6592fd8e6491adf20069dcabd6c0"
+    },
+    {
+      "path": "index.html",
+      "logical": "index.html",
+      "bytes": 5593,
+      "sha256": "e96e95c2be77f67455398db353d60d422a6193d65c1dda8886374729064cc82f"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/PROVENANCE.md",
+      "logical": "PROVENANCE.md",
+      "bytes": 3307,
+      "sha256": "d18947e45ae604ac6f5fd8eb6d43f019861d6592fd8e6491adf20069dcabd6c0"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/asset-basis.json",
+      "logical": "asset-basis.json",
+      "bytes": 455,
+      "sha256": "07e556dabffc8967830fe0d76eb678873d91fb9fda0b3817f67f24038a18a70f"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/audio/CREDITS.md",
+      "logical": "audio/CREDITS.md",
+      "bytes": 2573,
+      "sha256": "0e24724fb1b67552103255c796005f18d6d849c7b1c9a4c173eeefbf39a63a32"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/audio/demo-rain.wav",
+      "logical": "audio/demo-rain.wav",
+      "bytes": 128044,
+      "sha256": "735b89dfc40b8953011f2c68205dd4b2a955341abf45c5354ead60f2dc06d1e7"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/audio/demo-thunderstorm.wav",
+      "logical": "audio/demo-thunderstorm.wav",
+      "bytes": 128044,
+      "sha256": "05a20b81cc6e66c63fb7858357a83a1de42dd3a968a0195c08bd090d1e3fd951"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/audio/flightday-sting.m4a",
+      "logical": "audio/flightday-sting.m4a",
+      "bytes": 60034,
+      "sha256": "717641c4a5815b41a63c331e4fe9b71df140c970d05f75fdfea0157451c50422"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/audio/liftoff.m4a",
+      "logical": "audio/liftoff.m4a",
+      "bytes": 458354,
+      "sha256": "ab11c92c0f8ebb27615bba96dd069e831bc71ae7d70f3fb6f1c0b8f42f54074b"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/audio/morning.m4a",
+      "logical": "audio/morning.m4a",
+      "bytes": 2651981,
+      "sha256": "822625f3a43ca613c0550000089980c6eefa24b890d6f020b2599a95a2502b57"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/audio/quindar.m4a",
+      "logical": "audio/quindar.m4a",
+      "bytes": 7008,
+      "sha256": "0b162013ecb234ff3ba20d67bb4fdaed05a791b2de4626937f03af0ab50d11f2"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/audio/quindar.wav",
+      "logical": "audio/quindar.wav",
+      "bytes": 24044,
+      "sha256": "8ebb85aa9acc6f1cc2313c8840f5e39c2fcaa43672241662df00bef074d71f13"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/backgrounds.js",
+      "logical": "backgrounds.js",
+      "bytes": 21440,
+      "sha256": "6530df03bc7a4172ca026945ebe781718c3260a990337e33afa45eb345cd2280"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/css/app.css",
+      "logical": "css/app.css",
+      "bytes": 207214,
+      "sha256": "2476f4f4b480fff271125ff8b02d69ccc6b495458d1954ec0ac81c642c032e0d"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/css/phone.css",
+      "logical": "css/phone.css",
+      "bytes": 12743,
+      "sha256": "7da65af7227a93be2fdb76d22f556c46a74fa0b013bc6cca6760a8161099aea1"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/data.js",
+      "logical": "data.js",
+      "bytes": 88842,
+      "sha256": "3aad85834f7a255a5debda1a6383e2df1bc533abafd150c3c3708f0c9ef2e0fb"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fixtures/demo-house/calendars.json",
+      "logical": "fixtures/demo-house/calendars.json",
+      "bytes": 1397,
+      "sha256": "1c31f9f48de9b6464962c0f58569589adae27a93f69db8ce70e481cd828b2ef9"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fixtures/demo-house/commands.json",
+      "logical": "fixtures/demo-house/commands.json",
+      "bytes": 4356,
+      "sha256": "87b18e4bf3bb846bafb1ac513f7e7d549715dca3fcb4c54f5ca046ce2aea28ce"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fixtures/demo-house/extensions.json",
+      "logical": "fixtures/demo-house/extensions.json",
+      "bytes": 1675,
+      "sha256": "a088f99ccf98b5a64494140b8182045c1e3b54ee8fd278ea55505ea72a4f183f"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fixtures/demo-house/ha.json",
+      "logical": "fixtures/demo-house/ha.json",
+      "bytes": 72032,
+      "sha256": "a96840f9835da3907c059ccf31433195d490f49ee6d61129e9f5f9b06f29e9f9"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fixtures/demo-house/hub.json",
+      "logical": "fixtures/demo-house/hub.json",
+      "bytes": 940,
+      "sha256": "52c9057b6336d2f14372a1570bd61d6c57b04d85b5d0649b051ec3d935c41292"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fixtures/demo-house/manifest.json",
+      "logical": "fixtures/demo-house/manifest.json",
+      "bytes": 1081,
+      "sha256": "1bc51650642bf65ae15edeea2e49590f8a3f80c1b34dd0fb0d9a635769874f2b"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fixtures/demo-house/model.json",
+      "logical": "fixtures/demo-house/model.json",
+      "bytes": 24057,
+      "sha256": "4adf8ac2bbe44c04180e89aaccfcaca4ad4a44a9f52641ab6348a6a564a4291b"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fixtures/demo-house/scenarios.json",
+      "logical": "fixtures/demo-house/scenarios.json",
+      "bytes": 20074,
+      "sha256": "e78c2d2dc08fb6286683b2113ee90e204f79a7e19a3b3ed25a54f096f5391e10"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fixtures/demo-house/simulation.json",
+      "logical": "fixtures/demo-house/simulation.json",
+      "bytes": 414,
+      "sha256": "4b167fd4f6c3783c0cded0d5a6dc2b32ccace3d613ee6efc756fba99592ce86e"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fixtures/demo-house/space/space-snapshot.json",
+      "logical": "fixtures/demo-house/space/space-snapshot.json",
+      "bytes": 378786,
+      "sha256": "a60138346a42da6c4ba15c45a7db0a4178158aa8d36b49a53b913d6910aa873b"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fixtures/demo-house/stills/ORIGINALS.json",
+      "logical": "fixtures/demo-house/stills/ORIGINALS.json",
+      "bytes": 1437,
+      "sha256": "6d66e74ee2fd6be63659ee8c13b6be3f710aa4e61069011fdfa27467d1a53126"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fixtures/demo-house/stills/driveway.svg",
+      "logical": "fixtures/demo-house/stills/driveway.svg",
+      "bytes": 1235,
+      "sha256": "15d188a5923d485b8a02f67e4be35f4bb8d63368c7d1e2bdbc44be5b74e8aab7"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fixtures/demo-house/stills/front-door.svg",
+      "logical": "fixtures/demo-house/stills/front-door.svg",
+      "bytes": 1296,
+      "sha256": "d6805c849386f92a794343b5b3344cae7096cd50ed52ad7260230f6f1495c20a"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fixtures/demo-house/stills/robot-map.svg",
+      "logical": "fixtures/demo-house/stills/robot-map.svg",
+      "bytes": 1304,
+      "sha256": "efb6188f612e6136f2b250629863f221b7316ffcc0695f637097411d86bc2178"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fixtures/demo-house/todo.json",
+      "logical": "fixtures/demo-house/todo.json",
+      "bytes": 701,
+      "sha256": "eace5bbf75b4d17b2cc6a946ecc225ba9c8c493f5d7a442379b88d95fdf84bdc"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fixtures/on-this-day.json",
+      "logical": "fixtures/on-this-day.json",
+      "bytes": 21710,
+      "sha256": "aeeeb04287d1c9b4d3e6210ce00a4d2f477fea97d2ad1e26f125e0c3cfa17a8e"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fixtures/wallpaper/LICENSE-DATA",
+      "logical": "fixtures/wallpaper/LICENSE-DATA",
+      "bytes": 20138,
+      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fixtures/wallpaper/NOTICE",
+      "logical": "fixtures/wallpaper/NOTICE",
+      "bytes": 420,
+      "sha256": "d7427da2b3724d6ad52367f0c8f7a27b7cfa01a91d6eb98b8af924a7f93c0200"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fixtures/wallpaper/PROVENANCE.md",
+      "logical": "fixtures/wallpaper/PROVENANCE.md",
+      "bytes": 1635,
+      "sha256": "4fbc52f2a3853f40dbc5dda9ed1eea95badc5bc0940e9b4ee25b6174407476d8"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fixtures/wallpaper/stars-hyg-v4-mag5.json",
+      "logical": "fixtures/wallpaper/stars-hyg-v4-mag5.json",
+      "bytes": 160265,
+      "sha256": "7dc7c7985a91d01fb05df189174aef620f0c5f19a045655c6f314da2bfccfa8b"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fonts/Inter-LICENSE.txt",
+      "logical": "fonts/Inter-LICENSE.txt",
+      "bytes": 4380,
+      "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fonts/Inter-Variable.woff2",
+      "logical": "fonts/Inter-Variable.woff2",
+      "bytes": 352240,
+      "sha256": "693b77d4f32ee9b8bfc995589b5fad5e99adf2832738661f5402f9978429a8e3"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fonts/JetBrainsMono-Bold.woff2",
+      "logical": "fonts/JetBrainsMono-Bold.woff2",
+      "bytes": 94628,
+      "sha256": "08863c7964612257a90bd821e3127dc5ccb0b5046f881673a1ade5809eb21d0f"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fonts/JetBrainsMono-ExtraBold.woff2",
+      "logical": "fonts/JetBrainsMono-ExtraBold.woff2",
+      "bytes": 93856,
+      "sha256": "70b4312f885a27dd20fe1aee8b3433819229b0d3b81e4ae716c444e65ecafb50"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fonts/JetBrainsMono-Medium.woff2",
+      "logical": "fonts/JetBrainsMono-Medium.woff2",
+      "bytes": 94284,
+      "sha256": "fe1c9099e3ea4123a6216d8a4a31970a2cfc6e9d80056da165012f406c83e219"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fonts/JetBrainsMono-Regular.woff2",
+      "logical": "fonts/JetBrainsMono-Regular.woff2",
+      "bytes": 92380,
+      "sha256": "f1a7a03672cdd494ce0d5543fac6e4360fe22403c6de297fdc2e55a815f7baff"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fonts/JetBrainsMono-SemiBold.woff2",
+      "logical": "fonts/JetBrainsMono-SemiBold.woff2",
+      "bytes": 94484,
+      "sha256": "8f20245500c375a63879b47c12560a07bcaf7a88672d272f4d8e79b68f9186ae"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/fonts/OFL.txt",
+      "logical": "fonts/OFL.txt",
+      "bytes": 4399,
+      "sha256": "a76abf002c49097d146e86740a3105a5d00450b1592e820a1109a8c5680cd697"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/img/NOTICE.txt",
+      "logical": "img/NOTICE.txt",
+      "bytes": 205,
+      "sha256": "72eb78ca4a5c692b2b4e2653150c3d7b43fa198f7a6dea72cd38acb2104415f9"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/img/earth-day.jpg",
+      "logical": "img/earth-day.jpg",
+      "bytes": 498478,
+      "sha256": "9b89238783cd170f558e8272e68fbd8bd14ab1c1f0256f8246c79a8c035a856d"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/img/earth-night.webp",
+      "logical": "img/earth-night.webp",
+      "bytes": 84014,
+      "sha256": "b7a293fcb0c36a028fae34757fd1ec814affabfb886639b71a8eb9cd2332f938"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/app.js",
+      "logical": "js/app.js",
+      "bytes": 219434,
+      "sha256": "9c14b5888fdba930617c672b236bffae5392559abf772e1a721a156e34084aab"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/bgsets.js",
+      "logical": "js/bgsets.js",
+      "bytes": 23226,
+      "sha256": "21bcbddf2f327342821e96c88e7c47c52e18f030a46e6172f19251e0a188ae69"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/climate.js",
+      "logical": "js/climate.js",
+      "bytes": 4837,
+      "sha256": "a945f525ec69ca41c319ddc4d06b7385df65bb2efd469ae349dd3e5399e71fcc"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/config.js",
+      "logical": "js/config.js",
+      "bytes": 15719,
+      "sha256": "f70054f53689d24c5f5e8f5a4fd66775e61d5951da69716e0fc70ccb0d322145"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/demo-audio.js",
+      "logical": "js/demo-audio.js",
+      "bytes": 1846,
+      "sha256": "7f701ee167bfeffa483cd17c8771d5f3a3466b80db42987b9354265d6c40535f"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/demo-engine.js",
+      "logical": "js/demo-engine.js",
+      "bytes": 37619,
+      "sha256": "eeded65ddc5f5053c8b72c70e04104edda3bdbf225184b51c5115aeaa7568e6a"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/demo-static-lock.js",
+      "logical": "js/demo-static-lock.js",
+      "bytes": 1485,
+      "sha256": "ed2e428eb8f81def769891b88c48c95d3c98f4ced132f48b1208a3a997ce43bd"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/demo-static.js",
+      "logical": "js/demo-static.js",
+      "bytes": 1861,
+      "sha256": "6ac0e37024fb060ea88bdb0843f0d9ac1fc1944887d7a9dd8c4661cb42b3727a"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/demo.js",
+      "logical": "js/demo.js",
+      "bytes": 14770,
+      "sha256": "67efa1d602154df5abc74165004d5ecc628c94b96188fc48ad5f1b00a3e4b246"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/flight.js",
+      "logical": "js/flight.js",
+      "bytes": 1903,
+      "sha256": "119cfd41226512e0d4e87708326d4f172145353cadf40634addd2cc13f128ebf"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/focus.js",
+      "logical": "js/focus.js",
+      "bytes": 5727,
+      "sha256": "5d0c21d84faf4843a5c6d5ed12f611519838e71fea4dad2ffb06884ad9ca65ea"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/globe.js",
+      "logical": "js/globe.js",
+      "bytes": 13412,
+      "sha256": "ed71976ce7e30eaf59464f433d9f4e0b9de0ea2945f1c7af785b525eddc49d31"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/go-no-go-view.js",
+      "logical": "js/go-no-go-view.js",
+      "bytes": 6000,
+      "sha256": "8d8fc5a1e5a416d0d357a65b410d9de978de7e1a114121b7583400996ae3e23a"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/go-no-go.js",
+      "logical": "js/go-no-go.js",
+      "bytes": 5249,
+      "sha256": "12a1abbc73dd922a29096f3732eec50762e6108824c4c8e5577508a5dd31ed1f"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/ha-client.js",
+      "logical": "js/ha-client.js",
+      "bytes": 54012,
+      "sha256": "78ff5e342e7a0470008f25438517cb6c2c43ecda4b69d506d79de848de09b74d"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/house-check.js",
+      "logical": "js/house-check.js",
+      "bytes": 14326,
+      "sha256": "b0061acddd002fc756ba41448ba76bae420f1d4e3a0b01fd2793021242ed7d93"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/hub.js",
+      "logical": "js/hub.js",
+      "bytes": 7883,
+      "sha256": "070073c63c160c851805aa816591c324d9c56197dd050a9dac8be9ba901b70b4"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/icons.js",
+      "logical": "js/icons.js",
+      "bytes": 13605,
+      "sha256": "f38460d4517787bf3bae34fd6c6ecbc1874dec65530f3ae5bd88ea09041e583c"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/native.js",
+      "logical": "js/native.js",
+      "bytes": 2935,
+      "sha256": "91145371b91d39d0bd106b8bf6c3ac2dd4649b4c7607512c4a95437b629f20f6"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/net.js",
+      "logical": "js/net.js",
+      "bytes": 3008,
+      "sha256": "b3003b778445666a68994a87422a9e80aa1299a80ede7dcc16f0f588980a457e"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/qr.js",
+      "logical": "js/qr.js",
+      "bytes": 9734,
+      "sha256": "6edf860067cd0f7a1b52a754f8d0fb659cb3c7d777e478168b3f735795706f59"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/rain-nowcast.js",
+      "logical": "js/rain-nowcast.js",
+      "bytes": 8657,
+      "sha256": "a1d1040ce6807878ec3de2631f432335d0a570a2b061416e425e0acbdb87a1e3"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/robotVacuum.js",
+      "logical": "js/robotVacuum.js",
+      "bytes": 6188,
+      "sha256": "cd3e10319251b7b07d5268a8c4fadbbd384f33b08a50d8991b852de9efde15e0"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/roles.js",
+      "logical": "js/roles.js",
+      "bytes": 18021,
+      "sha256": "b6cf1d4cefbd9890a66da54d38313a6f2c3d9093d81456df5e82415d6198ce01"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/sleep-schedule.js",
+      "logical": "js/sleep-schedule.js",
+      "bytes": 7496,
+      "sha256": "5ecca693b62b8eace53088abc32ed7052a798eaaf50432d45c2a27e09a37b2e7"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/smart-comfort.js",
+      "logical": "js/smart-comfort.js",
+      "bytes": 19210,
+      "sha256": "986adf0e7e5c673c714ad7753b260e6c3b1eb51577e706e42d3dc156bda842db"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/space.js",
+      "logical": "js/space.js",
+      "bytes": 42694,
+      "sha256": "eed2d77bdd55c586171017bee3371ed3f1aee0e7d9ceb226a0d209058fd4a61b"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/theme-copy.js",
+      "logical": "js/theme-copy.js",
+      "bytes": 1884,
+      "sha256": "0a6effb8d4f909f89694ace772d595d524c1f251cf525e624222f52063bccb2d"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/theme-features.js",
+      "logical": "js/theme-features.js",
+      "bytes": 2105,
+      "sha256": "60e511bf5bf9d86aebf64958b8871f63bf2ee4657f07c177517a6a93df178403"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/time.js",
+      "logical": "js/time.js",
+      "bytes": 4918,
+      "sha256": "3b3dbd9dc94ff2d98be93741afd6d66122d06eebb802c7713b4295a69b663543"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/usage.js",
+      "logical": "js/usage.js",
+      "bytes": 14722,
+      "sha256": "60f9296460847422272dfd7ba06ea4e1eec834bb3e84122d744efbc3e241f925"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/views.js",
+      "logical": "js/views.js",
+      "bytes": 125306,
+      "sha256": "9a964e83c6f28b01a55b02ea37a9a1db9b2425146c01993f5b0df83b59f846e4"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/wake.js",
+      "logical": "js/wake.js",
+      "bytes": 2751,
+      "sha256": "5417308545d6537170c57ffc70759821a9111b0eb42532b49eb6c428e38f7827"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/wallpaper/ORIGINALS.json",
+      "logical": "js/wallpaper/ORIGINALS.json",
+      "bytes": 1014,
+      "sha256": "47568d0975b052ba1077e7e092084e473724e94f1856c93c27556047218ec641"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/wallpaper/PROVENANCE.md",
+      "logical": "js/wallpaper/PROVENANCE.md",
+      "bytes": 4428,
+      "sha256": "56f3ab83ae099e5b53b45764e14fecd66778bbe81210e7bd31ef8ab5cadef3d8"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/wallpaper/catalog.js",
+      "logical": "js/wallpaper/catalog.js",
+      "bytes": 1616,
+      "sha256": "0db22f4f3d52fbd5d4397527032028519e25b81a4357a35de91cf9257b7fb660"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/wallpaper/earth.js",
+      "logical": "js/wallpaper/earth.js",
+      "bytes": 3463,
+      "sha256": "8f93cdf13512c8dba406821dfac0d7b6aa35aa762e54f0069c66abb2c09a9583"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/wallpaper/earth.webp",
+      "logical": "js/wallpaper/earth.webp",
+      "bytes": 22838,
+      "sha256": "2bba0e48a919223e07c5d9ce2b266b17a95132620cef2984d43a31d80e01a55e"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/wallpaper/model.js",
+      "logical": "js/wallpaper/model.js",
+      "bytes": 4753,
+      "sha256": "cd862ef852c0376d87e08b32db92b47cb51b52b15e18c70fc6c0c8d81d19804b"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/wallpaper/runtime.js",
+      "logical": "js/wallpaper/runtime.js",
+      "bytes": 10980,
+      "sha256": "55fd5c9edab584f4c100903aa250419792548efc89808a410cff8e05f42291d8"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/wallpaper/scenes.js",
+      "logical": "js/wallpaper/scenes.js",
+      "bytes": 2372,
+      "sha256": "6c8bee578078b6c5bc777fddec66d866c160880c6ead011aef49f855f4a168a7"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/wallpaper/sky.webp",
+      "logical": "js/wallpaper/sky.webp",
+      "bytes": 4370,
+      "sha256": "9172643a35396bdc318513cb436f90e75448c51fe6f27ebd11c37736993e1236"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/wallpaper/stars.webp",
+      "logical": "js/wallpaper/stars.webp",
+      "bytes": 5948,
+      "sha256": "588f5c35078386a32a211f2b49d1254ee9abab84c022fe3071344cc23a719108"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/wallpaper/wallpaper.css",
+      "logical": "js/wallpaper/wallpaper.css",
+      "bytes": 1473,
+      "sha256": "efeb84e814325cb0ac78319354e04e8bc842f436cb2b36d219899bcce8e5f2dd"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/wallpaper/weather.webp",
+      "logical": "js/wallpaper/weather.webp",
+      "bytes": 4120,
+      "sha256": "663ce76ae01deb3430b847aefda30588f72be38ac2745487c545cdbff1ebdbd8"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/weather-link.js",
+      "logical": "js/weather-link.js",
+      "bytes": 67,
+      "sha256": "456279f5aa5f772bd4b78bf91a540d7c632e08e7349620f6be01b2aec0da6f11"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/js/weather-source.js",
+      "logical": "js/weather-source.js",
+      "bytes": 7094,
+      "sha256": "debac5026a950580c10c06af71a4eec1d3d8067f8138e06a68202f3c4905ac38"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/tools/build-stars-hyg.cjs",
+      "logical": "tools/build-stars-hyg.cjs",
+      "bytes": 4574,
+      "sha256": "bffc6b3112f001757b599cf70d5171e37de72b3c316bf5f8602472eb12cb6248"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/tools/capture-wallpaper.cjs",
+      "logical": "tools/capture-wallpaper.cjs",
+      "bytes": 6370,
+      "sha256": "c208590b0c24073847952227fa43a04c8ffddc8216a412c4187d95dd2d7e34e8"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/tools/verify-wallpaper-gated.sh",
+      "logical": "tools/verify-wallpaper-gated.sh",
+      "bytes": 758,
+      "sha256": "860d541d224390b5620add6b008a4aeffc17b3738c102b1ee7ed5dfca68707f9"
+    },
+    {
+      "path": "v/d1437f942b271f534af6/vendor/globe.gl.min.js",
+      "logical": "vendor/globe.gl.min.js",
+      "bytes": 1885160,
+      "sha256": "2c3e445c04d121215910a89688b96091c8a72071c122a4f830081a39b636c94c"
+    }
+  ],
+  "bytes": 8633721
+}

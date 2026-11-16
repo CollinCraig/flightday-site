@@ -1,0 +1,1037 @@
+{
+ "contract": 3,
+ "contract_minor": 0,
+ "revision": 1,
+ "demo": true,
+ "config": {
+  "version": 1,
+  "home": {
+   "name": "Demo house",
+   "zone": "zone.home"
+  },
+  "people": [
+   {
+    "id": "riley",
+    "person": "person.riley",
+    "notify": null,
+    "wakes": true,
+    "legacy_key": null,
+    "private_sources": [],
+    "builder_desk": false
+   },
+   {
+    "id": "sam",
+    "person": "person.sam",
+    "notify": "notify.mobile_app_sams_phone",
+    "wakes": true,
+    "legacy_key": null,
+    "private_sources": [],
+    "builder_desk": false
+   }
+  ],
+  "rooms": [
+   {
+    "area": "bedroom",
+    "kind": "bedroom"
+   },
+   {
+    "area": "hallway",
+    "kind": "hallway"
+   },
+   {
+    "area": "kitchen",
+    "kind": "kitchen"
+   },
+   {
+    "area": "living_room",
+    "kind": "living"
+   },
+   {
+    "area": "office",
+    "kind": "office"
+   },
+   {
+    "area": "porch",
+    "kind": "outdoor"
+   }
+  ],
+  "roles": {
+   "bedroom": "bedroom",
+   "sleep_speaker": "media_player.bedroom_speaker",
+   "alarm_speaker": null,
+   "sleep_sound_on": "speaker",
+   "wake_lights": [
+    "light.bedroom_lamp"
+   ],
+   "ring_lights": [
+    "light.bedroom_ceiling"
+   ],
+   "goodnight_off": {
+    "lights": "all",
+    "switches": [
+     "switch.porch_string_lights"
+    ],
+    "media": "all",
+    "except": [
+     "switch.coffee_maker"
+    ]
+   },
+   "thermostat": "climate.hallway",
+   "thermostat_sensor": null,
+   "indoor_temperature": [
+    {
+     "temperature": "sensor.bedroom_temperature",
+     "humidity": "sensor.bedroom_humidity",
+     "area": "bedroom",
+     "weight": 1
+    },
+    {
+     "temperature": "sensor.living_room_temperature",
+     "humidity": "sensor.living_room_humidity",
+     "area": "living_room",
+     "weight": 1
+    },
+    {
+     "temperature": "sensor.office_temperature",
+     "humidity": null,
+     "area": "office",
+     "weight": 0.5
+    }
+   ],
+   "weather": [
+    "weather.home",
+    "open_meteo"
+   ],
+   "weather_feels_like": null,
+   "agenda_calendars": [
+    "calendar.family",
+    "calendar.riley",
+    "calendar.sam"
+   ],
+   "wake_rule_calendars": [
+    "calendar.family",
+    "calendar.riley",
+    "calendar.sam"
+   ],
+   "wake_rule_due": false,
+   "due": [
+    "todo.chores"
+   ],
+   "vacuum": "vacuum.robot",
+   "vacuum_map": "image.robot_map",
+   "cameras": [
+    {
+     "entity": "camera.driveway",
+     "slot": "drive",
+     "last_event": "image.driveway_last_event",
+     "battery": false
+    },
+    {
+     "entity": "camera.front_door",
+     "slot": "front",
+     "last_event": "image.front_door_last_event",
+     "battery": false
+    }
+   ],
+   "doorbell": "event.front_door_ding",
+   "security": "alarm_control_panel.home",
+   "tvs": [
+    {
+     "media_player": "media_player.living_room_tv",
+     "remote": "remote.living_room_tv",
+     "streamer": "media_player.living_room_streamer",
+     "area": "living_room",
+     "extras": [
+      "bring_to_front"
+     ]
+    }
+   ],
+   "ai": null,
+   "hidden": []
+  },
+  "screens": [
+   {
+    "id": "scr_demowall",
+    "name": "Kitchen panel",
+    "kind": "panel",
+    "platform": "android",
+    "area": "kitchen",
+    "tv": null,
+    "night": "dim",
+    "alarm": true,
+    "control": "house",
+    "wakes_person": null,
+    "legacy_id": null
+   },
+   {
+    "id": "scr_demotv",
+    "name": "Living room TV",
+    "kind": "tv",
+    "platform": "android_tv",
+    "area": "living_room",
+    "tv": "media_player.living_room_tv",
+    "night": "dark",
+    "alarm": false,
+    "control": "house",
+    "wakes_person": null,
+    "legacy_id": null
+   },
+   {
+    "id": "scr_demotab",
+    "name": "Bedroom iPad",
+    "kind": "tablet",
+    "platform": "ipados",
+    "area": "bedroom",
+    "tv": null,
+    "night": "dark",
+    "alarm": true,
+    "control": "room",
+    "wakes_person": null,
+    "legacy_id": null
+   },
+   {
+    "id": "scr_demomac",
+    "name": "Office Mac",
+    "kind": "computer",
+    "platform": "macos",
+    "area": "office",
+    "tv": null,
+    "night": "dim",
+    "alarm": false,
+    "control": "house",
+    "wakes_person": null,
+    "legacy_id": null
+   },
+   {
+    "id": "scr_demophone",
+    "name": "Sam's phone",
+    "kind": "phone",
+    "platform": "ios",
+    "area": null,
+    "tv": null,
+    "night": "dark",
+    "alarm": false,
+    "control": "house",
+    "wakes_person": "sam",
+    "legacy_id": null
+   }
+  ],
+  "modules": {
+   "launch_alarm": true,
+   "goodnight": true,
+   "comfort_schedule": true,
+   "smart_comfort": false,
+   "space": true,
+   "cameras": true,
+   "vacuum": true,
+   "countdowns": true,
+   "builder_desk": false,
+   "ai_brief": false,
+   "flight_plan": false,
+   "weather": true,
+   "room_sensors": true,
+   "house_check": true,
+   "learning": false,
+   "x_bin_day": true
+  },
+  "countdowns": [
+   {
+    "id": "cd_trip01",
+    "title": "Trip to Yellowstone",
+    "date": "@day+12",
+    "show": [
+     "briefing",
+     "night"
+    ]
+   }
+  ]
+ },
+ "home": {
+  "name": "Demo house",
+  "latitude": 28.5244,
+  "longitude": -80.6823,
+  "elevation": 3,
+  "time_zone": "America/New_York",
+  "country": "US",
+  "units": "imperial",
+  "language": "en",
+  "label": "Space Coast"
+ },
+ "people": {
+  "riley": {
+   "name": "Riley",
+   "picture": null,
+   "user_id": "demo_user_riley",
+   "phone_ready": false
+  },
+  "sam": {
+   "name": "Sam",
+   "picture": null,
+   "user_id": "demo_user_sam",
+   "phone_ready": true
+  }
+ },
+ "rooms": {
+  "bedroom": {
+   "name": "Bedroom",
+   "kind": "bedroom"
+  },
+  "living_room": {
+   "name": "Living room",
+   "kind": "living"
+  },
+  "kitchen": {
+   "name": "Kitchen",
+   "kind": "kitchen"
+  },
+  "office": {
+   "name": "Office",
+   "kind": "office"
+  },
+  "hallway": {
+   "name": "Hallway",
+   "kind": "hallway"
+  },
+  "porch": {
+   "name": "Porch",
+   "kind": "outdoor"
+  }
+ },
+ "screens": {
+  "scr_demowall": {
+   "online": true,
+   "last_seen": "@now-30s",
+   "app_version": "2.0.0",
+   "state": "day",
+   "contract": 3
+  },
+  "scr_demotv": {
+   "online": true,
+   "last_seen": "@now-30s",
+   "app_version": "2.0.0",
+   "state": "day",
+   "contract": 3
+  },
+  "scr_demotab": {
+   "online": true,
+   "last_seen": "@now-30s",
+   "app_version": "2.0.0",
+   "state": "day",
+   "contract": 3
+  },
+  "scr_demomac": {
+   "online": true,
+   "last_seen": "@now-30s",
+   "app_version": "2.0.0",
+   "state": "day",
+   "contract": 3
+  },
+  "scr_demophone": {
+   "online": true,
+   "last_seen": "@now-30s",
+   "app_version": "2.0.0",
+   "state": "day",
+   "contract": 3
+  }
+ },
+ "entities": {
+  "alarm_enabled": "switch.flightday_alarm_enabled",
+  "wake_mon": "time.flightday_wake_mon",
+  "alarm_mon": "switch.flightday_alarm_mon",
+  "bedtime_mon": "time.flightday_bedtime_mon",
+  "up_by_mon": "time.flightday_up_by_mon",
+  "crew_mon": "select.flightday_crew_mon",
+  "wake_tue": "time.flightday_wake_tue",
+  "alarm_tue": "switch.flightday_alarm_tue",
+  "bedtime_tue": "time.flightday_bedtime_tue",
+  "up_by_tue": "time.flightday_up_by_tue",
+  "crew_tue": "select.flightday_crew_tue",
+  "wake_wed": "time.flightday_wake_wed",
+  "alarm_wed": "switch.flightday_alarm_wed",
+  "bedtime_wed": "time.flightday_bedtime_wed",
+  "up_by_wed": "time.flightday_up_by_wed",
+  "crew_wed": "select.flightday_crew_wed",
+  "wake_thu": "time.flightday_wake_thu",
+  "alarm_thu": "switch.flightday_alarm_thu",
+  "bedtime_thu": "time.flightday_bedtime_thu",
+  "up_by_thu": "time.flightday_up_by_thu",
+  "crew_thu": "select.flightday_crew_thu",
+  "wake_fri": "time.flightday_wake_fri",
+  "alarm_fri": "switch.flightday_alarm_fri",
+  "bedtime_fri": "time.flightday_bedtime_fri",
+  "up_by_fri": "time.flightday_up_by_fri",
+  "crew_fri": "select.flightday_crew_fri",
+  "wake_sat": "time.flightday_wake_sat",
+  "alarm_sat": "switch.flightday_alarm_sat",
+  "bedtime_sat": "time.flightday_bedtime_sat",
+  "up_by_sat": "time.flightday_up_by_sat",
+  "crew_sat": "select.flightday_crew_sat",
+  "wake_sun": "time.flightday_wake_sun",
+  "alarm_sun": "switch.flightday_alarm_sun",
+  "bedtime_sun": "time.flightday_bedtime_sun",
+  "up_by_sun": "time.flightday_up_by_sun",
+  "crew_sun": "select.flightday_crew_sun",
+  "wake_override": "datetime.flightday_wake_override",
+  "clear_override": "button.flightday_clear_override",
+  "snooze_minutes": "number.flightday_snooze_minutes",
+  "snooze_window": "number.flightday_snooze_window",
+  "ready_lead": "number.flightday_ready_lead",
+  "sleep_volume": "number.flightday_sleep_volume",
+  "alarm_max_volume": "number.flightday_alarm_max_volume",
+  "day_volume": "number.flightday_day_volume",
+  "sleep_timer": "number.flightday_sleep_timer",
+  "temp_night": "number.flightday_temp_night",
+  "temp_wake": "number.flightday_temp_wake",
+  "temp_day": "number.flightday_temp_day",
+  "sleep_sound": "select.flightday_sleep_sound",
+  "time_format": "select.flightday_time_format",
+  "briefing_hours": "select.flightday_briefing_hours",
+  "sleep_mode": "binary_sensor.flightday_sleep_mode",
+  "sleep_scope": "sensor.flightday_sleep_scope",
+  "launch_state": "sensor.flightday_launch_state",
+  "next_liftoff": "sensor.flightday_next_liftoff",
+  "last_morning": "sensor.flightday_last_morning",
+  "problem": "binary_sensor.flightday_problem",
+  "comfort_schedule": "switch.flightday_comfort_schedule",
+  "day_starts": "time.flightday_day_starts",
+  "comfort_status": "sensor.flightday_comfort_status",
+  "screen_scr_demowall_state": "sensor.flightday_screen_scr_demowall_state",
+  "screen_scr_demowall_night": "select.flightday_screen_scr_demowall_night",
+  "screen_scr_demowall_alarm": "switch.flightday_screen_scr_demowall_alarm",
+  "screen_scr_demowall_identify": "button.flightday_screen_scr_demowall_identify",
+  "screen_scr_demotv_state": "sensor.flightday_screen_scr_demotv_state",
+  "screen_scr_demotv_night": "select.flightday_screen_scr_demotv_night",
+  "screen_scr_demotv_alarm": "switch.flightday_screen_scr_demotv_alarm",
+  "screen_scr_demotv_identify": "button.flightday_screen_scr_demotv_identify",
+  "screen_scr_demotab_state": "sensor.flightday_screen_scr_demotab_state",
+  "screen_scr_demotab_night": "select.flightday_screen_scr_demotab_night",
+  "screen_scr_demotab_alarm": "switch.flightday_screen_scr_demotab_alarm",
+  "screen_scr_demotab_identify": "button.flightday_screen_scr_demotab_identify",
+  "screen_scr_demomac_state": "sensor.flightday_screen_scr_demomac_state",
+  "screen_scr_demomac_night": "select.flightday_screen_scr_demomac_night",
+  "screen_scr_demomac_alarm": "switch.flightday_screen_scr_demomac_alarm",
+  "screen_scr_demomac_identify": "button.flightday_screen_scr_demomac_identify",
+  "screen_scr_demophone_state": "sensor.flightday_screen_scr_demophone_state",
+  "screen_scr_demophone_night": "select.flightday_screen_scr_demophone_night",
+  "screen_scr_demophone_alarm": "switch.flightday_screen_scr_demophone_alarm",
+  "screen_scr_demophone_identify": "button.flightday_screen_scr_demophone_identify"
+ },
+ "lists": {
+  "lights": [
+   "light.bedroom_ceiling",
+   "light.bedroom_lamp",
+   "light.hallway",
+   "light.kitchen",
+   "light.living_room_ceiling",
+   "light.living_room_lamp",
+   "light.office_desk",
+   "switch.coffee_maker",
+   "switch.porch_string_lights"
+  ],
+  "scenes": [
+   "scene.dinner",
+   "scene.morning",
+   "scene.movie_night"
+  ],
+  "speakers": [
+   "media_player.bedroom_speaker",
+   "media_player.kitchen_speaker"
+  ],
+  "tvs": [
+   "media_player.living_room_tv"
+  ]
+ },
+ "hub": {
+  "url": "demo://hub",
+  "status": "ok",
+  "features": [
+   "space",
+   "nowcast",
+   "backgrounds",
+   "sleep"
+  ],
+  "token": "demo"
+ },
+ "launch": "@derived",
+ "issues": [],
+ "capabilities": {
+  "pairing": false,
+  "static_web": true,
+  "ai": false,
+  "legacy_v2": false
+ },
+ "setup_complete": true,
+ "integrations": [
+  {
+   "id": "launch_alarm",
+   "name": "Launch alarm",
+   "kind": "builtin",
+   "provider": "flightday",
+   "enabled": true,
+   "status": "on",
+   "summary": "Weekdays 6:45 AM · Bedroom speaker · Bedroom lamp",
+   "reason": null,
+   "uses": [
+    "sleep_speaker",
+    "wake_lights",
+    "ring_lights"
+   ],
+   "docs": "https://flightday.app/integrations/launch-alarm"
+  },
+  {
+   "id": "goodnight",
+   "name": "Goodnight",
+   "kind": "builtin",
+   "provider": "flightday",
+   "enabled": true,
+   "status": "on",
+   "summary": "Thunderstorm on the Bedroom speaker · lights off",
+   "reason": null,
+   "uses": [
+    "sleep_speaker",
+    "goodnight_off"
+   ],
+   "docs": "https://flightday.app/integrations/goodnight"
+  },
+  {
+   "id": "comfort_schedule",
+   "name": "Comfort schedule",
+   "kind": "builtin",
+   "provider": "flightday",
+   "enabled": true,
+   "status": "on",
+   "summary": "Night 70° · Wake 72° · Day 73° from 9:00 AM",
+   "reason": null,
+   "uses": [
+    "thermostat"
+   ],
+   "docs": "https://flightday.app/integrations/comfort-schedule"
+  },
+  {
+   "id": "smart_comfort",
+   "name": "Smart Comfort",
+   "kind": "builtin",
+   "provider": "flightday",
+   "enabled": false,
+   "status": "off",
+   "summary": "Labs · automatic heat and cool, shadow first",
+   "reason": null,
+   "uses": [
+    "thermostat",
+    "weather",
+    "indoor_temperature"
+   ],
+   "docs": "https://flightday.app/integrations/smart-comfort"
+  },
+  {
+   "id": "weather",
+   "name": "Weather",
+   "kind": "builtin",
+   "provider": "flightday",
+   "enabled": true,
+   "status": "on",
+   "summary": "Home forecast, then Open-Meteo",
+   "reason": null,
+   "uses": [
+    "weather"
+   ],
+   "docs": "https://flightday.app/integrations/weather"
+  },
+  {
+   "id": "room_sensors",
+   "name": "Room readings",
+   "kind": "builtin",
+   "provider": "flightday",
+   "enabled": true,
+   "status": "on",
+   "summary": "3 rooms",
+   "reason": null,
+   "uses": [
+    "indoor_temperature"
+   ],
+   "docs": "https://flightday.app/integrations/room-sensors"
+  },
+  {
+   "id": "space",
+   "name": "Space",
+   "kind": "builtin",
+   "provider": "flightday",
+   "enabled": true,
+   "status": "on",
+   "summary": "Launches, ISS passes over the Space Coast",
+   "reason": null,
+   "uses": [],
+   "docs": "https://flightday.app/integrations/space"
+  },
+  {
+   "id": "cameras",
+   "name": "Cameras",
+   "kind": "builtin",
+   "provider": "flightday",
+   "enabled": true,
+   "status": "on",
+   "summary": "Front door, Driveway · stills",
+   "reason": null,
+   "uses": [
+    "cameras",
+    "doorbell"
+   ],
+   "docs": "https://flightday.app/integrations/cameras"
+  },
+  {
+   "id": "vacuum",
+   "name": "Robot vacuum",
+   "kind": "builtin",
+   "provider": "flightday",
+   "enabled": true,
+   "status": "on",
+   "summary": "Docked · 100 %",
+   "reason": null,
+   "uses": [
+    "vacuum",
+    "vacuum_map"
+   ],
+   "docs": "https://flightday.app/integrations/vacuum"
+  },
+  {
+   "id": "countdowns",
+   "name": "Countdowns",
+   "kind": "builtin",
+   "provider": "flightday",
+   "enabled": true,
+   "status": "on",
+   "summary": "Trip to Yellowstone",
+   "reason": null,
+   "uses": [],
+   "docs": "https://flightday.app/integrations/countdowns"
+  },
+  {
+   "id": "house_check",
+   "name": "Systems check",
+   "kind": "builtin",
+   "provider": "flightday",
+   "enabled": true,
+   "status": "on",
+   "summary": "2 need you",
+   "reason": null,
+   "uses": [],
+   "docs": "https://flightday.app/integrations/house-check"
+  },
+  {
+   "id": "ai_brief",
+   "name": "AI brief",
+   "kind": "builtin",
+   "provider": "flightday",
+   "enabled": false,
+   "status": "needs_setup",
+   "summary": "Choose an AI model in Home Assistant",
+   "reason": {
+    "code": "missing_role",
+    "params": {
+     "role": "ai"
+    }
+   },
+   "uses": [
+    "ai"
+   ],
+   "docs": "https://flightday.app/integrations/ai-brief"
+  },
+  {
+   "id": "flight_plan",
+   "name": "Flight Plan",
+   "kind": "builtin",
+   "provider": "flightday",
+   "enabled": false,
+   "status": "needs_setup",
+   "summary": "Choose an AI model in Home Assistant",
+   "reason": {
+    "code": "missing_role",
+    "params": {
+     "role": "ai"
+    }
+   },
+   "uses": [
+    "ai"
+   ],
+   "docs": "https://flightday.app/integrations/flight-plan"
+  },
+  {
+   "id": "builder_desk",
+   "name": "Builder desk",
+   "kind": "builtin",
+   "provider": "flightday",
+   "enabled": false,
+   "status": "off",
+   "summary": "AI plan limits and agents, from a hub",
+   "reason": null,
+   "uses": [],
+   "docs": "https://flightday.app/integrations/builder-desk"
+  },
+  {
+   "id": "learning",
+   "name": "Continue training",
+   "kind": "builtin",
+   "provider": "flightday",
+   "enabled": false,
+   "status": "off",
+   "summary": "Continue training on Apple devices",
+   "reason": null,
+   "uses": [],
+   "docs": "https://flightday.app/integrations/learning"
+  },
+  {
+   "id": "x_bin_day",
+   "name": "Bin day",
+   "kind": "external",
+   "provider": "automation",
+   "enabled": true,
+   "status": "on",
+   "summary": "Posts a line the evening before collection",
+   "reason": null,
+   "uses": [],
+   "docs": null
+  }
+ ],
+ "lines": [
+  {
+   "source": "x_bin_day",
+   "key": "recycling",
+   "text": "Recycling goes out tonight",
+   "show": [
+    "briefing",
+    "home"
+   ],
+   "priority": "normal",
+   "until": "@tomorrow 09:00",
+   "icon": "recycle",
+   "person": null,
+   "posted_at": "@today 17:00"
+  }
+ ],
+ "checks": [
+  {
+   "source": "house_check",
+   "key": "porch_lights_late",
+   "status": "attention",
+   "title": "Porch string lights are on",
+   "detail": "On since 6:10 PM",
+   "since": "@now-40m",
+   "action": {
+    "label": "Turn off",
+    "domain": "switch",
+    "service": "turn_off",
+    "target": {
+     "entity_id": "switch.porch_string_lights"
+    }
+   }
+  },
+  {
+   "source": "vacuum",
+   "key": "filter_due",
+   "status": "attention",
+   "title": "Robot vacuum filter",
+   "detail": "Replace in 3 days",
+   "since": "@now-2d",
+   "action": null
+  }
+ ],
+ "entity_info": {
+  "alarm_control_panel.home": {
+   "name": "Home alarm",
+   "domain": "alarm_control_panel",
+   "area_id": "hallway",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "calendar.family": {
+   "name": "Family",
+   "domain": "calendar",
+   "area_id": null,
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "calendar.riley": {
+   "name": "Riley",
+   "domain": "calendar",
+   "area_id": null,
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "calendar.sam": {
+   "name": "Sam",
+   "domain": "calendar",
+   "area_id": null,
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "camera.driveway": {
+   "name": "Driveway camera",
+   "domain": "camera",
+   "area_id": null,
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "camera.front_door": {
+   "name": "Front door camera",
+   "domain": "camera",
+   "area_id": "porch",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "climate.hallway": {
+   "name": "Hallway thermostat",
+   "domain": "climate",
+   "area_id": "hallway",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "event.front_door_ding": {
+   "name": "Front door doorbell",
+   "domain": "event",
+   "area_id": "porch",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "image.driveway_last_event": {
+   "name": "Driveway camera last event",
+   "domain": "image",
+   "area_id": null,
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "image.front_door_last_event": {
+   "name": "Front door camera last event",
+   "domain": "image",
+   "area_id": "porch",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "image.robot_map": {
+   "name": "Robot vacuum map",
+   "domain": "image",
+   "area_id": "living_room",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "light.bedroom_ceiling": {
+   "name": "Bedroom ceiling",
+   "domain": "light",
+   "area_id": "bedroom",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "light.bedroom_lamp": {
+   "name": "Bedroom lamp",
+   "domain": "light",
+   "area_id": "bedroom",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "light.hallway": {
+   "name": "Hallway",
+   "domain": "light",
+   "area_id": "hallway",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "light.kitchen": {
+   "name": "Kitchen",
+   "domain": "light",
+   "area_id": "kitchen",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "light.living_room_ceiling": {
+   "name": "Living room ceiling",
+   "domain": "light",
+   "area_id": "living_room",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "light.living_room_lamp": {
+   "name": "Living room lamp",
+   "domain": "light",
+   "area_id": "living_room",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "light.office_desk": {
+   "name": "Desk light",
+   "domain": "light",
+   "area_id": "office",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "media_player.bedroom_speaker": {
+   "name": "Bedroom speaker",
+   "domain": "media_player",
+   "area_id": "bedroom",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "media_player.kitchen_speaker": {
+   "name": "Kitchen speaker",
+   "domain": "media_player",
+   "area_id": "kitchen",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "media_player.living_room_streamer": {
+   "name": "Living room streamer",
+   "domain": "media_player",
+   "area_id": "living_room",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "media_player.living_room_tv": {
+   "name": "Living room TV",
+   "domain": "media_player",
+   "area_id": "living_room",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "remote.living_room_tv": {
+   "name": "Living room TV remote",
+   "domain": "remote",
+   "area_id": "living_room",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "scene.dinner": {
+   "name": "Dinner",
+   "domain": "scene",
+   "area_id": null,
+   "platform": "demo",
+   "controllable": true,
+   "reason": null,
+   "scene": {
+    "opaque": false
+   }
+  },
+  "scene.morning": {
+   "name": "Morning",
+   "domain": "scene",
+   "area_id": null,
+   "platform": "demo",
+   "controllable": true,
+   "reason": null,
+   "scene": {
+    "opaque": false
+   }
+  },
+  "scene.movie_night": {
+   "name": "Movie night",
+   "domain": "scene",
+   "area_id": null,
+   "platform": "demo",
+   "controllable": true,
+   "reason": null,
+   "scene": {
+    "opaque": false
+   }
+  },
+  "sensor.bedroom_humidity": {
+   "name": "Bedroom humidity",
+   "domain": "sensor",
+   "area_id": "bedroom",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "sensor.bedroom_temperature": {
+   "name": "Bedroom temperature",
+   "domain": "sensor",
+   "area_id": "bedroom",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "sensor.living_room_humidity": {
+   "name": "Living room humidity",
+   "domain": "sensor",
+   "area_id": "living_room",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "sensor.living_room_temperature": {
+   "name": "Living room temperature",
+   "domain": "sensor",
+   "area_id": "living_room",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "sensor.office_temperature": {
+   "name": "Office temperature",
+   "domain": "sensor",
+   "area_id": "office",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "switch.coffee_maker": {
+   "name": "Coffee maker",
+   "domain": "switch",
+   "area_id": "kitchen",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "switch.porch_string_lights": {
+   "name": "Porch string lights",
+   "domain": "switch",
+   "area_id": "porch",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "todo.chores": {
+   "name": "Chores",
+   "domain": "todo",
+   "area_id": null,
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "vacuum.robot": {
+   "name": "Robot vacuum",
+   "domain": "vacuum",
+   "area_id": "living_room",
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  },
+  "weather.home": {
+   "name": "Home",
+   "domain": "weather",
+   "area_id": null,
+   "platform": "demo",
+   "controllable": true,
+   "reason": null
+  }
+ }
+}

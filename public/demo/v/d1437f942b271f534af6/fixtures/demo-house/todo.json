@@ -1,0 +1,44 @@
+{
+ "todo.chores": {
+  "items": [
+   {
+    "uid": "t1",
+    "summary": "Water the plants",
+    "status": "needs_action",
+    "due": "@day+0"
+   },
+   {
+    "uid": "t2",
+    "summary": "Library books due",
+    "status": "needs_action",
+    "due": "@day+1"
+   },
+   {
+    "uid": "t3",
+    "summary": "Pay water bill",
+    "status": "needs_action",
+    "due": "@day+3"
+   },
+   {
+    "uid": "t4",
+    "summary": "Change air filter",
+    "status": "completed",
+    "due": "@day-1"
+   }
+  ]
+ },
+ "todo.shopping_list": {
+  "items": [
+   {
+    "uid": "s1",
+    "summary": "Coffee",
+    "status": "needs_action"
+   },
+   {
+    "uid": "s2",
+    "summary": "Oat milk",
+    "status": "needs_action"
+   }
+  ]
+ }
+}

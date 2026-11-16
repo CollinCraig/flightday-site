@@ -1,0 +1,137 @@
+<!-- title: What’s configurable · Flight Day docs -->
+<!-- description: In development. Every Flight Day setting by area, with its choices, default and where to find it on a wall panel, TV, iPhone, iPad, Mac, Apple TV and Watch. -->
+<h1>What’s configurable</h1>
+<p class="lede">Every setting, grouped by area, with its choices and where to find it on a wall panel or TV and on Apple devices. The default is in bold.</p>
+<div class="callout">
+  <p><b>Who a setting applies to.</b> <b>House</b> settings live in Home Assistant and are the same on every screen. <b>This screen</b> settings belong to one wall panel, TV or Apple device; with the hub they follow that screen and can be edited from any screen in Settings › Screens.</p>
+  <p>House defaults are the starting values for a new setup. A house that’s already running keeps its own values.</p>
+</div>
+
+<h2 id="good-to-know">Good to know</h2>
+<ul>
+  <li>Times are <b>12-hour</b>, and every screen follows the house unless you change it.</li>
+  <li>The briefing stays up <b>2 hours</b> after the wake time, or until you choose Done.</li>
+  <li>Snooze is <b>10 minutes</b>. With Up by on Automatic, you’re up within <b>30 minutes</b> of the wake time, or <b>45 minutes</b> before your first event, whichever comes first.</li>
+  <li>The alarm starts at <b>7:00 AM Mon–Fri</b>, with weekends at <b>8:30 AM</b> and their alarm off. Bedtime targets start at the wake time minus 8 hours.</li>
+  <li>Lights always use their warmest colour. That isn’t a setting; it’s a rule.</li>
+  <li>The comfort schedule starts <b>off</b>.</li>
+</ul>
+
+<h2 id="display">Display and time</h2>
+<div class="tablewrap"><table class="rules">
+  <thead><tr><th scope="col">Setting</th><th scope="col">What it does</th><th scope="col">Choices</th><th scope="col">Where</th></tr></thead>
+  <tbody>
+    <tr><td>Time format<small>House</small></td><td>Clock style for every screen that follows the house.</td><td><b>12-hour</b> · 24-hour · Both (“07:45 (7:45 AM)”)</td><td>Wall/TV: Settings › Display<small>Apple: Settings › Display › House time format</small></td></tr>
+    <tr><td>This screen’s time format<small>This screen</small></td><td>Overrides the house format on one screen.</td><td><b>Follow shared</b> · 12-hour · 24-hour · Both. Apple adds System</td><td>Wall/TV: Settings › Display<small>Apple: Settings › Display</small></td></tr>
+    <tr><td>Brightness<small>This screen</small></td><td>How bright the screen is.</td><td><b>Auto</b> (follows the room’s light) · 5–100%</td><td>Wall/TV: Settings › Display or Screens<small>Apple: Settings › Screens</small></td></tr>
+    <tr><td>Theme<small>This screen</small></td><td>How the dashboard looks.</td><td><b>Tokyo Night</b> · Starship · Liquid Glass · Console</td><td>Wall/TV: Settings › Appearance or Screens<small>Apple: Settings › Screens › Theme</small></td></tr>
+    <tr><td>Units<small>This screen</small></td><td>Temperature units.</td><td><b>°F</b> · °C</td><td>Wall/TV: Settings › Home location<small>Apple: Not on Apple yet</small></td></tr>
+    <tr><td>Home location<small>This screen</small></td><td>The place used for weather, sunrise and sunset, and ISS passes.</td><td><b>From Home Assistant</b>, or typed in</td><td>Wall/TV: Settings › Home location<small>Apple: Settings › Home location</small></td></tr>
+  </tbody>
+</table></div>
+<h2 id="home">Home</h2>
+<div class="tablewrap"><table class="rules">
+  <thead><tr><th scope="col">Setting</th><th scope="col">What it does</th><th scope="col">Choices</th><th scope="col">Where</th></tr></thead>
+  <tbody>
+    <tr><td>Home tiles<small>This screen</small></td><td>Show, hide and reorder the Home tiles. The clock always stays first.</td><td><b>All shown</b>, in the standard order</td><td>Wall/TV: Hold a tile, or Menu on a remote<small>Apple: Settings › Screens › Home tiles (Apple TV keeps a fixed layout)</small></td></tr>
+    <tr><td>Areas<small>This screen</small></td><td>Which areas the top bar offers. Home is always there.</td><td>Space · House · Night · Status, <b>all on</b></td><td>Wall/TV: Settings › Home or Screens<small>Apple: Settings › Screens › Areas</small></td></tr>
+  </tbody>
+</table></div>
+<h2 id="alarm">Alarm and wake</h2>
+<p>With Up by on Automatic, the up-by time is the earliest of: your first timed event minus the ready lead, and the wake time plus the snooze window. Snooze is refused when the next liftoff would be under 3 minutes before it.</p>
+<div class="tablewrap"><table class="rules">
+  <thead><tr><th scope="col">Setting</th><th scope="col">What it does</th><th scope="col">Choices</th><th scope="col">Where</th></tr></thead>
+  <tbody>
+    <tr><td>Alarm<small>House</small></td><td>The master switch for the launch alarm.</td><td><b>Armed</b> · Off</td><td>Wall/TV: Night<small>Apple: Night, Goodnight</small></td></tr>
+    <tr><td>Wake time<small>House · per day</small></td><td>Your weekly wake time, by day group.</td><td>±15 min, or an exact time</td><td>Wall/TV: Night, or Settings › Night &amp; alarm › Schedule<small>Apple: Night › Schedule</small></td></tr>
+    <tr><td>Alarm on this day<small>House · per day</small></td><td>Whether that day rings.</td><td>On · Off</td><td>Wall/TV: Night, Schedule<small>Apple: Schedule</small></td></tr>
+    <tr><td>Customize days<small>Your view</small></td><td>Edit Mon–Fri as one group, or each day on its own.</td><td><b>Mon–Fri · Sat · Sun</b>; splits by itself when days differ</td><td>Wall/TV: Schedule<small>Apple: Schedule</small></td></tr>
+    <tr><td>Tomorrow only<small>House</small></td><td>A one-time wake change. The weekly plan stays as it is.</td><td>±15 min · <b>Use weekly plan</b> clears it</td><td>Wall/TV: Night › Tomorrow only, Schedule<small>Apple: Night, Goodnight</small></td></tr>
+    <tr><td>Who’s launching<small>House · per day</small></td><td>The whole crew gets the full bedroom alarm; one crew member gets a quiet alarm on their own phone.</td><td><b>Everyone</b> · one crew member</td><td>Wall/TV: Night<small>Apple: Night › Crew &amp; snooze defaults</small></td></tr>
+    <tr><td>Up by<small>House · per day</small></td><td>The latest you can snooze to that day.</td><td>±15 min · <b>Automatic</b></td><td>Wall/TV: Night<small>Apple: Night › Crew &amp; snooze defaults</small></td></tr>
+    <tr><td>Snooze<small>House</small></td><td>Minutes per snooze, followed by a one-minute count.</td><td>3–20 min · <b>10</b></td><td>Wall/TV: Used, not editable yet<small>Apple: Night › Crew &amp; snooze defaults</small></td></tr>
+    <tr><td>Snooze window<small>House</small></td><td>With Up by on Automatic, you must be up within this long of the wake time. 0 means no snoozing.</td><td>0–120 min · <b>30</b></td><td>Wall/TV: Used, not editable yet<small>Apple: Night › Crew &amp; snooze defaults</small></td></tr>
+    <tr><td>Ready lead<small>House</small></td><td>With Up by on Automatic, you must be up this long before your first timed event.</td><td>0–120 min · <b>45</b></td><td>Wall/TV: Used, not editable yet<small>Apple: Night › Crew &amp; snooze defaults</small></td></tr>
+    <tr><td>Alarm volume limit<small>House</small></td><td>The loudest the alarm takes a bedroom speaker, if you have one.</td><td>0–100 · <b>30</b></td><td>Wall/TV: Settings › Night &amp; alarm<small>Apple: Night › Sleep sound › Alarm max volume</small></td></tr>
+    <tr><td>Liftoff level<small>This screen</small></td><td>The loudness of the liftoff rumble only.</td><td>−6 to +6 dB · <b>0</b></td><td>Wall/TV: Settings › Display<small>Apple: Not on Apple yet</small></td></tr>
+    <tr><td>This screen’s own alarm<small>This screen</small></td><td>A backup alarm on the screen itself, used when Home Assistant isn’t connected.</td><td><b>6:30 AM, on</b></td><td>Wall/TV: Settings › Display (hidden when Home Assistant is connected)<small>Apple: —</small></td></tr>
+  </tbody>
+</table></div>
+<h2 id="night">Night and Goodnight</h2>
+<div class="tablewrap"><table class="rules">
+  <thead><tr><th scope="col">Setting</th><th scope="col">What it does</th><th scope="col">Choices</th><th scope="col">Where</th></tr></thead>
+  <tbody>
+    <tr><td>Bedtime target<small>House · per day</small></td><td>The target for the night before each wake day. It never starts anything.</td><td>A time per group · <b>wake − 8 h</b></td><td>Wall/TV: Schedule<small>Apple: Schedule</small></td></tr>
+    <tr><td>Sleep sound<small>House</small></td><td>Plays all night from Goodnight on the speaker or screen that plays it.</td><td><b>Thunderstorm</b> · Rain · Off</td><td>Wall/TV: Night<small>Apple: Night, Goodnight</small></td></tr>
+    <tr><td>Sleep volume<small>House</small></td><td>The live volume of the bedroom speaker.</td><td>0–100 · <b>20</b></td><td>Wall/TV: Night (− / +)<small>Apple: Night, Goodnight, Watch</small></td></tr>
+    <tr><td>At night<small>This screen</small></td><td>What the screen does at Goodnight.</td><td><b>Off</b> (screen off) · Dim (a night clock) · Stay on</td><td>Wall/TV: Settings › Night &amp; alarm or Screens<small>Apple: Settings › Screens</small></td></tr>
+    <tr><td>When woken<small>This screen</small></td><td>What a touch or key shows at night, for ten seconds.</td><td><b>Automatic</b> (pure black on TVs, night clock on the panel) · Pure black · Night clock</td><td>Wall/TV: Settings › Night &amp; alarm, Night, Screens<small>Apple: Settings › Screens (<b>Pure black</b>)</small></td></tr>
+    <tr><td>Night brightness<small>This screen</small></td><td>How bright a Dim screen is.</td><td><b>1%</b>, up to 30% on the panel</td><td>Wall/TV: Settings › Night &amp; alarm or Screens<small>Apple: Settings › Screens</small></td></tr>
+    <tr><td>Screen off at<small>This screen</small></td><td>A daily time for the panel to turn its screen off.</td><td><b>11:00 PM, on</b></td><td>Wall/TV: Settings › Display<small>Apple: —</small></td></tr>
+  </tbody>
+</table></div>
+<h2 id="briefing">Briefing</h2>
+<div class="tablewrap"><table class="rules">
+  <thead><tr><th scope="col">Setting</th><th scope="col">What it does</th><th scope="col">Choices</th><th scope="col">Where</th></tr></thead>
+  <tbody>
+    <tr><td>Briefing stays up<small>House</small></td><td>How long the morning briefing stays after the wake time. Done closes it sooner.</td><td>1 h · <b>2 h</b> · 3 h · until noon</td><td>Wall/TV: Settings › Night &amp; alarm<small>Apple: Night › Crew &amp; snooze defaults</small></td></tr>
+  </tbody>
+</table></div>
+<p>A briefing you open yourself closes after 45 minutes on the panel and 30 minutes on a TV.</p>
+<h2 id="comfort">Comfort and the thermostat</h2>
+<p>These appear when the house has a thermostat. Ranges come from your house, and a control stays locked when the house doesn’t offer it.</p>
+<div class="tablewrap"><table class="rules">
+  <thead><tr><th scope="col">Setting</th><th scope="col">What it does</th><th scope="col">Choices</th><th scope="col">Where</th></tr></thead>
+  <tbody>
+    <tr><td>Comfort schedule<small>House</small></td><td>Turns the scheduled temperatures on or off. Off keeps the current setpoint.</td><td>On · <b>Off</b></td><td>Wall/TV: Settings › Comfort, House › Thermostat<small>Apple: Settings › Schedule &amp; comfort</small></td></tr>
+    <tr><td>Night · Wake · Day<small>House</small></td><td>Night applies at Goodnight, Wake ten minutes before the wake time, Day from Day starts.</td><td>50–90 °F · <b>68 · 71 · 70 °F</b></td><td>Wall/TV: Settings › Comfort, Night › Tonight, House › Thermostat<small>Apple: Settings › Schedule &amp; comfort (asks you to confirm)</small></td></tr>
+    <tr><td>Day starts<small>House</small></td><td>When the Day temperature begins.</td><td>±15 min · <b>9:00 AM</b></td><td>Wall/TV: Settings › Comfort<small>Apple: Settings › Schedule &amp; comfort</small></td></tr>
+    <tr><td>Auto heat &amp; cool<small>House</small></td><td>Lets Smart Comfort choose heat or cool.</td><td><b>On</b> · Off</td><td>Wall/TV: Settings › Comfort<small>Apple: Settings › Schedule &amp; comfort</small></td></tr>
+    <tr><td>Manual changes last<small>House</small></td><td>How long a − or + hold lasts.</td><td><b>Until next period</b> · 1 h · 2 h · 4 h</td><td>Wall/TV: Settings › Comfort<small>Apple: Settings › Schedule &amp; comfort</small></td></tr>
+    <tr><td>Switch heat/cool after<small>House</small></td><td>How far past the target before it switches between heat and cool.</td><td>1–4 °F · <b>2</b></td><td>Wall/TV: Settings › Comfort<small>Apple: Settings › Schedule &amp; comfort</small></td></tr>
+    <tr><td>Suggest fresh-air days<small>House</small></td><td>Tells you when it’s a good time to open up.</td><td><b>On</b> · Off</td><td>Wall/TV: Settings › Comfort<small>Apple: Settings › Schedule &amp; comfort</small></td></tr>
+    <tr><td>Fresh air limits<small>House</small></td><td>The outside temperature band, the humidity limit, inside warnings and a wind limit.</td><td>Outside <b>64–80 °F</b> · humidity <b>Normal</b> · warn below <b>66</b> or above <b>80 °F</b> · gusts up to <b>25 mph</b></td><td>Wall/TV: Settings › Comfort<small>Apple: Settings › Schedule &amp; comfort</small></td></tr>
+    <tr><td>Phone notifications<small>House</small></td><td>Sends comfort notices to your phone, through a notification service in Home Assistant.</td><td><b>On</b> · Off</td><td>Wall/TV: Settings › Comfort<small>Apple: Settings › Schedule &amp; comfort</small></td></tr>
+    <tr><td>Comfort for<small>House</small></td><td>Which rooms count.</td><td><b>Whole home</b> · one room with a sensor</td><td>Wall/TV: Settings › Comfort<small>Apple: Settings › Schedule &amp; comfort</small></td></tr>
+    <tr><td>Aim for the rooms<small>House</small></td><td>Steers by the room readings instead of the thermostat’s own sensor.</td><td>On · <b>Off</b></td><td>Wall/TV: Settings › Comfort<small>Apple: Settings › Schedule &amp; comfort</small></td></tr>
+    <tr><td>Humidity: run the AC above<small>House</small></td><td>The humidity that turns on cooling.</td><td>55–70% · <b>60%</b></td><td>Wall/TV: Settings › Comfort<small>Apple: Settings › Schedule &amp; comfort</small></td></tr>
+    <tr><td>Use AI plan <span class="st st-dev">In development</span><small>House</small></td><td>Uses an AI plan that the house rules check, with Re-plan now and Apply or Dismiss for suggestions.</td><td>On · <b>Off</b></td><td>Wall/TV: Settings › Comfort<small>Apple: Settings › Schedule &amp; comfort</small></td></tr>
+  </tbody>
+</table></div>
+<h2 id="weather">Weather</h2>
+<p>Weather has two settings, Home location and Units (under Display and time). The source order is automatic; see <a href="/docs/weather/">Weather and rain soon</a>.</p>
+<h2 id="space">Space and launches</h2>
+<div class="tablewrap"><table class="rules">
+  <thead><tr><th scope="col">Setting</th><th scope="col">What it does</th><th scope="col">Choices</th><th scope="col">Where</th></tr></thead>
+  <tbody>
+    <tr><td>Any launch within<small>This screen</small></td><td>How far ahead any launch switches the screens to launch day.</td><td>3 · 6 · <b>12</b> · 24 · 48 h</td><td>Wall/TV: Settings › Launch day<small>Apple: Fixed at 12 h</small></td></tr>
+    <tr><td>Featured vehicles within<small>This screen</small></td><td>The same for big missions, such as crewed flights.</td><td>24 · 48 · <b>72</b> · 168 h</td><td>Wall/TV: Settings › Launch day<small>Apple: Fixed at 72 h</small></td></tr>
+    <tr><td>Favourites<small>This screen</small></td><td>Which missions lead, best first.</td><td>A list; <b>major US launches first</b></td><td>Wall/TV: Settings › Launch day<small>Apple: Settings › Missions › Launch priorities</small></td></tr>
+    <tr><td>Never lead<small>This screen</small></td><td>Missions that never lead but stay listed.</td><td>A list · <b>empty</b></td><td>Wall/TV: Settings › Launch day<small>Apple: Hide a tier in Launch priorities</small></td></tr>
+    <tr><td>Stop tracking<small>House</small></td><td>Lets go of a tracked mission.</td><td>—</td><td>Wall/TV: Settings › Launch day<small>Apple: Settings › Missions</small></td></tr>
+  </tbody>
+</table></div>
+<h2 id="ambient">Ambient and pictures</h2>
+<div class="tablewrap"><table class="rules">
+  <thead><tr><th scope="col">Setting</th><th scope="col">What it does</th><th scope="col">Choices</th><th scope="col">Where</th></tr></thead>
+  <tbody>
+    <tr><td>Ambient<small>This screen</small></td><td>What the idle screen shows.</td><td><b>Still</b> · Animated · Live</td><td>Wall/TV: Settings › Ambient or Screens<small>Apple: Settings › Screens</small></td></tr>
+    <tr><td>Starts after<small>This screen</small></td><td>How long the screen waits before Ambient.</td><td>Never · 1 · 2 · <b>5</b> · 10 · 15 · 30 min</td><td>Wall/TV: Settings › Ambient<small>Apple: Fixed: 5 min on Apple TV, 10 min on a wall iPad</small></td></tr>
+    <tr><td>Picture changes every<small>This screen</small></td><td>How often the Ambient picture changes.</td><td>30 s · 1 · <b>2</b> · 5 · 10 · 30 min</td><td>Wall/TV: Settings › Ambient<small>Apple: Not on Apple yet</small></td></tr>
+    <tr><td>Backgrounds<small>This screen</small></td><td>Where the dashboard’s pictures come from.</td><td><b>Living</b> (NASA pictures, launches, events) · theme only</td><td>Wall/TV: Settings › Appearance<small>Apple: Not on Apple yet</small></td></tr>
+    <tr><td>Rotate every<small>This screen</small></td><td>How often the dashboard background changes.</td><td>1 · 2 · 5 · <b>10</b> · 15 · 30 · 60 min</td><td>Wall/TV: Settings › Appearance<small>Apple: Not on Apple yet</small></td></tr>
+  </tbody>
+</table></div>
+<h2 id="screens">Screens</h2>
+<p>Each screen keeps its own name, areas, Home tiles, theme, Ambient, night look, at-night behaviour, brightness and night brightness. Edit any screen from any screen in Settings › Screens on a wall panel or TV, or Settings › Screens on Apple. Forgetting a screen needs a press and hold.</p>
+<h2 id="apple">Apple only</h2>
+<div class="tablewrap"><table class="rules">
+  <thead><tr><th scope="col">Setting</th><th scope="col">What it does</th><th scope="col">Choices</th><th scope="col">Where</th></tr></thead>
+  <tbody>
+    <tr><td>Time format: System<small>This device</small></td><td>Follows the device’s own 12/24-hour setting.</td><td>An extra choice in Display</td><td>Wall/TV: —<small>Apple: Settings › Display</small></td></tr>
+    <tr><td>Wake room<small>This device</small></td><td>Makes an Apple TV or iPad part of the bedroom alarm.</td><td><b>Other room</b> · Bedroom screen</td><td>Wall/TV: —<small>Apple: Settings › Screens</small></td></tr>
+    <tr><td>Sleep log<small>This device</small></td><td>Reads your sleep from Apple Health and shares a summary with the house. See <a href="/privacy/#health">Privacy</a>.</td><td><b>Off</b> until you turn it on</td><td>Wall/TV: —<small>Apple: Settings, on iPhone</small></td></tr>
+  </tbody>
+</table></div>
+<h2 id="demo">Demo house</h2>
+<p><span class="st st-dev">In development</span> A labelled demo house with sample data (Sam and Riley, the crew), for trying Flight Day without a house. Your saved connection is kept. You can already <a href="/demo/">try the demo house</a> in your browser.</p>

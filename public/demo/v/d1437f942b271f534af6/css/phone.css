@@ -1,0 +1,127 @@
+/* A real narrow layout: full-width scrollable cards, with the same data and controls. */
+@media (max-width:699px) {
+ html,body {height:auto;min-height:100%;overflow-x:hidden;overflow-y:auto;}
+ body {font-family:Inter,system-ui,sans-serif;font-size:16px;}
+ html .stage,html.demo-house .stage {position:relative;left:0;top:0;transform:none;width:100%;height:auto;min-height:calc(100dvh - var(--demo-rail-height,0px));padding:66px 12px calc(28px + var(--demo-rail-height,0px));overflow:visible;font-size:16px;line-height:1.5;container-type:normal;--bw:1px;--r:12px;}
+ .bar {position:fixed;inset:0 0 auto;height:54px;padding:4px 8px;z-index:1000;font-size:13px;gap:6px;background:#0a0e1a;}
+ .bar-c,.bar-r>.bi:not([data-act="settings"]),.wsb i {display:none;}
+ .bar-r {gap:0;}.bar-r [data-act="settings"] {width:44px;height:44px;padding:10px;overflow:hidden;font-size:0;}
+ .bar-r [data-act="settings"] .ic {width:22px;height:22px;}
+ .ws {gap:2px;min-width:0;flex:1;}.wsb {min-height:44px;padding:6px 7px;font-size:13px;border-radius:8px;}
+ .views {position:static;inset:auto;overflow:visible;}
+ .view {position:static;inset:auto;display:none!important;padding:0;overflow:visible;min-height:0;}
+ .view.on {display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-template-rows:none!important;gap:14px;}
+ .view .tile {grid-area:auto!important;margin:0!important;min-width:0;min-height:0;padding:16px;border-radius:12px;height:auto;overflow:visible;}
+ .tile>.th {font-size:12px;line-height:1.5;min-height:20px;height:auto;gap:8px;margin-bottom:12px;white-space:normal;}
+ .tile>.th .tm {font-size:12px;line-height:1.5;gap:6px;flex-wrap:wrap;}
+ .tile>.tb {font-size:16px;line-height:1.5;min-height:0;overflow:visible;zoom:1;}
+ .chip {font-size:12px;line-height:1.5;padding:3px 6px;border-radius:6px;}
+ .ic {width:20px;height:20px;}.ic.tiny {width:14px;height:14px;}
+ .btn,.ibtn,.togbtn,.set-btns button {font-size:15px;line-height:1.4;min-height:44px;padding:10px 12px;border-radius:8px;white-space:normal;}
+ .ibtn {width:44px;height:44px;}.ibtn .ic,.ibtn.sm .ic {width:20px;height:20px;}
+ .btn span {overflow:visible;text-overflow:clip;}.rowbtns {gap:8px;padding-top:12px;flex-wrap:wrap;}
+ .g-phone .hero {gap:12px;min-height:0;}
+ .g-phone .farline {display:flex;flex-direction:column;align-items:flex-start;gap:12px;}
+ .g-phone .clock {font-size:64px;line-height:1.05;letter-spacing:-2px;}
+ .g-phone .clock .time-period {font-size:22px;letter-spacing:0;}
+ .g-phone .far {padding:0;min-width:0;width:100%;}
+ .g-phone .far em {font-size:12px;line-height:1.5;margin-bottom:4px;}
+ .g-phone .far>b {font-size:23px;line-height:1.3;display:block;overflow:visible;-webkit-line-clamp:unset;}
+ .g-phone .far>.far-summary {font-size:14px;line-height:1.5;gap:3px 7px;}
+ .g-phone .far .time-period,.g-phone .far .time-secondary {font-size:inherit;}
+ .g-phone .near {font-size:14px;line-height:1.5;gap:6px 10px;margin:0;}
+ .g-phone .nearwx {gap:6px;}.g-phone .nearwx .ic {width:18px;height:18px;}
+ .g-phone .hero>.grow,.g-phone .tl {display:none;}.g-phone .hero .leave {font-size:14px;line-height:1.5;margin:0;}
+ .g-phone .spaceline {padding-top:12px;margin-top:0;gap:10px;flex-wrap:wrap;}
+ .g-phone .sp-go {font-size:14px;line-height:1.5;gap:6px;flex-wrap:wrap;min-height:44px;}
+ .g-phone .sp-go .ic {width:18px;height:18px;}.g-phone .sp-go .k {font-size:11px;}.g-phone .sp-go .dim {flex:1 0 100%;white-space:normal;overflow:visible;}
+ .g-phone .spaceline .watchpill {font-size:14px;min-height:44px;padding:8px 12px;}
+ .g-phone .sw {gap:12px;}.g-phone .sw-when {min-height:0;gap:10px;flex-wrap:wrap;}
+ .g-phone .sw-time>b {font-size:44px;line-height:1.15;}.g-phone .sw-time .time-period {font-size:16px;}
+ .g-phone .sw-time>span {font-size:14px;line-height:1.5;}.g-phone .sw-info {font-size:14px;line-height:1.5;gap:8px;}
+ .g-phone .sw-info>div {gap:8px;}.g-phone .sw-week {display:none;}
+ .g-phone .sw-foot,.g-phone .sw-glance {font-size:14px;line-height:1.5;}
+ .g-phone .sw .rowbtns {width:100%;}.g-phone .sw .btn {justify-content:center;}
+ .g-phone .sw-top {align-items:flex-start;gap:12px;flex-wrap:wrap;}
+ .g-phone .sw-sub {font-size:14px;line-height:1.5;gap:8px;text-align:left;align-items:flex-start;}
+ .g-phone .sw-sub>span,.g-phone .sw-sub .sw-snd {gap:6px;flex-wrap:wrap;}.g-phone .sw-sub .ic {width:18px;height:18px;}
+ .g-phone .sw .sl-week {display:none;}
+ .g-phone .wx-now {gap:12px;flex-wrap:wrap;}.g-phone .wx-now>b {font-size:42px;line-height:1.15;}
+ .g-phone .wx-now>.ic {width:38px;height:38px;}.g-phone .wx-now>div {flex:1 1 150px;}
+ .g-phone .wx-now>div>span {font-size:18px;line-height:1.4;white-space:normal;overflow:visible;}.g-phone .wx-now small {font-size:13px;line-height:1.5;}
+ .g-phone .wx-main {align-items:center;gap:12px;}.g-phone .wx-main>b {font-size:44px;line-height:1.15;}
+ .g-phone .wx-main>.ic {width:40px;height:40px;}.g-phone .wx-text>b {font-size:18px;line-height:1.4;}.g-phone .wx-text>span {font-size:13px;line-height:1.5;}
+ .g-phone .wx-hours {margin-top:16px;overflow-x:auto;gap:14px;display:flex;padding:0 0 8px;}
+ .g-phone .wx-hours>* {flex:0 0 48px;}.g-phone .wx-hours em,.g-phone .wx-hours small {font-size:11px;line-height:1.4;}.g-phone .wx-hours b {font-size:16px;line-height:1.5;}.g-phone .wx-hours .ic {width:23px;height:23px;}
+ .g-phone .row {font-size:16px;line-height:1.5;min-height:52px;padding:10px 0;gap:10px;flex-shrink:0;}
+ .g-phone .row.two .grow>b {font-size:16px;line-height:1.4;}.g-phone .row.two .grow>span,.g-phone .row.two .grow>.due-meta {font-size:13px;line-height:1.6;white-space:normal;}
+ .g-phone .due-meta {gap:3px 7px;}.g-phone .row>.ic {width:20px;height:20px;}
+ .g-phone .rows.scroll {overflow:visible;}.g-phone .b2-none,.g-phone .empty {font-size:14px;line-height:1.5;padding:16px 0;}
+ .feed {position:static;margin-top:20px;min-height:32px;padding:0;font-size:12px;}.feed-l {display:none;}.feed-r {width:100%;font-size:12px;}
+ #demo-rail {height:64px;padding:6px 12px;gap:5px;flex-wrap:wrap;align-content:center;}
+ #demo-house-chip {font-size:12px;min-height:32px;padding:6px 10px;}#demo-space-source {font-size:10px;}
+ html.demo-house {--demo-rail-height:64px;}
+ .liftoff,.ambient,.softoff,.shutdown {position:fixed;inset:54px 0 var(--demo-rail-height,0px);overflow:auto;}
+ .brief.brief2 {position:relative;inset:auto;transform:none!important;display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;width:100%;padding:16px;gap:14px;font-size:16px;--u:16px;}
+ .brief2>* {grid-area:auto!important;min-width:0;min-height:0!important;}.brief2 .b2-head {display:flex;flex-direction:column;align-items:stretch;gap:12px;}
+ .brief2 .b2-hello {gap:5px;}.brief2 .b2-hello>b {font-size:48px;line-height:1.15;}.brief2 .b2-hello>em,.brief2 .b2-hello>span {font-size:14px;line-height:1.5;}
+ .brief2 .b2-card {padding:14px;overflow:visible;}.brief2 .b2-row {font-size:14px;gap:10px;padding:10px 0;}.brief2 h3 {font-size:13px;line-height:1.5;}
+ .brief2 .b2-wx {display:block;}.brief2 .wx-hours {overflow:auto;display:flex;gap:15px;}.brief2 .wx-hours>* {flex:0 0 45px;}
+ .brief2 .b2-wx .b2-temp {font-size:40px;}.brief2 .b2-wx>div {margin-bottom:12px;}.brief2 .b2-btns {width:100%;}
+ .alarm-controls {position:fixed;left:12px;right:12px;bottom:calc(12px + var(--demo-rail-height,0px));padding:12px;font-size:14px;line-height:1.5;max-height:35dvh;overflow:auto;gap:8px;}
+ .alarm-controls .btn,.alarm-controls small {font-size:13px;}.alarm-actions {gap:8px;flex-wrap:wrap;}
+ .dw-clock {font-size:56px;}.dw-count {font-size:36px;}.dw-title,.dw-kicker,.dw-sub {font-size:14px;}
+ .nt-clock {font-size:64px;}.nt-under,.nt-row,.nt-row>em,.nt-row small {font-size:14px;line-height:1.5;}.nt {width:100%;padding:18px;}.nt-v {font-size:22px;gap:12px;}.nt-b {min-width:44px;min-height:44px;}
+ .modal {position:fixed;inset:54px 0 var(--demo-rail-height,0px);overflow:auto;padding:12px;}
+ .modal-win {width:100%;height:auto;max-height:none;padding:14px;border-radius:12px;}.mh {font-size:16px;min-height:44px;gap:10px;}.mcols {display:block;overflow:visible;}.mcol {overflow:visible!important;}
+ .sgroup {margin-bottom:22px;}.sgroup h3 {font-size:16px;line-height:1.5;margin-bottom:10px;}.set,.set-note,.field,.sysline {font-size:14px;line-height:1.5;}.set {flex-wrap:wrap;gap:8px;padding:10px 0;}.set small {font-size:12px;}.set-c {max-width:100%;flex-wrap:wrap;}.set input,.set select,.set-c select {font-size:15px;min-height:44px;max-width:100%;}
+ .seg button,.stepper button {font-size:14px;min-height:44px;min-width:44px;padding:8px;}.stepper b {font-size:15px;}
+}
+@media (max-width:699px) {
+ html,body {height:100%;overflow:hidden;}
+ html .stage,html.demo-house .stage {height:calc(100dvh - var(--demo-rail-height,0px));min-height:0;overflow-y:auto;overflow-x:hidden;padding-bottom:24px;}
+ .g-phone .sw-top {align-items:flex-start;}.g-phone .sw-sub {flex:1 1 100%;}
+}
+@media (max-width:699px) {
+ .dw-hud {left:20px;right:20px;top:15%;bottom:auto;}.dw-phase,.dw-sub {font-size:14px;line-height:1.5;}.dw-count {font-size:56px;line-height:1.4;margin:0;}
+ .nt-clock {line-height:1.4;}.nt-under {margin-top:8px;}
+}
+@media (max-width:699px) {
+ .g-phone .climate-glance,.g-phone .comfort-home-notice,.g-phone .rain-strip {font-size:14px;line-height:1.5;gap:8px;margin-top:0;min-height:44px;}
+ .g-phone .climate-glance .ic {width:20px;height:20px;flex:none;}
+ .g-phone .climate-glance span {white-space:normal;}
+}
+@media (max-width:699px) {
+ .g-phone .wx-hours .time-period,.brief2 .wx-hours .time-period {font-size:11px;}
+}
+@media (max-width:699px) {
+ .g-phone .far>span {font-size:14px;line-height:1.5;}
+}
+@media (max-width:699px) {
+ .g-phone .asof {font-size:12px;line-height:1.5;max-width:100%;white-space:normal;}
+}
+@media (max-width:699px) {
+ /* Named desktop grid areas otherwise create extra implicit columns on a phone. */
+ .liftoff .brief.brief2 {grid-template-areas:none!important;grid-template-columns:minmax(0,1fr)!important;grid-template-rows:none!important;align-content:start;}
+ .brief2 .b2-head {gap:16px;}.brief2 .b2-verdict,.brief2 .b2-hello {flex:none;min-width:0;width:100%;}
+ .brief2 .b2-btns {flex-wrap:wrap;gap:10px;}.brief2 .b2-btns>.btn {flex:1;}
+ .brief2 .b2-wxnow {flex-wrap:wrap;gap:12px;}.brief2 .b2-wxnow>.ic {width:40px;height:40px;}.brief2 .b2-wxnow>b {font-size:42px;}
+ .brief2 .b2-wxnow>div:not(.b2-sun) {flex:1 1 150px;}.brief2 .b2-wxnow strong {font-size:18px;line-height:1.4;white-space:normal;overflow:visible;}
+ .brief2 .b2-wxnow>div>span {font-size:13px;line-height:1.5;}.brief2 .b2-sun {flex:1 1 100%;flex-direction:row;gap:16px;font-size:13px;}
+ .brief2 .b2-row {grid-template-columns:74px minmax(0,1fr);gap:12px;}.brief2 .b2-row em {font-size:14px;}
+ .brief2 .b2-alert {flex-wrap:wrap;font-size:14px;gap:8px;}.brief2 .b2-alert span {white-space:normal;overflow:visible;}
+}
+@media (max-width:699px) {
+ .brief2 .b2-btns {flex:none;min-height:44px;}
+ .brief2 .b2-btns .alarm-heading,.brief2 .b2-btns>small,.brief2 .b2-btns .alarm-label {font-size:13px;line-height:1.5;}
+ .brief2 .b2-btns .alarm-actions {width:100%;justify-content:stretch;gap:8px;}
+ .brief2 .b2-btns .alarm-actions .btn {min-width:0;flex:1 1 auto;}
+}
+
+@media(max-width:699px){#v-house .tile .tb,#v-house .robotVacuum,#v-house .comfort-status,#v-house .comfort-room,#v-house .comfort-basis{font-size:14px;line-height:1.5;}#v-house .vacuum-map img{height:180px;}#v-house .vacuum-status span,#v-house .vacuum-map figcaption,#v-house .scene b,#v-house .scene small{font-size:13px;}#v-house .robotVacuum h3,#v-house .comfort-rooms h3{font-size:16px;}#v-house .row{min-height:44px;font-size:14px;flex-shrink:0;}#v-house .row .mini,#v-house .row.two .grow>b,#v-house .row.two .grow>span{font-size:13px;}#v-house .scenes{grid-template-columns:1fr;}#v-house .art{width:80px;}#v-house .cam{height:220px;}#v-house .cam-foot{font-size:13px;}}
+
+/* Narrow House media keep a real image box instead of a zero-basis flex strip. */
+@media(max-width:699px){#v-house .cam{flex:0 0 220px;min-height:220px;height:220px;}#v-house .cam-badge{font-size:10px;line-height:1.4;top:8px;left:8px;padding:4px 6px;max-width:calc(100% - 16px);flex-wrap:wrap;}#v-house .cam-hint{font-size:11px;}#v-house .ic{width:20px;height:20px;flex:none;}#v-house .ic.tiny{width:14px;height:14px;}}
+
+/* Preserve the phone scale and header space with persistent Home clock frames. */
+@media(max-width:699px){html.phone-layout .stage .g-phone .hero .clock{font-size:64px;height:auto;line-height:1.05;}html.phone-layout .stage .g-phone .hero .farline,html.phone-layout .stage .g-phone .hero .clockrow{min-height:0;}html.phone-layout .stage .g-phone .tile-hero>.th{height:auto;min-height:20px;max-height:none;}html.phone-layout .stage .g-phone .tile-hero>.th>.tm{max-height:none;overflow:visible;}}

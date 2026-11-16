@@ -1,0 +1,3 @@
+Star data: HYG database by David Nash (astronexus), CC BY-SA 4.0, adapted: subset to magnitude 5.0
+
+Generated · HYG star data: web/js/wallpaper/stars.webp (1920x1080 poster rendered by web/js/wallpaper/scenes.js from the adapted subset above; sha256 588f5c35078386a32a211f2b49d1254ee9abab84c022fe3071344cc23a719108), CC BY-SA 4.0 (adapted). Regenerate: tools/capture-wallpaper.cjs then tools/verify-wallpaper-gated.sh.

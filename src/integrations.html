@@ -1,0 +1,164 @@
+<!-- title: Integrations · Flight Day -->
+<!-- description: In development. Flight Day’s built-in integrations and their status, what each status means, how to build your own with lines, checks and role hints, examples, and the rules for being listed. -->
+<!-- path: /integrations/ -->
+<!-- out: integrations/index.html -->
+<main id="main">
+  <div class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">Integrations · In development</p>
+        <h1>Add what you have</h1>
+        <p class="lede">The alarm clock is the core. Everything else is an integration that lights up when you have the device: a speaker, lights, a thermostat, a vacuum, cameras, AI. Missing one is never a problem.</p>
+        <div class="callout">
+          <p><b>Where this stands.</b> The integrations below run in one household today, each with its status. The public extension API and Settings › Integrations arrive with Flight Day for Home Assistant at the open-source release. <span class="st st-dev">In development</span></p>
+        </div>
+        <ul class="toc g g-toc4" aria-label="On this page">
+          <li><a href="#built-in">Built in</a></li>
+          <li><a href="#statuses">Statuses</a></li>
+          <li><a href="#build">Build your own</a></li>
+          <li><a href="#examples">Examples</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section id="built-in" aria-labelledby="builtin-h">
+    <div class="wrap">
+      <div class="head rv">
+        <h2 id="builtin-h">Built in</h2>
+        <p class="muted">Core parts need no devices. The rest use roles: the devices you point Flight Day at, such as your bedroom speaker or wake lights. Working means implemented in the development build. Unfinished work stays In development; design ideas stay Concept. <span class="st st-dev">Working · in development</span> <span class="st st-dev">In development</span> <span class="st st-concept">Concept</span></p>
+      </div>
+      <div class="tablewrap rv">
+        <table class="rules">
+          <thead><tr><th scope="col">Integration</th><th scope="col">What it does</th><th scope="col">Uses</th><th scope="col">Status</th></tr></thead>
+          <tbody>
+            <tr><td>Launch alarm</td><td>Countdown, liftoff, Snooze, I’m up, Scrub and the briefing. Sound on the screens and a dawn on screen by default; a speaker’s volume ramp and a light ramp when you have them.</td><td class="mono">sleep_speaker · alarm_speaker · wake_lights · ring_lights (all optional)</td><td><div class="chips"><span class="st st-core">Core</span><span class="st st-dev">Working · in development</span></div></td></tr>
+            <tr><td>Goodnight</td><td>Dark screens, and the sleep sound on the device by default; a speaker’s sound and lights off when you have them.</td><td class="mono">sleep_speaker · goodnight_off (optional)</td><td><div class="chips"><span class="st st-core">Core</span><span class="st st-dev">Working · in development</span></div></td></tr>
+            <tr><td>Weather</td><td>The forecast, rain soon and alerts. Open-Meteo is built in, free, with no key; Home Assistant weather sources join it.</td><td class="mono">weather (optional)</td><td><div class="chips"><span class="st st-core">Core</span><span class="st st-dev">Working · in development</span></div></td></tr>
+            <tr><td>Space</td><td>Launch manifest, globe, ISS passes, visible launches and Flight Director, from public feeds. On by default, no setup.</td><td class="mono">—</td><td><div class="chips"><span class="st st-dev">Working · in development</span></div></td></tr>
+            <tr><td>Comfort schedule</td><td>Night, Wake and Day temperatures. Keeps the mode; Off stays off.</td><td class="mono">thermostat</td><td><div class="chips"><span class="st st-dev">Working · in development</span></div></td></tr>
+            <tr><td>Smart Comfort</td><td>Automatic heat and cool, fresh air and holds. Starts by watching only.</td><td class="mono">thermostat · weather · indoor_temperature</td><td><div class="chips"><span class="st st-dev">In development</span></div></td></tr>
+            <tr><td>Room readings</td><td>Temperature and humidity per room.</td><td class="mono">indoor_temperature</td><td><div class="chips"><span class="st st-dev">In development</span></div></td></tr>
+            <tr><td>Cameras</td><td>Camera stills and tap-to-view.</td><td class="mono">cameras</td><td><div class="chips"><span class="st st-dev">Working · in development</span></div></td></tr>
+            <tr><td>Robot vacuum</td><td>Status, start, pause, dock and the map. Room cleaning through adapters.</td><td class="mono">vacuum · vacuum_map</td><td><div class="chips"><span class="st st-dev">Working · in development</span></div></td></tr>
+            <tr><td>Countdowns</td><td>“<i>title</i> in N days”.</td><td class="mono">—</td><td><div class="chips"><span class="st st-core">Core</span><span class="st st-dev">In development</span></div></td></tr>
+            <tr><td>Systems check</td><td>What needs attention at home, from checks, each a Caution or a Warning, with an optional AI summary.</td><td class="mono">ai (optional)</td><td><div class="chips"><span class="st st-dev">In development</span></div></td></tr>
+            <tr><td>AI brief</td><td>One AI-made line in the briefing, labelled AI-made.</td><td class="mono">ai</td><td><div class="chips"><span class="st st-dev">Working · in development</span></div></td></tr>
+            <tr><td>Flight Plan</td><td>An AI-made plan for the day from the calendar and routines.</td><td class="mono">ai</td><td><div class="chips"><span class="st st-concept">Concept</span></div></td></tr>
+            <tr><td>Builder desk</td><td>AI plan limits, agents and machines, from a hub with the usage collector.</td><td class="mono">(hub)</td><td><div class="chips"><span class="st st-dev">Working · in development</span></div></td></tr>
+            <tr><td>Continue training</td><td>Continue training (optional): opens the Morrowdock app's Today screen. Needs the Morrowdock iPad app (private beta).</td><td class="mono">—</td><td><div class="chips"><span class="st st-dev">In development</span></div></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="statuses" aria-labelledby="statuses-h">
+    <div class="wrap area">
+      <div>
+        <div class="head rv">
+          <h2 id="statuses-h">What Settings › Integrations will show</h2>
+          <p class="muted">Each integration gets a status and a one-line summary. Green is on, muted is off, amber needs you, red is an error.</p>
+        </div>
+        <div class="tablewrap rv">
+          <table class="rules">
+            <thead><tr><th scope="col">Status</th><th scope="col">When</th><th scope="col">Example</th></tr></thead>
+            <tbody>
+              <tr><td>On</td><td>Turned on, with every device it needs present and working</td><td>“Weekdays 6:45 AM · Bedroom speaker · Bedroom lamp”</td></tr>
+              <tr><td>Off</td><td>Turned off</td><td>“Labs · automatic heat and cool, shadow first”</td></tr>
+              <tr><td>Needs setup</td><td>On, or about to be, but a device it needs is missing</td><td>“Choose a thermostat”</td></tr>
+              <tr><td>Unavailable</td><td>A device it uses is unavailable</td><td>“Bedroom speaker unavailable · volume control off”</td></tr>
+              <tr><td>Error</td><td>Its own code failed; Home Assistant gets a repair notice</td><td>“Stopped after an error · see Home Assistant”</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="muted rv">Your own integrations show On or Off, and Unavailable when they haven’t posted for longer than they promised (“No update since 6:10 AM”).</p>
+      </div>
+      <figure class="shot area-media rv"><img class="only-dark" loading="lazy" src="/assets/concepts/C8-dark.webp" width="1600" height="1000" alt="Concept: Settings › Integrations on a Mac. Rows for the launch alarm, Goodnight, comfort schedule, Smart Comfort (Labs, off), weather, AI brief (needs setup) and a Bin day row added by you, each with a status and a summary."><img class="only-light" loading="lazy" src="/assets/concepts/C8-light.webp" width="1600" height="1000" alt="Concept: Settings › Integrations on a Mac, with each integration’s status and summary."><figcaption><span>Settings › Integrations, not built yet</span><span class="tag concept">Concept</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section id="build" aria-labelledby="build-h">
+    <div class="wrap">
+      <div class="head rv">
+        <h2 id="build-h">Build your own</h2>
+        <p class="muted">Four small parts of Flight Day for Home Assistant, usable from automations, scripts or a custom integration, with no Flight Day code changes. <span class="st st-dev">In development</span></p>
+      </div>
+      <div class="g g-4sq rv-kids">
+        <article class="card feature"><h3>Role hints</h3><p>Give an entity the Home Assistant label <span class="mono">flightday_&lt;role&gt;</span>, such as <span class="mono">flightday_wake_lights</span>, and it becomes a strong suggestion for that role. A crew member still confirms it; nothing is applied silently.</p></article>
+        <article class="card feature"><h3>Lines</h3><p>Post a short line to the briefing, Home or Night with <span class="mono">flightday.post_line</span>: up to 80 characters, with an end time. Night lines are text only; they never wake a screen or make a sound.</p></article>
+        <article class="card feature"><h3>Checks</h3><p>Report something that needs attention to the Systems check with <span class="mono">flightday.report_check</span>, as a Caution (<span class="mono">attention</span>) or a Warning (<span class="mono">problem</span>), optionally with a one-tap fix. Locks, alarm panels and thermostats can’t be fixes.</p></article>
+        <article class="card feature"><h3>Register, and react</h3><p>Register with <span class="mono">flightday.register_integration</span> when the <span class="mono">flightday</span> event says ready, and react to that event in automations: <i>wake</i> is liftoff, <i>up</i> is a confirmed “I’m up”.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="examples" aria-labelledby="examples-h">
+    <div class="wrap">
+      <div class="head rv">
+        <h2 id="examples-h">Examples</h2>
+        <p class="muted">Each example runs against Flight Day for Home Assistant (contract 3.0, Home Assistant 2026.1 or later). The examples are included with the open-source code. None has passed staging validation yet; each says so until it does.</p>
+      </div>
+      <div class="g g-6 examples rv-kids">
+      <article class="card example-card">
+        <div class="example-head"><h3>Bin day</h3>{{staging bin-day}}</div>
+        <p>Registers, then posts a line the evening before collection and clears it the next morning. A shorter variant is included; install only one.</p>
+        {{example bin-day/bin_day.yaml}}
+        {{example bin-day/bin_day_minimal.yaml}}
+      </article>
+      <article class="card example-card">
+        <div class="example-head"><h3>Filter reminder</h3>{{staging filter-reminder}}</div>
+        <p>A Systems check finding raised as a Caution (<span class="mono">attention</span>) that clears by itself (<span class="mono">ok</span>), with no action.</p>
+        {{example filter-reminder/filter_reminder.yaml}}
+      </article>
+      <article class="card example-card">
+        <div class="example-head"><h3>Porch lights</h3>{{staging porch-lights-check}}</div>
+        <p>A Systems check finding with a one-tap Turn off action.</p>
+        {{example porch-lights-check/porch_lights.yaml}}
+      </article>
+      <article class="card example-card">
+        <div class="example-head"><h3>Coffee when up</h3>{{staging coffee-when-up}}</div>
+        <p>Reacts to a confirmed “I’m up”, leaving out tests and timeouts.</p>
+        {{example coffee-when-up/coffee.yaml}}
+      </article>
+      <article class="card example-card">
+        <div class="example-head"><h3>Wake light label</h3>{{staging label-a-wake-light}}</div>
+        <p>A role hint through a Home Assistant label.</p>
+        {{example label-a-wake-light/README.md}}
+      </article>
+      <article class="card example-card">
+        <div class="example-head"><h3>Custom integration</h3>{{staging custom-integration-minimal}}</div>
+        <p>A small custom Home Assistant integration that registers itself and posts one line from a sensor it creates.</p>
+        {{example custom-integration-minimal/custom_components/flightday_example/manifest.json}}
+        {{example custom-integration-minimal/custom_components/flightday_example/__init__.py}}
+        {{example custom-integration-minimal/custom_components/flightday_example/sensor.py}}
+      </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="rules" aria-labelledby="irules-h">
+    <div class="wrap">
+      <div class="head rv"><h2 id="irules-h">Rules for integration authors</h2></div>
+      <ol class="steps rv">
+        <li><span><b>Honest data.</b> Post a line only when you know it’s true. Say “as of” when data is old, and clear lines that stopped being true.</span></li>
+        <li><span><b>Plain voice.</b> Short, numbers over adjectives, sentence case, no exclamation marks or emoji. “Recycling goes out tonight.”</span></li>
+        <li><span><b>Quiet nights.</b> Night lines are text only. Integrations never play sound, turn on lights or wake bedroom screens at night.</span></li>
+        <li><span><b>Warm light.</b> If your automation sets lights in reaction to Flight Day, use the warmest colour temperature.</span></li>
+        <li><span><b>Thermostat Off is sacred.</b> Never turn a thermostat on from Off in reaction to Flight Day.</span></li>
+        <li><span><b>Privacy.</b> Lines and checks show on every screen in the house. Use the person field for anything meant for one crew member, and never post credentials, addresses or health data.</span></li>
+        <li><span><b>Rate.</b> Update a line when it changes, not on a timer.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="listing" aria-labelledby="listing-h">
+    <div class="wrap">
+      <div class="note rv">
+        <h2 id="listing-h">Getting listed</h2>
+        <p>Community integrations are listed here when they follow the rules above, have a public repository and docs, and are submitted by pull request to the site with a one-line description and a Real or Sample screenshot.</p>
+        <p><b>Being listed never means Flight Day runs that code.</b> People install it themselves.</p>
+      </div>
+    </div>
+  </section>
+</main>

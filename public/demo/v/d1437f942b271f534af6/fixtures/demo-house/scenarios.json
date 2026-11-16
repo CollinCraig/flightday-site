@@ -1,0 +1,993 @@
+{
+ "clear": {
+  "label": "Clear morning",
+  "clock": null,
+  "weather": {
+   "current": {
+    "condition": "sunny",
+    "temperature": 76,
+    "apparent_temperature": 78
+   },
+   "hourly": [
+    {
+     "datetime": "@hour+1",
+     "condition": "sunny",
+     "temperature": 77,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+2",
+     "condition": "sunny",
+     "temperature": 78,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+3",
+     "condition": "sunny",
+     "temperature": 79,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+4",
+     "condition": "sunny",
+     "temperature": 80,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+5",
+     "condition": "sunny",
+     "temperature": 81,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+6",
+     "condition": "sunny",
+     "temperature": 81,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+7",
+     "condition": "sunny",
+     "temperature": 80,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+8",
+     "condition": "sunny",
+     "temperature": 79,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+9",
+     "condition": "partlycloudy",
+     "temperature": 77,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+10",
+     "condition": "partlycloudy",
+     "temperature": 75,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+11",
+     "condition": "partlycloudy",
+     "temperature": 73,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+12",
+     "condition": "partlycloudy",
+     "temperature": 71,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    }
+   ],
+   "daily": [
+    {
+     "datetime": "@day+0",
+     "condition": "sunny",
+     "temperature": 81,
+     "templow": 66,
+     "precipitation_probability": 10
+    },
+    {
+     "datetime": "@day+1",
+     "condition": "partlycloudy",
+     "temperature": 82,
+     "templow": 67,
+     "precipitation_probability": 20
+    },
+    {
+     "datetime": "@day+2",
+     "condition": "rainy",
+     "temperature": 78,
+     "templow": 68,
+     "precipitation_probability": 60
+    },
+    {
+     "datetime": "@day+3",
+     "condition": "partlycloudy",
+     "temperature": 80,
+     "templow": 66,
+     "precipitation_probability": 20
+    },
+    {
+     "datetime": "@day+4",
+     "condition": "sunny",
+     "temperature": 83,
+     "templow": 67,
+     "precipitation_probability": 10
+    }
+   ],
+   "nowcast": {
+    "source": "demo",
+    "as_of": "@now-2m",
+    "summary": null,
+    "minutes": [
+     {
+      "t": "@now+0m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+5m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+10m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+15m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+20m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+25m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+30m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+35m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+40m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+45m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+50m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+55m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     }
+    ],
+    "attribution_url": null,
+    "unavailable": false
+   },
+   "alerts": []
+  },
+  "launch_state": "idle",
+  "sleep_mode": false
+ },
+ "rain-soon": {
+  "label": "Rain soon",
+  "clock": null,
+  "weather": {
+   "current": {
+    "condition": "cloudy",
+    "temperature": 74,
+    "apparent_temperature": 76
+   },
+   "hourly": [
+    {
+     "datetime": "@hour+1",
+     "condition": "rainy",
+     "temperature": 74,
+     "precipitation_probability": 80,
+     "precipitation": 0.1
+    },
+    {
+     "datetime": "@hour+2",
+     "condition": "rainy",
+     "temperature": 72,
+     "precipitation_probability": 60,
+     "precipitation": 0.07
+    },
+    {
+     "datetime": "@hour+3",
+     "condition": "cloudy",
+     "temperature": 72,
+     "precipitation_probability": 20,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+4",
+     "condition": "cloudy",
+     "temperature": 73,
+     "precipitation_probability": 20,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+5",
+     "condition": "cloudy",
+     "temperature": 74,
+     "precipitation_probability": 20,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+6",
+     "condition": "cloudy",
+     "temperature": 75,
+     "precipitation_probability": 20,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+7",
+     "condition": "cloudy",
+     "temperature": 75,
+     "precipitation_probability": 20,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+8",
+     "condition": "cloudy",
+     "temperature": 74,
+     "precipitation_probability": 20,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+9",
+     "condition": "cloudy",
+     "temperature": 73,
+     "precipitation_probability": 20,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+10",
+     "condition": "cloudy",
+     "temperature": 72,
+     "precipitation_probability": 20,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+11",
+     "condition": "cloudy",
+     "temperature": 71,
+     "precipitation_probability": 20,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+12",
+     "condition": "cloudy",
+     "temperature": 70,
+     "precipitation_probability": 20,
+     "precipitation": 0
+    }
+   ],
+   "daily": [
+    {
+     "datetime": "@day+0",
+     "condition": "rainy",
+     "temperature": 77,
+     "templow": 67,
+     "precipitation_probability": 70
+    },
+    {
+     "datetime": "@day+1",
+     "condition": "partlycloudy",
+     "temperature": 82,
+     "templow": 67,
+     "precipitation_probability": 20
+    },
+    {
+     "datetime": "@day+2",
+     "condition": "rainy",
+     "temperature": 78,
+     "templow": 68,
+     "precipitation_probability": 60
+    },
+    {
+     "datetime": "@day+3",
+     "condition": "partlycloudy",
+     "temperature": 80,
+     "templow": 66,
+     "precipitation_probability": 20
+    },
+    {
+     "datetime": "@day+4",
+     "condition": "sunny",
+     "temperature": 83,
+     "templow": 67,
+     "precipitation_probability": 10
+    }
+   ],
+   "nowcast": {
+    "source": "demo",
+    "as_of": "@now-2m",
+    "summary": {
+     "kind": "starts",
+     "at": "@now+25m",
+     "intensity": "light"
+    },
+    "minutes": [
+     {
+      "t": "@now+0m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+5m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+10m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+15m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+20m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+25m",
+      "intensity_mm_h": 0.4,
+      "chance": 0.8
+     },
+     {
+      "t": "@now+30m",
+      "intensity_mm_h": 0.4,
+      "chance": 0.8
+     },
+     {
+      "t": "@now+35m",
+      "intensity_mm_h": 1.6,
+      "chance": 0.8
+     },
+     {
+      "t": "@now+40m",
+      "intensity_mm_h": 1.6,
+      "chance": 0.8
+     },
+     {
+      "t": "@now+45m",
+      "intensity_mm_h": 1.6,
+      "chance": 0.8
+     },
+     {
+      "t": "@now+50m",
+      "intensity_mm_h": 1.6,
+      "chance": 0.8
+     },
+     {
+      "t": "@now+55m",
+      "intensity_mm_h": 1.6,
+      "chance": 0.8
+     }
+    ],
+    "attribution_url": null,
+    "unavailable": false
+   },
+   "alerts": []
+  },
+  "launch_state": "idle",
+  "sleep_mode": false
+ },
+ "storm-alert": {
+  "label": "Storm warning (sample alert)",
+  "clock": "06:30",
+  "weather": {
+   "current": {
+    "condition": "lightning-rainy",
+    "temperature": 73,
+    "apparent_temperature": 75
+   },
+   "hourly": [
+    {
+     "datetime": "@hour+1",
+     "condition": "lightning-rainy",
+     "temperature": 73,
+     "precipitation_probability": 90,
+     "precipitation": 0.11
+    },
+    {
+     "datetime": "@hour+2",
+     "condition": "lightning-rainy",
+     "temperature": 72,
+     "precipitation_probability": 90,
+     "precipitation": 0.11
+    },
+    {
+     "datetime": "@hour+3",
+     "condition": "lightning-rainy",
+     "temperature": 72,
+     "precipitation_probability": 80,
+     "precipitation": 0.1
+    },
+    {
+     "datetime": "@hour+4",
+     "condition": "rainy",
+     "temperature": 73,
+     "precipitation_probability": 20,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+5",
+     "condition": "rainy",
+     "temperature": 74,
+     "precipitation_probability": 20,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+6",
+     "condition": "rainy",
+     "temperature": 75,
+     "precipitation_probability": 20,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+7",
+     "condition": "rainy",
+     "temperature": 76,
+     "precipitation_probability": 20,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+8",
+     "condition": "rainy",
+     "temperature": 76,
+     "precipitation_probability": 20,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+9",
+     "condition": "rainy",
+     "temperature": 75,
+     "precipitation_probability": 20,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+10",
+     "condition": "rainy",
+     "temperature": 74,
+     "precipitation_probability": 20,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+11",
+     "condition": "rainy",
+     "temperature": 73,
+     "precipitation_probability": 20,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+12",
+     "condition": "rainy",
+     "temperature": 72,
+     "precipitation_probability": 20,
+     "precipitation": 0
+    }
+   ],
+   "daily": [
+    {
+     "datetime": "@day+0",
+     "condition": "lightning-rainy",
+     "temperature": 79,
+     "templow": 69,
+     "precipitation_probability": 90
+    },
+    {
+     "datetime": "@day+1",
+     "condition": "partlycloudy",
+     "temperature": 82,
+     "templow": 67,
+     "precipitation_probability": 20
+    },
+    {
+     "datetime": "@day+2",
+     "condition": "rainy",
+     "temperature": 78,
+     "templow": 68,
+     "precipitation_probability": 60
+    },
+    {
+     "datetime": "@day+3",
+     "condition": "partlycloudy",
+     "temperature": 80,
+     "templow": 66,
+     "precipitation_probability": 20
+    },
+    {
+     "datetime": "@day+4",
+     "condition": "sunny",
+     "temperature": 83,
+     "templow": 67,
+     "precipitation_probability": 10
+    }
+   ],
+   "nowcast": {
+    "source": "demo",
+    "as_of": "@now-2m",
+    "summary": {
+     "kind": "starts",
+     "at": "@now+0m",
+     "intensity": "light"
+    },
+    "minutes": [
+     {
+      "t": "@now+0m",
+      "intensity_mm_h": 0.4,
+      "chance": 0.8
+     },
+     {
+      "t": "@now+5m",
+      "intensity_mm_h": 0.4,
+      "chance": 0.8
+     },
+     {
+      "t": "@now+10m",
+      "intensity_mm_h": 6,
+      "chance": 0.8
+     },
+     {
+      "t": "@now+15m",
+      "intensity_mm_h": 6,
+      "chance": 0.8
+     },
+     {
+      "t": "@now+20m",
+      "intensity_mm_h": 6,
+      "chance": 0.8
+     },
+     {
+      "t": "@now+25m",
+      "intensity_mm_h": 6,
+      "chance": 0.8
+     },
+     {
+      "t": "@now+30m",
+      "intensity_mm_h": 6,
+      "chance": 0.8
+     },
+     {
+      "t": "@now+35m",
+      "intensity_mm_h": 6,
+      "chance": 0.8
+     },
+     {
+      "t": "@now+40m",
+      "intensity_mm_h": 6,
+      "chance": 0.8
+     },
+     {
+      "t": "@now+45m",
+      "intensity_mm_h": 6,
+      "chance": 0.8
+     },
+     {
+      "t": "@now+50m",
+      "intensity_mm_h": 6,
+      "chance": 0.8
+     },
+     {
+      "t": "@now+55m",
+      "intensity_mm_h": 6,
+      "chance": 0.8
+     }
+    ],
+    "attribution_url": null,
+    "unavailable": false
+   },
+   "alerts": [
+    {
+     "id": "demo-alert-1",
+     "event": "Severe Thunderstorm Warning",
+     "severity": "severe",
+     "headline": "Severe thunderstorm warning until 9:00 AM (sample alert)",
+     "starts": "@now-10m",
+     "ends": "@today 09:00",
+     "source": "demo"
+    }
+   ]
+  },
+  "launch_state": "idle",
+  "sleep_mode": true
+ },
+ "alarm": {
+  "label": "Launch alarm · T-04:00",
+  "clock": "06:41",
+  "weather": "clear",
+  "launch_state": "countdown",
+  "launch": {
+   "launch_at": "@today 06:45",
+   "count_at": "@today 06:35",
+   "kind": "first"
+  },
+  "sleep_mode": true
+ },
+ "snoozed": {
+  "label": "Snoozed",
+  "clock": "06:52",
+  "weather": "clear",
+  "launch_state": "snoozed",
+  "launch": {
+   "launch_at": "@today 06:58",
+   "count_at": "@today 06:57",
+   "snoozes": 1,
+   "kind": "relaunch"
+  },
+  "sleep_mode": true
+ },
+ "briefing": {
+  "label": "Morning briefing",
+  "clock": "06:53",
+  "weather": "clear",
+  "launch_state": "up",
+  "launch": {
+   "launch_at": "@today 06:45",
+   "up_at": "@today 06:50",
+   "snoozes": 0,
+   "kind": "first"
+  },
+  "sleep_mode": false
+ },
+ "night": {
+  "label": "Night",
+  "clock": "23:30",
+  "weather": {
+   "current": {
+    "condition": "clear-night",
+    "temperature": 68,
+    "apparent_temperature": 68
+   },
+   "hourly": [
+    {
+     "datetime": "@hour+1",
+     "condition": "clear-night",
+     "temperature": 67,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+2",
+     "condition": "clear-night",
+     "temperature": 67,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+3",
+     "condition": "clear-night",
+     "temperature": 66,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+4",
+     "condition": "clear-night",
+     "temperature": 66,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+5",
+     "condition": "clear-night",
+     "temperature": 66,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+6",
+     "condition": "clear-night",
+     "temperature": 66,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+7",
+     "condition": "sunny",
+     "temperature": 67,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+8",
+     "condition": "sunny",
+     "temperature": 70,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+9",
+     "condition": "sunny",
+     "temperature": 73,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+10",
+     "condition": "sunny",
+     "temperature": 76,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+11",
+     "condition": "sunny",
+     "temperature": 78,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    },
+    {
+     "datetime": "@hour+12",
+     "condition": "sunny",
+     "temperature": 79,
+     "precipitation_probability": 5,
+     "precipitation": 0
+    }
+   ],
+   "daily": [
+    {
+     "datetime": "@day+0",
+     "condition": "sunny",
+     "temperature": 81,
+     "templow": 66,
+     "precipitation_probability": 10
+    },
+    {
+     "datetime": "@day+1",
+     "condition": "partlycloudy",
+     "temperature": 82,
+     "templow": 67,
+     "precipitation_probability": 20
+    },
+    {
+     "datetime": "@day+2",
+     "condition": "rainy",
+     "temperature": 78,
+     "templow": 68,
+     "precipitation_probability": 60
+    },
+    {
+     "datetime": "@day+3",
+     "condition": "partlycloudy",
+     "temperature": 80,
+     "templow": 66,
+     "precipitation_probability": 20
+    },
+    {
+     "datetime": "@day+4",
+     "condition": "sunny",
+     "temperature": 83,
+     "templow": 67,
+     "precipitation_probability": 10
+    }
+   ],
+   "nowcast": {
+    "source": "demo",
+    "as_of": "@now-2m",
+    "summary": null,
+    "minutes": [
+     {
+      "t": "@now+0m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+5m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+10m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+15m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+20m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+25m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+30m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+35m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+40m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+45m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+50m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     },
+     {
+      "t": "@now+55m",
+      "intensity_mm_h": 0,
+      "chance": 0.05
+     }
+    ],
+    "attribution_url": null,
+    "unavailable": false
+   },
+   "alerts": []
+  },
+  "launch_state": "idle",
+  "sleep_mode": true,
+  "states": {
+   "light.living_room_lamp": {
+    "state": "off"
+   },
+   "light.kitchen": {
+    "state": "off"
+   },
+   "light.office_desk": {
+    "state": "off"
+   },
+   "switch.porch_string_lights": {
+    "state": "off"
+   },
+   "media_player.bedroom_speaker": {
+    "state": "playing",
+    "attributes": {
+     "media_title": "Thunderstorm",
+     "volume_level": 0.2
+    }
+   },
+   "media_player.kitchen_speaker": {
+    "state": "idle"
+   },
+   "sensor.flightday_comfort_status": {
+    "state": "night"
+   }
+  }
+ },
+ "alarm-clock": {
+  "label": "Alarm clock only (no devices)",
+  "clock": "06:41",
+  "weather": "clear",
+  "launch_state": "countdown",
+  "launch": {
+   "launch_at": "@today 06:45",
+   "count_at": "@today 06:35",
+   "kind": "first"
+  },
+  "sleep_mode": true,
+  "config_override": {
+   "roles": {
+    "bedroom": null,
+    "sleep_speaker": null,
+    "alarm_speaker": null,
+    "sleep_sound_on": "screens",
+    "wake_lights": [],
+    "ring_lights": [],
+    "goodnight_off": {
+     "lights": "none",
+     "switches": [],
+     "media": "none",
+     "except": []
+    },
+    "thermostat": null,
+    "thermostat_sensor": null,
+    "indoor_temperature": [],
+    "weather": [
+     "open_meteo"
+    ],
+    "weather_feels_like": null,
+    "agenda_calendars": [
+     "calendar.family"
+    ],
+    "wake_rule_calendars": [],
+    "wake_rule_due": false,
+    "due": [],
+    "vacuum": null,
+    "vacuum_map": null,
+    "cameras": [],
+    "doorbell": null,
+    "security": null,
+    "tvs": [],
+    "ai": null,
+    "hidden": []
+   },
+   "modules": {
+    "launch_alarm": true,
+    "goodnight": true,
+    "comfort_schedule": false,
+    "smart_comfort": false,
+    "space": true,
+    "cameras": false,
+    "vacuum": false,
+    "countdowns": true,
+    "builder_desk": false,
+    "ai_brief": false,
+    "flight_plan": false,
+    "weather": true,
+    "room_sensors": false,
+    "house_check": false,
+    "learning": false,
+    "x_bin_day": false
+   }
+  },
+  "note": "The core with zero roles: alarm audio and dawn on this screen, Today from one calendar, Open-Meteo weather. Settings → Integrations shows every optional integration as Add …"
+ },
+ "doorbell": {
+  "label": "Doorbell",
+  "clock": "16:20",
+  "weather": "clear",
+  "launch_state": "idle",
+  "sleep_mode": false,
+  "timeline": [
+   {
+    "at": "@now+20s",
+    "fire": {
+     "entity_id": "event.front_door_ding",
+     "event_type": "ring"
+    }
+   }
+  ]
+ }
+}

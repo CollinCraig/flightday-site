@@ -1,0 +1,44 @@
+{
+  "schema": "flightday.first-party-assets/v1",
+  "assets": [
+    {
+      "asset": "iphone-alarm-v2-full.png",
+      "sha256": "f86f292f55cf7e7375b946c4d6a94322c17eb769713bcbbcd2a288d9f7602a7d",
+      "bytes": 378924,
+      "origin": "Flight Day native app capture in demo mode; sample data",
+      "recorded_from": "Flight Day 1.0 build 1; source SHA-256 1ac9e5ddd1a187e5972e0c094dcab7bf77a2ee0e01c02f7927e3459923026074; iPhone 18 Pro, iOS 27.2",
+      "tool": "XCUIScreen.main.screenshot",
+      "original_sha256": "f86f292f55cf7e7375b946c4d6a94322c17eb769713bcbbcd2a288d9f7602a7d",
+      "encode_settings": "Original full native PNG; exclusive byte copy; no crop, trim or transformation",
+      "licence": "Apache-2.0",
+      "contains_third_party": false,
+      "label": "Real app \u00b7 sample data"
+    },
+    {
+      "asset": "ipad-alarm-v2-full.png",
+      "sha256": "4f064acba977a8608ec076126764a0a59c14fc6f7583c125592a5886de9d1149",
+      "bytes": 523683,
+      "origin": "Flight Day native app capture in demo mode; sample data",
+      "recorded_from": "Flight Day 1.0 build 1; source SHA-256 1ac9e5ddd1a187e5972e0c094dcab7bf77a2ee0e01c02f7927e3459923026074; iPad Pro 13-inch (M5), iOS 27.2",
+      "tool": "XCUIScreen.main.screenshot",
+      "original_sha256": "4f064acba977a8608ec076126764a0a59c14fc6f7583c125592a5886de9d1149",
+      "encode_settings": "Original full native PNG; exclusive byte copy; no crop, trim or transformation",
+      "licence": "Apache-2.0",
+      "contains_third_party": false,
+      "label": "Real app \u00b7 sample data"
+    },
+    {
+      "asset": "iphone-alarm-v3-full.png",
+      "sha256": "1d2ed059a169abe13477f0a1851363020a69c3ba0a2f65af033104e66ed3f779",
+      "bytes": 311475,
+      "origin": "Flight Day native app capture in demo mode; sample data",
+      "recorded_from": "Flight Day 1.0 build 1; source SHA-256 e9b546196de310e49852d244a6a084f8357943915cf376219857238c48b1c3c7; iPhone 18 Pro, iOS 27.2",
+      "tool": "XCUIScreen.main.screenshot",
+      "original_sha256": "1d2ed059a169abe13477f0a1851363020a69c3ba0a2f65af033104e66ed3f779",
+      "encode_settings": "Original full native PNG; exclusive byte copy; no crop, trim or transformation",
+      "licence": "Apache-2.0",
+      "contains_third_party": false,
+      "label": "Real app \u00b7 sample data"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+# Append both entries to automations.yaml. Collection sensor: local YYYY-MM-DD.
+- alias: Bin day register
+  triggers:
+    - trigger: event
+      event_type: flightday
+      event_data: {action: ready}
+    # Registration is idempotent; double firing is harmless.
+    - trigger: homeassistant
+      event: start
+  actions:
+    - action: flightday.register_integration
+      data: {id: bin_day, name: Bin day, provides: [lines]}
+
+- alias: Bin day line
+  triggers:
+    - trigger: time
+      at: "17:00:00"
+      id: evening
+    - trigger: time
+      at: "09:00:00"
+      id: morning
+    # Catch-up: a post missed while Flight Day was reloading is restored when it is ready again.
+    - trigger: event
+      event_type: flightday
+      event_data: {action: ready}
+      id: catchup
+    - trigger: homeassistant
+      event: start
+      id: catchup
+  variables:
+    collection: "{{ states('sensor.bin_collection_day') }}"
+    eve: "{{ collection == (now().date() + timedelta(days=1)) | string and now().hour >= 17 }}"
+    overnight: "{{ collection == now().date() | string and now() < today_at('09:00') }}"
+  actions:
+    - if:
+        - condition: template
+          value_template: "{{ trigger.id != 'morning' and (eve or overnight) }}"
+      then:
+        # Same key and until each time, so posting twice is harmless.
+        - action: flightday.post_line
+          data:
+            source: x_bin_day
+            key: recycling
+            text: Recycling goes out tonight
+            show: [briefing, home]
+            priority: normal
+            until: "{{ (today_at('09:00') + timedelta(days=1 if eve else 0)).isoformat() }}"
+            icon: recycle
+      else:
+        - action: flightday.clear_line
+          data: {source: x_bin_day, key: recycling}

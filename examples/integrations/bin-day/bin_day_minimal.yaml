@@ -1,0 +1,15 @@
+- alias: Bin day minimal register
+  triggers: [{trigger: event, event_type: flightday, event_data: {action: ready}}, {trigger: homeassistant, event: start}] # Registration is idempotent; double firing is harmless.
+  actions:
+    - action: flightday.register_integration
+      data: {id: bin_day, name: Bin day, provides: [lines]}
+- alias: Bin day minimal line
+  triggers: [{trigger: time, at: "17:00:00"}]
+  conditions:
+    - condition: template
+      value_template: "{{ states('sensor.bin_collection_day') == (now().date() + timedelta(days=1)) | string }}"
+  actions:
+    - action: flightday.post_line
+      data: {source: x_bin_day, key: recycling, text: Recycling goes out tonight,
+             show: [briefing, home], priority: normal,
+             until: "{{ (today_at('09:00') + timedelta(days=1)).isoformat() }}"}

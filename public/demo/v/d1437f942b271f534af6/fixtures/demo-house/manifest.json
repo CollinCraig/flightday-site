@@ -1,0 +1,46 @@
+{
+ "fixture": "demo-house",
+ "version": 1,
+ "contract": 3,
+ "roles": 1,
+ "label": {
+  "chip": "Demo house · sample data",
+  "night_chip": "Demo house",
+  "widget": "Demo",
+  "site": "Sample data"
+ },
+ "default_scenario": "clear",
+ "this_screen": {
+  "android": "scr_demowall",
+  "web": "scr_demowall",
+  "android_tv": "scr_demotv",
+  "tvos": "scr_demotv",
+  "ios": "scr_demophone",
+  "watchos": "scr_demophone",
+  "ipados": "scr_demotab",
+  "macos": "scr_demomac"
+ },
+ "files": {
+  "ha": "ha.json",
+  "model": "model.json",
+  "calendars": "calendars.json",
+  "todo": "todo.json",
+  "scenarios": "scenarios.json",
+  "hub": "hub.json",
+  "simulation": "simulation.json",
+  "commands": "commands.json",
+  "extensions": "extensions.json",
+  "space_snapshot": "space/space-snapshot.json",
+  "stills": [
+   "stills/front-door.svg",
+   "stills/driveway.svg",
+   "stills/robot-map.svg"
+  ]
+ },
+ "sounds": "Use the app's bundled sounds (web/audio) or /flightday_static/sounds; the demo adds none.",
+ "ambient_default": {
+  "mode": "wallpaper",
+  "source": "scenes",
+  "scene": "auto"
+ }
+}

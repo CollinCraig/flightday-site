@@ -1,0 +1,18 @@
+<!-- title: Robot vacuum · Flight Day docs -->
+<!-- description: In development. The robot vacuum card: status, battery, map, Start, Pause and Return to dock, rooms and maintenance. Optional: it appears when Home Assistant has a vacuum. -->
+<h1>Robot vacuum</h1>
+<p class="lede">Status, battery and the map, with Start, Pause and Return to dock. It appears when your Home Assistant has a vacuum. Roborock gets room cleaning and maintenance through its own adapter.</p>
+<div class="chips"><span class="st st-opt">Optional</span><span class="st st-dev">In development</span></div>
+
+<h2 id="card">The card</h2>
+<ul>
+  <li>The status and battery (“82% battery”), and the latest map.</li>
+  <li><b>Start</b>, <b>Pause</b> and <b>Return to dock</b> act on the real vacuum.</li>
+  <li>Home shows only “Cleaning…” or “Stuck · …”, and a “Needs a hand” chip when it needs you.</li>
+</ul>
+
+<h2 id="rooms">Cleaning one room</h2>
+<p><span class="st st-dev">In development</span> <b>Clean a room</b> lists the rooms the vacuum reports. Rooms with the same name show their number. It has been tested against a simulated vacuum so far.</p>
+
+<h2 id="maintenance">Maintenance</h2>
+<p>The main brush, side brush, filter, sensors and strainer, each with the time left or “Overdue”. An item at or below zero is overdue. Nothing resets by itself.</p>

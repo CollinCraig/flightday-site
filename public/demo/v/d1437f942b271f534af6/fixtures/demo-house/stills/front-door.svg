@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Illustration: front door at dusk (demo camera still)">
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2547"/><stop offset="1" stop-color="#3A3550"/></linearGradient>
+  <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FFE3B8" stop-opacity="0.9"/><stop offset="1" stop-color="#FFE3B8" stop-opacity="0"/></radialGradient></defs>
+  <rect width="640" height="360" fill="url(#sky)"/>
+  <rect x="120" y="60" width="400" height="250" fill="#2A2F44"/>
+  <rect x="270" y="120" width="100" height="190" rx="4" fill="#5A3A2A"/>
+  <circle cx="355" cy="220" r="5" fill="#C9A15A"/>
+  <circle cx="410" cy="130" r="60" fill="url(#glow)"/><rect x="402" y="118" width="16" height="22" rx="3" fill="#FFC56B"/>
+  <rect x="80" y="310" width="480" height="50" fill="#1C1E2A"/><rect x="240" y="300" width="160" height="12" fill="#3A3E52"/>
+  <path d="M180 310 q-20 -60 10 -90 q10 40 -5 90z M180 310 q25 -55 0 -95 q-15 45 0 95z" fill="#2F5A3E"/><rect x="165" y="290" width="30" height="22" fill="#6A4A3A"/>
+  <text x="628" y="350" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#A3ACC6">Illustration · demo</text>
+</svg>

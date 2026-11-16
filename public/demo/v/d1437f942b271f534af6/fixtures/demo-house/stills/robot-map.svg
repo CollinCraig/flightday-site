@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Illustration: robot vacuum floor map (demo)">
+  <rect width="640" height="400" fill="#11172A"/>
+  <g fill="#1A2238" stroke="#838DAA" stroke-width="2">
+    <rect x="40" y="40" width="240" height="150"/><rect x="280" y="40" width="320" height="200"/>
+    <rect x="40" y="190" width="240" height="60"/><rect x="40" y="250" width="240" height="110"/><rect x="280" y="240" width="320" height="120"/>
+  </g>
+  <g font-family="Inter, system-ui, sans-serif" font-size="14" fill="#C9CFE0">
+    <text x="56" y="66">Kitchen</text><text x="296" y="66">Living room</text><text x="56" y="214">Hallway</text><text x="56" y="276">Office</text><text x="296" y="266">Bedroom</text>
+  </g>
+  <polyline points="560,220 520,200 320,200 320,90 560,90 560,150 330,150 250,120 70,120 70,160 250,160 250,220 70,220"
+            fill="none" stroke="#4CC38A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+  <circle cx="560" cy="220" r="9" fill="#FF8A3D"/><text x="575" y="225" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#A3ACC6">Dock</text>
+  <text x="628" y="390" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#A3ACC6">Illustration · demo</text>
+</svg>

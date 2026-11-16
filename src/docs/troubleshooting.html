@@ -1,0 +1,49 @@
+<!-- title: Troubleshooting and FAQ · Flight Day docs -->
+<!-- description: In development. Common Flight Day questions and honest fixes: a black screen at night, a missing Snooze, muted speakers, old values, a locked thermostat, missing weather and more. -->
+<h1>Troubleshooting and FAQ</h1>
+<p class="lede">Try the smallest useful check first. Flight Day never fills in a guess, so most fixes start with reading what the screen says.</p>
+
+<h2 id="night-black">The screen is black at night</h2>
+<p>That’s the night screen. One touch or key shows the dim controls for ten seconds. A Sony TV with Picture off uses the first key to turn its picture back on, so press a second key.</p>
+
+<h2 id="first-press">My first press during the alarm did nothing</h2>
+<p>The first key only shows the controls, so a sleepy press can’t cancel the morning. Only Back and Play/Pause act straight away, and both snooze.</p>
+
+<h2 id="no-snooze">Snooze is missing</h2>
+<p>The up-by time is too close for another snooze. Choose I’m up (on the final launch it needs a hold), or hold Scrub to call off the morning.</p>
+
+<h2 id="muted">It says “muted · the lights will still rise”</h2>
+<p>The bedroom speaker is muted, and Flight Day won’t unmute it for you. Choose “Muted · Select to unmute” in the night controls if you want sound. Choosing Goodnight with a sleep sound also unmutes it.</p>
+
+<h2 id="house-offline">It says “house offline — lights not held”</h2>
+<p>The screen can’t reach Home Assistant, so it’s running its own backup alarm, and a snooze affects only that screen. Check Status for what isn’t connected.</p>
+
+<h2 id="old-value">A tile is dimmed and says “as of …”</h2>
+<p>The data is old. Reconnecting usually refreshes it. An old value on screen isn’t proof that a command worked.</p>
+
+<h2 id="thermostat-locked">The thermostat shows “—” and − and + are locked</h2>
+<p>It’s Off. Choose Heat or Cool to get a setpoint, or Auto to hand it back to Smart Comfort.</p>
+
+<h2 id="comfort-quiet">Comfort did nothing overnight</h2>
+<p>A manual Off stays off until you choose <b>Resume Auto</b>. Smart Comfort’s automatic mode may also still be watching only.</p>
+
+<h2 id="rooms-waiting">It says “Room sensors · waiting for Apple Home”</h2>
+<p>No room readings are arriving. Check the automation that sends them. Don’t type numbers in by hand; Flight Day only uses real readings.</p>
+
+<h2 id="no-weather">There’s no weather, or no rain line</h2>
+<p>Weather needs a home location: check Settings › Home location. A dry next hour shows no rain line on purpose, and bedroom screens hide rain hints at night.</p>
+
+<h2 id="old-launcher">A TV shows its old launcher</h2>
+<p>If Flight Day crashes three times within five minutes, a safety watchdog hands the TV back to its previous launcher for ten minutes. It comes back by itself.</p>
+
+<h2 id="sleep-sound">The sleep sound says “cannot be played right now · retrying”</h2>
+<p>Flight Day keeps retrying. Check that the speaker is on and that the sound’s source can be reached.</p>
+
+<h2 id="apple-token">An Apple device asks for a token</h2>
+<p>Enter it once in Settings on one device. With iCloud Keychain on, your other Apple devices get it too.</p>
+
+<h2 id="control-missing">A control seems to be missing</h2>
+<p>Scroll the focused card or the Settings detail. A locked control needs its real source or device; Flight Day doesn’t show controls for things your house can’t do.</p>
+
+<h2 id="dont">What not to do</h2>
+<p>Don’t factory-reset a screen, uninstall the app, clear its storage or re-pair the house as a routine fix. Those throw away working settings. If an update doesn’t go well, ask for help first.</p>

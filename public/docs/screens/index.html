@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What am I looking at? · Flight Day docs</title>
+<meta name="description" content="In development. A guide to each area’s headline readouts and Flight Day’s status lines: “as of”, dimmed tiles, waiting and offline states, snoozed and muted lines, demo labels.">
+<link rel="canonical" href="https://flightday.app/docs/screens/">
+<meta name="theme-color" content="#0A0E1A" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F4F5F9" media="(prefers-color-scheme: light)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Flight Day">
+<meta property="og:title" content="What am I looking at? · Flight Day docs">
+<meta property="og:description" content="In development. A guide to each area’s headline readouts and Flight Day’s status lines: “as of”, dimmed tiles, waiting and offline states, snoozed and muted lines, demo labels.">
+<meta property="og:url" content="https://flightday.app/docs/screens/">
+<meta property="og:image" content="https://flightday.app/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Flight Day mark, a half sun on a horizon with an ascent trail, and the line: Every day is a flight day.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="fd-version" content="1.6.2">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.v7.css">
+<script src="/assets/site.v7.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="devbar" role="note"><div class="wrap"><span>In development · early access soon · official launch planned for 8 Dec</span><a href="/roadmap/">Roadmap</a></div></div>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Flight Day home"><img class="logo-dark" src="/assets/brand/flightday-lockup.svg" alt="Flight Day" width="120" height="30"><img class="logo-light" src="/assets/brand/flightday-lockup-on-light.svg" alt="Flight Day" width="120" height="30"></a>
+    <nav aria-label="Main"><ul class="nav">
+      <li><a href="/features/">Features</a></li>
+      <li><a href="/docs/" aria-current="page">Docs</a></li>
+      <li><a href="/roadmap/">Roadmap</a></li>
+      <li><a href="/press/">Launch kit</a></li>
+    </ul></nav>
+    <button class="theme" type="button" data-theme-toggle hidden aria-label="Switch theme"><svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg><svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+  </div>
+</header>
+
+<main id="main" class="docs">
+<div class="wrap docs-layout">
+<details class="docs-mobile"><summary><span>Docs</span><b>What am I looking at?</b></summary><nav class="docs-nav" aria-label="Docs menu"><div class="docs-search" role="search" data-docs-search hidden><label for="ds-m" class="sr">Search the docs</label><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="ds-m" type="search" placeholder="Search the docs" autocomplete="off" spellcheck="false"><p class="docs-hits sr" aria-live="polite"></p><ul class="docs-results"></ul></div><p class="docs-group">Start here</p><ul><li><a href="/docs/">Docs home</a></li><li><a href="/docs/getting-started/">Getting started</a></li></ul><p class="docs-group">The alarm clock</p><ul><li><a href="/docs/launch-alarm/">The launch alarm</a></li><li><a href="/docs/briefing/">The morning briefing</a></li><li><a href="/docs/goodnight/">Goodnight and the night screen</a></li><li><a href="/docs/sleep-schedule/">The sleep schedule</a></li></ul><p class="docs-group">Your whole day and home</p><ul><li><a href="/docs/whole-day/">What you can add</a></li><li><a href="/docs/dashboard/">The dashboard and your day</a></li><li><a href="/docs/weather/">Weather and rain soon</a></li><li><a href="/docs/smart-comfort/">Smart Comfort</a></li><li><a href="/docs/house/">Lights, speakers and cameras</a></li><li><a href="/docs/vacuum/">Robot vacuum</a></li><li><a href="/docs/house-check/">Systems check and the AI planner</a></li><li><a href="/docs/space/">The Space feed</a></li><li><a href="/docs/ambient/">Ambient</a></li></ul><p class="docs-group">Reference</p><ul><li><a href="/docs/settings/">What’s configurable</a></li><li><a href="/docs/screens/" aria-current="page">What am I looking at?</a></li><li><a href="/docs/things-to-try/">Things to try</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li><li><a href="/docs/requirements/">Requirements and setup</a></li><li><a href="/docs/words/">Words we use</a></li></ul></nav></details>
+<aside class="docs-side"><nav class="docs-nav" aria-label="Docs"><div class="docs-search" role="search" data-docs-search hidden><label for="ds-d" class="sr">Search the docs</label><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="ds-d" type="search" placeholder="Search the docs" autocomplete="off" spellcheck="false"><p class="docs-hits sr" aria-live="polite"></p><ul class="docs-results"></ul></div><p class="docs-group">Start here</p><ul><li><a href="/docs/">Docs home</a></li><li><a href="/docs/getting-started/">Getting started</a></li></ul><p class="docs-group">The alarm clock</p><ul><li><a href="/docs/launch-alarm/">The launch alarm</a></li><li><a href="/docs/briefing/">The morning briefing</a></li><li><a href="/docs/goodnight/">Goodnight and the night screen</a></li><li><a href="/docs/sleep-schedule/">The sleep schedule</a></li></ul><p class="docs-group">Your whole day and home</p><ul><li><a href="/docs/whole-day/">What you can add</a></li><li><a href="/docs/dashboard/">The dashboard and your day</a></li><li><a href="/docs/weather/">Weather and rain soon</a></li><li><a href="/docs/smart-comfort/">Smart Comfort</a></li><li><a href="/docs/house/">Lights, speakers and cameras</a></li><li><a href="/docs/vacuum/">Robot vacuum</a></li><li><a href="/docs/house-check/">Systems check and the AI planner</a></li><li><a href="/docs/space/">The Space feed</a></li><li><a href="/docs/ambient/">Ambient</a></li></ul><p class="docs-group">Reference</p><ul><li><a href="/docs/settings/">What’s configurable</a></li><li><a href="/docs/screens/" aria-current="page">What am I looking at?</a></li><li><a href="/docs/things-to-try/">Things to try</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li><li><a href="/docs/requirements/">Requirements and setup</a></li><li><a href="/docs/words/">Words we use</a></li></ul></nav></aside>
+<article class="docs-body">
+<p class="eyebrow">Reference</p>
+<h1>What am I looking at?</h1>
+<p class="lede">Flight Day shows real data or says plainly what it’s waiting for. A missing value is never a default, and an old value carries its age.</p>
+
+<h2 id="areas">The headline in each area</h2>
+<div class="tablewrap"><table class="rules">
+  <thead><tr><th scope="col">Area</th><th scope="col">Look here first</th></tr></thead>
+  <tbody>
+    <tr><td>Home</td><td>The big clock and the line under it: the next event, the wake time or a launch’s T-minus. Then Weather, and Today or Tomorrow.</td></tr>
+    <tr><td>Space</td><td>The top row of the manifest, with its T-minus, and the brief under the globe.</td></tr>
+    <tr><td>House</td><td>The lights that are on, what’s playing, and the thermostat’s mode and setpoint.</td></tr>
+    <tr><td>Night</td><td>Tomorrow’s wake time, whether the alarm is armed, and Tonight: what Goodnight will do.</td></tr>
+    <tr><td>Status</td><td>What’s connected and what isn’t, and plan limits.</td></tr>
+  </tbody>
+</table></div>
+
+<h2 id="freshness">Fresh, old and missing</h2>
+<div class="tablewrap"><table class="rules">
+  <thead><tr><th scope="col">You see</th><th scope="col">It means</th></tr></thead>
+  <tbody>
+    <tr><td>“as of 6:10 AM” on a dimmed tile</td><td>The data is older than it should be. It’s the last value received, not a fresh reading.</td></tr>
+    <tr><td>A standby line, such as “Thermostat not connected” or “Calendar not connected”</td><td>That source isn’t connected. Nothing is filled in for it.</td></tr>
+    <tr><td>“Not connected” in Status, with a list</td><td>The sources that have no connection, each with a link to the setting that fixes it.</td></tr>
+    <tr><td>“Home Assistant · not connected — add URL + token in Settings”</td><td>No house is set up on this screen.</td></tr>
+    <tr><td>“This card could not load · try again from Settings → Reload”</td><td>A tile failed to draw.</td></tr>
+    <tr><td>“House action not confirmed · reconnecting”</td><td>A command didn’t come back confirmed. Don’t assume it worked.</td></tr>
+  </tbody>
+</table></div>
+
+<h2 id="alarm">The alarm</h2>
+<div class="tablewrap"><table class="rules">
+  <thead><tr><th scope="col">You see</th><th scope="col">It means</th></tr></thead>
+  <tbody>
+    <tr><td>“T-04:12 · liftoff 6:50 AM”</td><td>The count to your wake time.</td></tr>
+    <tr><td>“liftoff 6:50 AM · up by 7:20 AM · 1 snooze”</td><td>The alarm header: liftoff, the up-by time and snoozes used so far.</td></tr>
+    <tr><td>“Snoozed · liftoff 7:00 AM”, or “snoozing · liftoff …” at night</td><td>Waiting to count down again.</td></tr>
+    <tr><td>“No more snoozes — up by …”</td><td>The up-by time is too close for another snooze.</td></tr>
+    <tr><td>“Final launch”</td><td>The last liftoff before up-by. I’m up needs a hold.</td></tr>
+    <tr><td>“muted · the lights will still rise”</td><td>The bedroom speaker is muted. Flight Day never unmutes it in the morning.</td></tr>
+    <tr><td>“house offline — lights not held”</td><td>The screen is running its own backup alarm, without the house.</td></tr>
+    <tr><td>“Up … · no answer”</td><td>Nobody answered; the alarm stopped after 15 minutes.</td></tr>
+  </tbody>
+</table></div>
+
+<h2 id="house">The house</h2>
+<div class="tablewrap"><table class="rules">
+  <thead><tr><th scope="col">You see</th><th scope="col">It means</th></tr></thead>
+  <tbody>
+    <tr><td>“Comfort · waiting for the house” or “Comfort offline”</td><td>No comfort status has arrived from Home Assistant yet.</td></tr>
+    <tr><td>“Room sensors · waiting for Apple Home”</td><td>No room readings have arrived yet.</td></tr>
+    <tr><td>“· not counted” on a dimmed room</td><td>That reading is too old, or the room is left out, so comfort ignores it.</td></tr>
+    <tr><td>“Comfort is quiet for the night”</td><td>A bedroom screen at night: comfort controls wait until morning.</td></tr>
+    <tr><td>“Choose Heat or Cool to see its setpoint”</td><td>The thermostat is Off, so there’s no setpoint to show.</td></tr>
+    <tr><td>“Needs a hand”</td><td>The vacuum is stuck or needs maintenance.</td></tr>
+  </tbody>
+</table></div>
+
+<h2 id="labels">Labels and badges</h2>
+<div class="tablewrap"><table class="rules">
+  <thead><tr><th scope="col">You see</th><th scope="col">It means</th></tr></thead>
+  <tbody>
+    <tr><td><b>LIVE</b> banner</td><td>A launch is in flight. Watch opens it.</td></tr>
+    <tr><td>Plan limits: live, standby, “report from …”, “limit hit”, “est.”</td><td>The state of each AI plan’s usage report. A limit the service doesn’t report is never made up.</td></tr>
+    <tr><td>A yellow “demo” chip</td><td>That tile shows sample data, on purpose.</td></tr>
+    <tr><td>“AI” on a line</td><td>The line was made by AI.</td></tr>
+    <tr><td>“Estimated · typical ascent, not telemetry”</td><td>Flight Director’s altitude and speed are a typical ascent, not live data.</td></tr>
+  </tbody>
+</table></div>
+
+<h2 id="coming">Coming later</h2>
+<p><b>Go / No-Go</b> <span class="st st-dev">In development</span> (in the demo house; arrives with the next app release): a line at the top of the briefing, for example “Checks incomplete · weather as of 6:10 AM”. Until then, the briefing shows each input with its own age.</p>
+<nav class="docs-pager" aria-label="Previous and next page"><a class="prev" href="/docs/settings/"><small>Previous</small><span>What’s configurable</span></a><a class="next" href="/docs/things-to-try/"><small>Next</small><span>Things to try</span></a></nav>
+</article>
+</div>
+</main>
+<script src="/assets/docs-index.js" defer></script>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <a href="/" aria-label="Flight Day home" class="brand"><img class="logo-dark" src="/assets/brand/flightday-lockup.svg" alt="Flight Day" width="96" height="24"><img class="logo-light" src="/assets/brand/flightday-lockup-on-light.svg" alt="Flight Day" width="96" height="24"></a>
+      <nav aria-label="Footer"><a href="/features/">Features</a><a href="/roadmap/">Roadmap</a><a href="/docs/">Docs</a><a href="/integrations/">Integrations</a><a href="/install/">Install</a><a href="/press/">Launch kit</a><a href="/privacy/">Privacy</a><a href="/changelog/">Mission Log</a></nav>
+    </div>
+    <p class="family"><a href="https://morrowdock.app">Morrowdock</a> and Flight Day are made by Collin Craig with AI agents (Claude and Codex).<br>Morrowdock: the open learning studio. Flight Day: launch control for your home and your day.</p>
+    <p>Background imagery: NASA</p>
+    <p>Every day is a flight day. Launch data from Launch Library 2 (The Space Devs). Flight Day isn’t affiliated with any launch provider, Apple, Google or Home Assistant.</p>
+    <p class="ver">Site 1.6.2 · <a href="/changelog/#v1-6-2">What’s new</a></p>
+  </div>
+</footer>
+</body>
+</html>

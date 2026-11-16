@@ -1,0 +1,54 @@
+{
+ "panel-home": {
+  "w": 1920,
+  "h": 1080
+ },
+ "panel-house": {
+  "w": 1920,
+  "h": 1080
+ },
+ "panel-night": {
+  "w": 1920,
+  "h": 1080
+ },
+ "panel-night-overlay": {
+  "w": 1920,
+  "h": 1080
+ },
+ "tv-home": {
+  "w": 1920,
+  "h": 1080
+ },
+ "panel-alarm": {
+  "w": 1920,
+  "h": 1080
+ },
+ "panel-space": {
+  "w": 1920,
+  "h": 1080
+ },
+ "ipad-space": {
+  "w": 2752,
+  "h": 2000
+ },
+ "mac-home": {
+  "w": 2720,
+  "h": 1700
+ },
+ "iphone-home": {
+  "w": 1206,
+  "h": 2622
+ },
+ "iphone-alarm": {
+  "w": 1206,
+  "h": 2622
+ },
+ "appletv-alarm": {
+  "w": 1920,
+  "h": 1080
+ },
+ "watch-alarm": {
+  "w": 416,
+  "h": 496
+ }
+}

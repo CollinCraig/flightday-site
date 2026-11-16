@@ -1,0 +1,16 @@
+{
+  "name": "flightday-site",
+  "version": "1.0.0",
+  "description": "The public site for **Flight Day**. Plain static HTML and CSS, about 30 lines of JavaScript (the theme toggle), no build step needed to serve it. Everything that ships is in `public/`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "type": "commonjs",
+  "devDependencies": {
+    "wrangler": "4.20.0"
+  }
+}

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-labelledby="t"><title id="t">Flight Day app icon</title>
+<!-- Flight Day app icon master. Full bleed, no corner mask (each platform applies its own).
+     Mark grid (design/BRAND.md §6) scaled x7.4, offset (122, 66). Layers: #back = sky, glow, stars, ground, sun, horizon;
+     #front = trail + craft (tvOS parallax front layer / Android adaptive foreground). -->
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#05070F"/><stop offset=".55" stop-color="#0C1328"/><stop offset="1" stop-color="#1A2547"/></linearGradient>
+<radialGradient id="glow" cx="536.4" cy="658" r="560" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FF8A3D" stop-opacity=".55"/><stop offset=".45" stop-color="#FF8A3D" stop-opacity=".16"/><stop offset="1" stop-color="#FF8A3D" stop-opacity="0"/></radialGradient>
+<linearGradient id="sun" x1="0" y1="450.8" x2="0" y2="598.8" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFC56B"/><stop offset="1" stop-color="#FF8A3D"/></linearGradient>
+<linearGradient id="trail" x1="255.2" y1="584" x2="699.2" y2="206.6" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#F1F3F9" stop-opacity=".45"/><stop offset=".55" stop-color="#F1F3F9" stop-opacity=".9"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+<radialGradient id="craft" cx="776.9" cy="195.5" r="105.8" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFE3B8" stop-opacity=".55"/><stop offset="1" stop-color="#FFE3B8" stop-opacity="0"/></radialGradient>
+<linearGradient id="ground" x1="0" y1="658" x2="0" y2="1024" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1A1420"/><stop offset=".18" stop-color="#0A0D18"/><stop offset="1" stop-color="#05070D"/></linearGradient>
+</defs>
+<g id="back">
+<rect width="1024" height="1024" fill="url(#sky)"/>
+<rect width="1024" height="1024" fill="url(#glow)"/>
+<circle cx="214" cy="236" r="5" fill="#F1F3F9" opacity=".55"/><circle cx="330" cy="140" r="3.5" fill="#F1F3F9" opacity=".4"/><circle cx="868" cy="520" r="4" fill="#F1F3F9" opacity=".35"/>
+<rect y="658" width="1024" height="366" fill="url(#ground)"/>
+<path d="M388.4 598.8 A148 148 0 0 1 684.4 598.8 Z" fill="url(#sun)"/>
+<path d="M0 658H1024" stroke="#FFD9A8" stroke-width="32"/>
+</g>
+<g id="front">
+<path d="M255.2 584 C255.2 391.6 425.4 236.2 699.2 206.6" stroke="url(#trail)" stroke-width="51.8" stroke-linecap="round" fill="none"/>
+<circle cx="776.9" cy="195.5" r="105.8" fill="url(#craft)"/>
+<circle cx="776.9" cy="195.5" r="40.7" fill="#FFFFFF"/>
+</g>
+</svg>

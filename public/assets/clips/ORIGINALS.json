@@ -1,0 +1,193 @@
+{
+  "schema": "flightday.first-party-assets/v1",
+  "assets": [
+    {
+      "asset": "alarm-ember-ccd25ed60d26.mp4",
+      "sha256": "61163862b36e4130e1a26be0b0a8f88cf94973a556b2a28ce62a3f95ad5e6caf",
+      "bytes": 777962,
+      "origin": "Flight Day web app, demo mode and sample data",
+      "recorded_from": "Flight Day web 1.10.3 + Ember; SHA-256 465f0756552dff34e13d36d875b3ea16d212b303f8aecdac1aabd3f54664d1f0",
+      "tool": "tools/record-clips.cjs",
+      "original_sha256": "ccd25ed60d26f26b7f0551b83e73937a41c90d3c09bb55c4bed1dee9ae162fd0",
+      "encode_settings": "tools/encode-capture.mjs: 1280x720 at 30 fps; H.264 libx264 slow CRF 22, High, yuv420p, maxrate 2000k, bufsize 4000k, faststart; muted; metadata stripped",
+      "licence": "Apache-2.0",
+      "contains_third_party": false
+    },
+    {
+      "asset": "alarm-ember-ccd25ed60d26.webm",
+      "sha256": "8648803066296c94a871a7d2379f3b919d91b9db298ac6823c7d97d4f036e1af",
+      "bytes": 315696,
+      "origin": "Flight Day web app, demo mode and sample data",
+      "recorded_from": "Flight Day web 1.10.3 + Ember; SHA-256 465f0756552dff34e13d36d875b3ea16d212b303f8aecdac1aabd3f54664d1f0",
+      "tool": "tools/record-clips.cjs",
+      "original_sha256": "ccd25ed60d26f26b7f0551b83e73937a41c90d3c09bb55c4bed1dee9ae162fd0",
+      "encode_settings": "tools/encode-capture.mjs: 1280x720 at 30 fps; VP9 libvpx-vp9, CRF 38, bitrate 0, row-mt 1, deadline good, cpu-used 4, yuv420p; muted; metadata stripped",
+      "licence": "Apache-2.0",
+      "contains_third_party": false
+    },
+    {
+      "asset": "snooze-ember-413ccb3f6568.mp4",
+      "sha256": "518538dc03acb37e3fe26393d1da781a51448a0abf596c040f98e126481f7fdb",
+      "bytes": 16169,
+      "origin": "Flight Day web app, demo mode and sample data",
+      "recorded_from": "Flight Day web 1.10.3 + Ember; SHA-256 465f0756552dff34e13d36d875b3ea16d212b303f8aecdac1aabd3f54664d1f0",
+      "tool": "tools/record-clips.cjs",
+      "original_sha256": "413ccb3f656822334e4bcef41cad918f2c19530a6eb2f080f4bb4bc148ae9a55",
+      "encode_settings": "tools/encode-capture.mjs: 1280x720 at 30 fps; H.264 libx264 slow CRF 22, High, yuv420p, maxrate 2000k, bufsize 4000k, faststart; muted; metadata stripped",
+      "licence": "Apache-2.0",
+      "contains_third_party": false
+    },
+    {
+      "asset": "snooze-ember-413ccb3f6568.webm",
+      "sha256": "879f8eb27adc08fd986d119f030575dca40bbf1037f1596f387ee86c7c5aad99",
+      "bytes": 15483,
+      "origin": "Flight Day web app, demo mode and sample data",
+      "recorded_from": "Flight Day web 1.10.3 + Ember; SHA-256 465f0756552dff34e13d36d875b3ea16d212b303f8aecdac1aabd3f54664d1f0",
+      "tool": "tools/record-clips.cjs",
+      "original_sha256": "413ccb3f656822334e4bcef41cad918f2c19530a6eb2f080f4bb4bc148ae9a55",
+      "encode_settings": "tools/encode-capture.mjs: 1280x720 at 30 fps; VP9 libvpx-vp9, CRF 38, bitrate 0, row-mt 1, deadline good, cpu-used 4, yuv420p; muted; metadata stripped",
+      "licence": "Apache-2.0",
+      "contains_third_party": false
+    },
+    {
+      "asset": "goodnight-ember-1effcd92c411.mp4",
+      "sha256": "ebb18849a24d83895bb3c55dc630d8310f5f29ed34ca4f47531953e9244fe8ec",
+      "bytes": 365735,
+      "origin": "Flight Day web app, demo mode and sample data",
+      "recorded_from": "Flight Day web 1.10.3 + Ember; SHA-256 465f0756552dff34e13d36d875b3ea16d212b303f8aecdac1aabd3f54664d1f0",
+      "tool": "tools/record-clips.cjs",
+      "original_sha256": "1effcd92c411d76f6e5e98dca9e6a5f09c052f356e546289a00db9d3a37ef1cd",
+      "encode_settings": "tools/encode-capture.mjs: 1280x720 at 30 fps; H.264 libx264 slow CRF 22, High, yuv420p, maxrate 2000k, bufsize 4000k, faststart; muted; metadata stripped",
+      "licence": "Apache-2.0",
+      "contains_third_party": false
+    },
+    {
+      "asset": "goodnight-ember-1effcd92c411.webm",
+      "sha256": "ba1f2c9c6d630eb425779bbe63efbd9f75e8001b1a63f046ecc8dd5cff92f8ca",
+      "bytes": 234173,
+      "origin": "Flight Day web app, demo mode and sample data",
+      "recorded_from": "Flight Day web 1.10.3 + Ember; SHA-256 465f0756552dff34e13d36d875b3ea16d212b303f8aecdac1aabd3f54664d1f0",
+      "tool": "tools/record-clips.cjs",
+      "original_sha256": "1effcd92c411d76f6e5e98dca9e6a5f09c052f356e546289a00db9d3a37ef1cd",
+      "encode_settings": "tools/encode-capture.mjs: 1280x720 at 30 fps; VP9 libvpx-vp9, CRF 38, bitrate 0, row-mt 1, deadline good, cpu-used 4, yuv420p; muted; metadata stripped",
+      "licence": "Apache-2.0",
+      "contains_third_party": false
+    },
+    {
+      "asset": "ambient-ember-060622a0f576.mp4",
+      "sha256": "18acde2aa427bcb2f1cc56c2cc99bf181105366af199b1c2d30b1e85dbf155d8",
+      "bytes": 54234,
+      "origin": "Flight Day web app, demo mode and sample data",
+      "recorded_from": "Flight Day web 1.10.3 + Ember; SHA-256 465f0756552dff34e13d36d875b3ea16d212b303f8aecdac1aabd3f54664d1f0",
+      "tool": "tools/record-clips.cjs",
+      "original_sha256": "060622a0f576e4c570d253d6cd160f07aece16cac58450b72d4a86629c5f4c90",
+      "encode_settings": "tools/encode-capture.mjs: 1280x720 at 30 fps; H.264 libx264 slow CRF 22, High, yuv420p, maxrate 2000k, bufsize 4000k, faststart; muted; metadata stripped",
+      "licence": "Apache-2.0",
+      "contains_third_party": false
+    },
+    {
+      "asset": "ambient-ember-060622a0f576.webm",
+      "sha256": "4a1767d585421e2d1962a9fff9cbedad51ee81f156d72e49ed6b03b205450fcf",
+      "bytes": 45982,
+      "origin": "Flight Day web app, demo mode and sample data",
+      "recorded_from": "Flight Day web 1.10.3 + Ember; SHA-256 465f0756552dff34e13d36d875b3ea16d212b303f8aecdac1aabd3f54664d1f0",
+      "tool": "tools/record-clips.cjs",
+      "original_sha256": "060622a0f576e4c570d253d6cd160f07aece16cac58450b72d4a86629c5f4c90",
+      "encode_settings": "tools/encode-capture.mjs: 1280x720 at 30 fps; VP9 libvpx-vp9, CRF 38, bitrate 0, row-mt 1, deadline good, cpu-used 4, yuv420p; muted; metadata stripped",
+      "licence": "Apache-2.0",
+      "contains_third_party": false
+    },
+    {
+      "asset": "comfort-ember-b75e55743ede.mp4",
+      "sha256": "81ffb5ea6a4d47a02f35bdb56ceee8d25e8d0add11c569e2aa029f51c0628fd1",
+      "bytes": 82386,
+      "origin": "Flight Day web app, demo mode and sample data",
+      "recorded_from": "Flight Day web 1.10.3 + Ember; SHA-256 465f0756552dff34e13d36d875b3ea16d212b303f8aecdac1aabd3f54664d1f0",
+      "tool": "tools/record-clips.cjs",
+      "original_sha256": "b75e55743ededae27b1b97af34a9edd1b74e24d028d85b73e16b117948aafaa6",
+      "encode_settings": "tools/encode-capture.mjs: 1280x720 at 30 fps; H.264 libx264 slow CRF 22, High, yuv420p, maxrate 2000k, bufsize 4000k, faststart; muted; metadata stripped",
+      "licence": "Apache-2.0",
+      "contains_third_party": false
+    },
+    {
+      "asset": "comfort-ember-b75e55743ede.webm",
+      "sha256": "38368d6879a0c542085f0eb58d68cb3aa0a0b6dee74a0ada57e59d73290a4280",
+      "bytes": 98933,
+      "origin": "Flight Day web app, demo mode and sample data",
+      "recorded_from": "Flight Day web 1.10.3 + Ember; SHA-256 465f0756552dff34e13d36d875b3ea16d212b303f8aecdac1aabd3f54664d1f0",
+      "tool": "tools/record-clips.cjs",
+      "original_sha256": "b75e55743ededae27b1b97af34a9edd1b74e24d028d85b73e16b117948aafaa6",
+      "encode_settings": "tools/encode-capture.mjs: 1280x720 at 30 fps; VP9 libvpx-vp9, CRF 38, bitrate 0, row-mt 1, deadline good, cpu-used 4, yuv420p; muted; metadata stripped",
+      "licence": "Apache-2.0",
+      "contains_third_party": false
+    },
+    {
+      "asset": "globe-ember-b56551ad4552.mp4",
+      "sha256": "8195bf6d892ed1487d780a174f87190de64d86eac9d0c9ebb1cf1b5c4018c83e",
+      "bytes": 320674,
+      "origin": "Flight Day web app, demo mode and sample data",
+      "recorded_from": "Flight Day web 1.10.3 + Ember; SHA-256 465f0756552dff34e13d36d875b3ea16d212b303f8aecdac1aabd3f54664d1f0",
+      "tool": "tools/record-clips.cjs",
+      "original_sha256": "b56551ad45524804d6bc7b7d902c71a8fb66cbb63daf314ab4b9c99f4c84840f",
+      "encode_settings": "tools/encode-capture.mjs: 1280x720 at 30 fps; H.264 libx264 slow CRF 22, High, yuv420p, maxrate 2000k, bufsize 4000k, faststart; muted; metadata stripped",
+      "licence": "Apache-2.0",
+      "contains_third_party": true,
+      "third_party": [
+        {
+          "asset": "demo/v/d1437f942b271f534af6/img/earth-day.jpg",
+          "sha256": "9b89238783cd170f558e8272e68fbd8bd14ab1c1f0256f8246c79a8c035a856d",
+          "source_url": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/bmng/bmng-topography-bathymetry/december/world.topo.bathy.200412.3x5400x2700.jpg",
+          "terms_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+          "licence": "NASA public domain (United States); NASA media usage guidelines",
+          "credit": "NASA / NASA Earth Observatory; Reto St\u00f6ckli",
+          "fetched_utc": "2026-11-14T21:59:00.653800+00:00",
+          "provenance": "public/PROVENANCE.md"
+        },
+        {
+          "asset": "demo/v/d1437f942b271f534af6/img/earth-night.webp",
+          "sha256": "b7a293fcb0c36a028fae34757fd1ec814affabfb886639b71a8eb9cd2332f938",
+          "source_url": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/144000/144898/BlackMarble_2016_01deg.jpg",
+          "terms_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+          "licence": "NASA public domain (United States); NASA media usage guidelines",
+          "credit": "NASA / NASA Earth Observatory; Joshua Stevens; Suomi NPP VIIRS data from Miguel Rom\u00e1n, NASA GSFC",
+          "fetched_utc": "2026-11-14T22:06:54.803672+00:00",
+          "provenance": "public/PROVENANCE.md"
+        }
+      ]
+    },
+    {
+      "asset": "globe-ember-b56551ad4552.webm",
+      "sha256": "43da2faf732947648d7e39042c953512104f265aa4c6c361678a1e71fe5872ef",
+      "bytes": 301207,
+      "origin": "Flight Day web app, demo mode and sample data",
+      "recorded_from": "Flight Day web 1.10.3 + Ember; SHA-256 465f0756552dff34e13d36d875b3ea16d212b303f8aecdac1aabd3f54664d1f0",
+      "tool": "tools/record-clips.cjs",
+      "original_sha256": "b56551ad45524804d6bc7b7d902c71a8fb66cbb63daf314ab4b9c99f4c84840f",
+      "encode_settings": "tools/encode-capture.mjs: 1280x720 at 30 fps; VP9 libvpx-vp9, CRF 38, bitrate 0, row-mt 1, deadline good, cpu-used 4, yuv420p; muted; metadata stripped",
+      "licence": "Apache-2.0",
+      "contains_third_party": true,
+      "third_party": [
+        {
+          "asset": "demo/v/d1437f942b271f534af6/img/earth-day.jpg",
+          "sha256": "9b89238783cd170f558e8272e68fbd8bd14ab1c1f0256f8246c79a8c035a856d",
+          "source_url": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/bmng/bmng-topography-bathymetry/december/world.topo.bathy.200412.3x5400x2700.jpg",
+          "terms_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+          "licence": "NASA public domain (United States); NASA media usage guidelines",
+          "credit": "NASA / NASA Earth Observatory; Reto St\u00f6ckli",
+          "fetched_utc": "2026-11-14T21:59:00.653800+00:00",
+          "provenance": "public/PROVENANCE.md"
+        },
+        {
+          "asset": "demo/v/d1437f942b271f534af6/img/earth-night.webp",
+          "sha256": "b7a293fcb0c36a028fae34757fd1ec814affabfb886639b71a8eb9cd2332f938",
+          "source_url": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/144000/144898/BlackMarble_2016_01deg.jpg",
+          "terms_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+          "licence": "NASA public domain (United States); NASA media usage guidelines",
+          "credit": "NASA / NASA Earth Observatory; Joshua Stevens; Suomi NPP VIIRS data from Miguel Rom\u00e1n, NASA GSFC",
+          "fetched_utc": "2026-11-14T22:06:54.803672+00:00",
+          "provenance": "public/PROVENANCE.md"
+        }
+      ]
+    }
+  ]
+}

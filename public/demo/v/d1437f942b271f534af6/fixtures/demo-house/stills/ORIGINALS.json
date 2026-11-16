@@ -1,0 +1,34 @@
+{
+  "schema": "flightday.first-party-assets/v1",
+  "generated_utc": "2026-11-15T00:29:15+00:00",
+  "note": "First-party originals. No third-party source, so no fetch record. Third-party images use PROVENANCE.md (flightday.asset-provenance/v1) instead.",
+  "assets": [
+    {
+      "asset": "driveway.svg",
+      "sha256": "15d188a5923d485b8a02f67e4be35f4bb8d63368c7d1e2bdbc44be5b74e8aab7",
+      "bytes": 1235,
+      "origin": "first-party original illustration (Flight Day demo house, FE-D3 by the Flight Day design lead)",
+      "licence": "Apache-2.0 (project licence)",
+      "label": "Illustration · demo",
+      "contains_third_party": false
+    },
+    {
+      "asset": "front-door.svg",
+      "sha256": "d6805c849386f92a794343b5b3344cae7096cd50ed52ad7260230f6f1495c20a",
+      "bytes": 1296,
+      "origin": "first-party original illustration (Flight Day demo house, FE-D3 by the Flight Day design lead)",
+      "licence": "Apache-2.0 (project licence)",
+      "label": "Illustration · demo",
+      "contains_third_party": false
+    },
+    {
+      "asset": "robot-map.svg",
+      "sha256": "efb6188f612e6136f2b250629863f221b7316ffcc0695f637097411d86bc2178",
+      "bytes": 1304,
+      "origin": "first-party original illustration (Flight Day demo house, FE-D3 by the Flight Day design lead)",
+      "licence": "Apache-2.0 (project licence)",
+      "label": "Illustration · demo",
+      "contains_third_party": false
+    }
+  ]
+}

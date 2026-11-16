@@ -1,0 +1,46 @@
+{
+ "/v1/sleep": {
+  "people": [
+   {
+    "id": "riley",
+    "name": "Riley",
+    "source": "apple-watch",
+    "updatedAt": "@lastwake+8m",
+    "nights": 7,
+    "averageAsleepMinutes": 437,
+    "lastNight": {
+     "bed": "@lastwake-472m",
+     "wake": "@lastwake",
+     "asleepMinutes": 448,
+     "inBedMinutes": 472,
+     "awakeMinutes": 14,
+     "remMinutes": 101,
+     "coreMinutes": 268,
+     "deepMinutes": 79
+    }
+   },
+   {
+    "id": "sam",
+    "name": "Sam",
+    "source": "apple-watch",
+    "updatedAt": "@lastwake+5m",
+    "nights": 6,
+    "averageAsleepMinutes": 412,
+    "lastNight": {
+     "bed": "@lastwake-460m",
+     "wake": "@lastwake",
+     "asleepMinutes": 421,
+     "inBedMinutes": 460,
+     "awakeMinutes": 19,
+     "remMinutes": 92,
+     "coreMinutes": 251,
+     "deepMinutes": 78
+    }
+   }
+  ]
+ },
+ "/v1/weather/nowcast": "@scenario.weather.nowcast",
+ "/v1/usage": null,
+ "/v1/limits": null,
+ "/v1/ai/brief": null
+}

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" data-theme="tokyo-night">
+<head>
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; media-src 'self' blob:; frame-src 'none'; worker-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<script src="v/d1437f942b271f534af6/js/demo-static.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="color-scheme" content="dark">
+<title>Flight Day</title>
+<link rel="preload" href="v/d1437f942b271f534af6/fonts/JetBrainsMono-Medium.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="v/d1437f942b271f534af6/css/app.css">
+<link rel="stylesheet" href="v/d1437f942b271f534af6/css/phone.css">
+</head>
+<body>
+<div id="stage" class="stage booting">
+
+  <!-- living background: two crossfading layers + adaptive scrim -->
+  <div class="bg" id="bg">
+    <div class="bg-layer" id="bgA"></div>
+    <div class="bg-layer" id="bgB"></div>
+  </div>
+  <div class="shade" id="shade"></div>
+
+  <!-- waybar -->
+  <header class="bar" id="bar">
+    <nav class="ws" id="ws" aria-label="workspaces"></nav>
+    <div class="bar-c" id="barCenter"></div>
+    <div class="bar-r" id="barRight"></div>
+  </header>
+
+  <!-- global LIVE banner (launch / landing / EVA happening now) -->
+  <div class="live" id="live" hidden></div>
+
+  <!-- workspaces -->
+  <main class="views" id="views">
+    <section class="view" id="v-home" data-ws="home"></section>
+    <section class="view" id="v-space" data-ws="space"></section>
+    <section class="view" id="v-house" data-ws="house"></section>
+    <section class="view" id="v-night" data-ws="night"></section>
+    <section class="view" id="v-status" data-ws="status"></section>
+  </main>
+
+  <!-- mission control feed line: background credit + headline ticker -->
+  <footer class="feed" id="feed">
+    <div class="feed-l" id="feedCredit"></div>
+    <div class="feed-r" id="feedNews"></div>
+  </footer>
+
+  <!-- ambient mode (also the TV screensaver) -->
+  <section class="ambient" id="ambient" hidden></section>
+
+  <!-- morning launch sequence -->
+  <section class="liftoff" id="liftoff" hidden></section>
+
+  <!-- small sheets (arrange Home), power-down sequence, morning alarm bar -->
+  <section class="modal sleep" id="sleep" hidden></section>
+  <section class="shutdown" id="shutdown" hidden></section>
+  <div class="alarm-controls" id="alarmControls" hidden></div>
+
+  <!-- launch watch: the webcast plays here, on this screen -->
+  <section class="watch" id="watch" hidden></section>
+
+  <!-- settings -->
+  <section class="modal" id="settings" hidden></section>
+
+  <div class="toast" id="toast" hidden></div>
+  <div class="popup" id="popup" hidden></div>
+  <div class="softoff" id="softoff" hidden></div>
+</div>
+
+<script src="v/d1437f942b271f534af6/js/demo-engine.js"></script>
+<script src="v/d1437f942b271f534af6/js/demo.js"></script>
+  <script src="v/d1437f942b271f534af6/js/demo-audio.js"></script>
+<script src="v/d1437f942b271f534af6/js/config.js"></script>
+<script src="v/d1437f942b271f534af6/js/roles.js"></script>
+<script src="v/d1437f942b271f534af6/js/time.js"></script>
+<script src="v/d1437f942b271f534af6/js/net.js"></script>
+<script src="v/d1437f942b271f534af6/js/icons.js"></script>
+<script src="v/d1437f942b271f534af6/js/qr.js"></script>
+<script src="v/d1437f942b271f534af6/js/native.js"></script>
+<script src="v/d1437f942b271f534af6/js/weather-link.js"></script>
+<script src="v/d1437f942b271f534af6/js/weather-source.js"></script>
+<script src="v/d1437f942b271f534af6/js/rain-nowcast.js"></script>
+<script src="v/d1437f942b271f534af6/js/sleep-schedule.js"></script>
+<script src="v/d1437f942b271f534af6/js/hub.js"></script>
+<script src="v/d1437f942b271f534af6/js/climate.js"></script>
+<script src="v/d1437f942b271f534af6/js/smart-comfort.js"></script>
+<script src="v/d1437f942b271f534af6/js/robotVacuum.js"></script>
+<script src="v/d1437f942b271f534af6/js/theme-copy.js"></script>
+<script src="v/d1437f942b271f534af6/js/house-check.js"></script>
+<script src="v/d1437f942b271f534af6/js/demo-static-lock.js"></script>
+<script src="v/d1437f942b271f534af6/js/ha-client.js"></script>
+<script src="v/d1437f942b271f534af6/data.js"></script>
+<script src="v/d1437f942b271f534af6/js/theme-features.js"></script>
+<script src="v/d1437f942b271f534af6/js/usage.js"></script>
+<script src="v/d1437f942b271f534af6/js/flight.js"></script>
+<script src="v/d1437f942b271f534af6/js/space.js"></script>
+<script src="v/d1437f942b271f534af6/js/globe.js"></script>
+<script src="v/d1437f942b271f534af6/js/bgsets.js"></script>
+<script src="v/d1437f942b271f534af6/backgrounds.js"></script>
+<script src="v/d1437f942b271f534af6/js/focus.js"></script>
+<script src="v/d1437f942b271f534af6/js/views.js"></script>
+<script src="v/d1437f942b271f534af6/js/wake.js"></script>
+<script src="v/d1437f942b271f534af6/js/go-no-go.js"></script>
+<script src="v/d1437f942b271f534af6/js/go-no-go-view.js"></script>
+<script src="v/d1437f942b271f534af6/js/wallpaper/model.js"></script>
+<script src="v/d1437f942b271f534af6/js/wallpaper/catalog.js"></script>
+<script src="v/d1437f942b271f534af6/js/wallpaper/scenes.js"></script>
+<script src="v/d1437f942b271f534af6/js/wallpaper/earth.js"></script>
+<script src="v/d1437f942b271f534af6/js/wallpaper/runtime.js"></script>
+<link rel="stylesheet" href="v/d1437f942b271f534af6/js/wallpaper/wallpaper.css">
+<script src="v/d1437f942b271f534af6/js/app.js"></script>
+</body>
+</html>

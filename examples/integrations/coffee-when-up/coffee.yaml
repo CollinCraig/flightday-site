@@ -1,0 +1,17 @@
+- alias: Coffee when up
+  triggers:
+    - trigger: event
+      event_type: flightday
+      event_data: {v: 3, action: up, test: false}
+  conditions:
+    - condition: template
+      value_template: "{{ not trigger.event.data.test and trigger.event.data.by != 'timeout' }}"
+    - condition: time
+      after: "05:00:00"
+      before: "12:00:00"
+    - condition: state
+      entity_id: switch.coffee_maker
+      state: "off"
+  actions:
+    - action: switch.turn_on
+      target: {entity_id: switch.coffee_maker}

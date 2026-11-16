@@ -1,0 +1,15 @@
+<!-- title: Flight Day 1.10.3: a steadier clock -->
+<!-- description: In development. Release notes for Flight Day 1.10.3 on the wall panel and TV app. -->
+<!-- path: /changelog/1.10.3/ -->
+<!-- out: changelog/1.10.3/index.html -->
+<main id="main"><section><div class="wrap">
+<p class="eyebrow">Wall panel and TV app · house build</p>
+<h1>Flight Day 1.10.3: a steadier clock</h1>
+<p class="asof">14 November 2026 · wall panel and TV app</p>
+<p><b>The clock no longer blinks.</b> On the Ambient screen, the clock used to fade out and back in every 30 seconds, at each new minute and whenever fresh data arrived. Flight Day was rebuilding the whole clock and replaying its entrance animation each time. Now the clock stays on screen and only the digits change. On a real wall panel, the brightness of the clock area varied 99.5% less than before the fix.</p>
+<p><b>The clock stays put.</b> It keeps a fixed position and size all day. To protect screens from burn-in it drifts very slowly, never more than 3 pixels in total and at most 1 pixel every 10 minutes, so you won't see it move.</p>
+<p><b>Live wallpapers no longer flash dark.</b> When a live wallpaper resumed after a power-saving pause, the background dipped dark for about a second. The still picture now stays until the live scene has fully faded in.</p>
+<p><b>A new Flight Day sound.</b> The launch moment at T-0 now opens with Flight Day's own short sound, on screens that play audio. It never plays when the app starts.</p>
+<p><b>Tests.</b> 30 new automated checks fail if the clock ever dims or the background goes dark. They run on the panel, TV and desktop layouts, alongside 10,320 clock-position checks.</p>
+<p><a href="/changelog/">Back to the Mission Log</a></p>
+</div></section></main>

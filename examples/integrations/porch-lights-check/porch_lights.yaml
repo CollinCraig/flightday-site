@@ -1,0 +1,38 @@
+- alias: Porch lights check
+  mode: restart
+  triggers:
+    - trigger: event
+      event_type: flightday
+      event_data: {action: ready}
+    # Registration is idempotent; double firing is harmless.
+    - trigger: homeassistant
+      event: start
+  actions:
+    - action: flightday.register_integration
+      data: {id: porch_lights_check, name: Porch lights check, provides: [checks]}
+    - repeat:
+        while: "{{ true }}"
+        sequence:
+          - if:
+              - condition: template
+                value_template: "{{ states('switch.porch_string_lights') in ['on', 'off'] }}"
+            then:
+              - action: flightday.report_check
+                data:
+                  source: x_porch_lights_check
+                  key: porch_lights_late
+                  status: "{{ 'attention' if is_state('switch.porch_string_lights', 'on') else 'ok' }}"
+                  title: Porch string lights are on
+                  since: "{{ states.switch.porch_string_lights.last_changed.isoformat() }}"
+                  morning: false
+                  action:
+                    label: Turn off
+                    domain: switch
+                    service: turn_off
+                    target: {entity_id: switch.porch_string_lights}
+            else:
+              - action: flightday.clear_check
+                data: {source: x_porch_lights_check, key: porch_lights_late}
+          - wait_for_trigger:
+              - trigger: state
+                entity_id: switch.porch_string_lights

@@ -1,0 +1,72 @@
+<!-- title: What am I looking at? · Flight Day docs -->
+<!-- description: In development. A guide to each area’s headline readouts and Flight Day’s status lines: “as of”, dimmed tiles, waiting and offline states, snoozed and muted lines, demo labels. -->
+<h1>What am I looking at?</h1>
+<p class="lede">Flight Day shows real data or says plainly what it’s waiting for. A missing value is never a default, and an old value carries its age.</p>
+
+<h2 id="areas">The headline in each area</h2>
+<div class="tablewrap"><table class="rules">
+  <thead><tr><th scope="col">Area</th><th scope="col">Look here first</th></tr></thead>
+  <tbody>
+    <tr><td>Home</td><td>The big clock and the line under it: the next event, the wake time or a launch’s T-minus. Then Weather, and Today or Tomorrow.</td></tr>
+    <tr><td>Space</td><td>The top row of the manifest, with its T-minus, and the brief under the globe.</td></tr>
+    <tr><td>House</td><td>The lights that are on, what’s playing, and the thermostat’s mode and setpoint.</td></tr>
+    <tr><td>Night</td><td>Tomorrow’s wake time, whether the alarm is armed, and Tonight: what Goodnight will do.</td></tr>
+    <tr><td>Status</td><td>What’s connected and what isn’t, and plan limits.</td></tr>
+  </tbody>
+</table></div>
+
+<h2 id="freshness">Fresh, old and missing</h2>
+<div class="tablewrap"><table class="rules">
+  <thead><tr><th scope="col">You see</th><th scope="col">It means</th></tr></thead>
+  <tbody>
+    <tr><td>“as of 6:10 AM” on a dimmed tile</td><td>The data is older than it should be. It’s the last value received, not a fresh reading.</td></tr>
+    <tr><td>A standby line, such as “Thermostat not connected” or “Calendar not connected”</td><td>That source isn’t connected. Nothing is filled in for it.</td></tr>
+    <tr><td>“Not connected” in Status, with a list</td><td>The sources that have no connection, each with a link to the setting that fixes it.</td></tr>
+    <tr><td>“Home Assistant · not connected — add URL + token in Settings”</td><td>No house is set up on this screen.</td></tr>
+    <tr><td>“This card could not load · try again from Settings → Reload”</td><td>A tile failed to draw.</td></tr>
+    <tr><td>“House action not confirmed · reconnecting”</td><td>A command didn’t come back confirmed. Don’t assume it worked.</td></tr>
+  </tbody>
+</table></div>
+
+<h2 id="alarm">The alarm</h2>
+<div class="tablewrap"><table class="rules">
+  <thead><tr><th scope="col">You see</th><th scope="col">It means</th></tr></thead>
+  <tbody>
+    <tr><td>“T-04:12 · liftoff 6:50 AM”</td><td>The count to your wake time.</td></tr>
+    <tr><td>“liftoff 6:50 AM · up by 7:20 AM · 1 snooze”</td><td>The alarm header: liftoff, the up-by time and snoozes used so far.</td></tr>
+    <tr><td>“Snoozed · liftoff 7:00 AM”, or “snoozing · liftoff …” at night</td><td>Waiting to count down again.</td></tr>
+    <tr><td>“No more snoozes — up by …”</td><td>The up-by time is too close for another snooze.</td></tr>
+    <tr><td>“Final launch”</td><td>The last liftoff before up-by. I’m up needs a hold.</td></tr>
+    <tr><td>“muted · the lights will still rise”</td><td>The bedroom speaker is muted. Flight Day never unmutes it in the morning.</td></tr>
+    <tr><td>“house offline — lights not held”</td><td>The screen is running its own backup alarm, without the house.</td></tr>
+    <tr><td>“Up … · no answer”</td><td>Nobody answered; the alarm stopped after 15 minutes.</td></tr>
+  </tbody>
+</table></div>
+
+<h2 id="house">The house</h2>
+<div class="tablewrap"><table class="rules">
+  <thead><tr><th scope="col">You see</th><th scope="col">It means</th></tr></thead>
+  <tbody>
+    <tr><td>“Comfort · waiting for the house” or “Comfort offline”</td><td>No comfort status has arrived from Home Assistant yet.</td></tr>
+    <tr><td>“Room sensors · waiting for Apple Home”</td><td>No room readings have arrived yet.</td></tr>
+    <tr><td>“· not counted” on a dimmed room</td><td>That reading is too old, or the room is left out, so comfort ignores it.</td></tr>
+    <tr><td>“Comfort is quiet for the night”</td><td>A bedroom screen at night: comfort controls wait until morning.</td></tr>
+    <tr><td>“Choose Heat or Cool to see its setpoint”</td><td>The thermostat is Off, so there’s no setpoint to show.</td></tr>
+    <tr><td>“Needs a hand”</td><td>The vacuum is stuck or needs maintenance.</td></tr>
+  </tbody>
+</table></div>
+
+<h2 id="labels">Labels and badges</h2>
+<div class="tablewrap"><table class="rules">
+  <thead><tr><th scope="col">You see</th><th scope="col">It means</th></tr></thead>
+  <tbody>
+    <tr><td><b>LIVE</b> banner</td><td>A launch is in flight. Watch opens it.</td></tr>
+    <tr><td>Plan limits: live, standby, “report from …”, “limit hit”, “est.”</td><td>The state of each AI plan’s usage report. A limit the service doesn’t report is never made up.</td></tr>
+    <tr><td>A yellow “demo” chip</td><td>That tile shows sample data, on purpose.</td></tr>
+    <tr><td>“AI” on a line</td><td>The line was made by AI.</td></tr>
+    <tr><td>“Estimated · typical ascent, not telemetry”</td><td>Flight Director’s altitude and speed are a typical ascent, not live data.</td></tr>
+  </tbody>
+</table></div>
+
+<h2 id="coming">Coming later</h2>
+<p><b>Go / No-Go</b> <span class="st st-dev">In development</span> (in the demo house; arrives with the next app release): a line at the top of the briefing, for example “Checks incomplete · weather as of 6:10 AM”. Until then, the briefing shows each input with its own age.</p>

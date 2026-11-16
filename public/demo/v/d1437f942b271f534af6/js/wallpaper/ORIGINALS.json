@@ -1,0 +1,24 @@
+{
+  "schema": "flightday.first-party-assets/v1",
+  "note": "Original generated sky/weather scene posters; no fetched image or third-party raster input. Canonical source and processing: web/js/wallpaper/PROVENANCE.md.",
+  "assets": [
+    {
+      "asset": "sky.webp",
+      "sha256": "9172643a35396bdc318513cb436f90e75448c51fe6f27ebd11c37736993e1236",
+      "bytes": 4370,
+      "origin": "First-party Flight Day sky scene render, FE-W16; original renderer and generated art",
+      "licence": "Apache-2.0 (project licence)",
+      "label": "Generated scene \u00b7 original",
+      "contains_third_party": false
+    },
+    {
+      "asset": "weather.webp",
+      "sha256": "663ce76ae01deb3430b847aefda30588f72be38ac2745487c545cdbff1ebdbd8",
+      "bytes": 4120,
+      "origin": "First-party Flight Day weather scene render, FE-W16; original renderer and generated art",
+      "licence": "Apache-2.0 (project licence)",
+      "label": "Generated scene \u00b7 original",
+      "contains_third_party": false
+    }
+  ]
+}

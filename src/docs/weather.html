@@ -1,0 +1,21 @@
+<!-- title: Weather and rain soon · Flight Day docs -->
+<!-- description: In development. Where Flight Day’s forecast comes from, the next-hour rain line, why it’s quiet at night, and Open in AccuWeather. -->
+<h1>Weather and rain soon</h1>
+<p class="lede">The forecast, the next hour of rain and any weather alert, each with its source named.</p>
+
+<h2 id="sources">Where the forecast comes from</h2>
+<p>Open-Meteo is built in: free, with no key. If your Home Assistant has AccuWeather or Apple Weather, Flight Day prefers fresh data from those, section by section, and falls back to Open-Meteo for anything missing. The credit line names the mix, for example “AccuWeather · hourly: Open-Meteo”. RealFeel appears only with a real AccuWeather value; otherwise it says “Feels like”.</p>
+<p>Weather needs a home location. It comes from Home Assistant, or you can type it in Settings › Home location. Without one, no weather is shown.</p>
+
+<h2 id="rain-soon">Rain soon</h2>
+<p>A one-line rain forecast for the next hour, for example “Rain starting ~8:10 AM · light” or “Rain for the next 30 min, ending ~9:40 AM”. A dry forecast shows no line, on purpose. A hint that stops updating disappears after 30 minutes.</p>
+<p>It uses Apple’s next-hour forecast when the hub has one, and Open-Meteo otherwise. When Apple data is shown, its attribution and legal link are shown too.</p>
+
+<h2 id="night">Quiet at night</h2>
+<p>Bedroom screens hide rain hints at night. Living-room screens keep them.</p>
+
+<h2 id="accuweather">Open in AccuWeather</h2>
+<p>Opens the AccuWeather app if it’s installed, or a web page with Close and Back. It doesn’t change where the dashboard gets its data. Not on Apple TV.</p>
+
+<h2 id="units">Units</h2>
+<p>°F or °C, in Settings › Home location on the wall panel and TVs.</p>

@@ -1,0 +1,21 @@
+{
+ "alarm_preview_s": 60,
+ "snooze_minutes_in_demo": 1,
+ "snooze_note": "Demo: 1-minute snooze",
+ "thermostat_drift_f_per_min": 0.1,
+ "light_transition_s": 1,
+ "vacuum": {
+  "route": [
+   "kitchen",
+   "living_room",
+   "hallway"
+  ],
+  "minutes_per_room": 2,
+  "battery_drop_per_min": 1,
+  "return_minutes": 1
+ },
+ "goodnight_delay_s": 3,
+ "doorbell_popup_s": 30,
+ "reset_on_leave": true,
+ "persist": "session"
+}

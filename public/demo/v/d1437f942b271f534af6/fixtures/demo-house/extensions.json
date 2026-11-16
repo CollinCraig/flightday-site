@@ -1,0 +1,72 @@
+{
+ "fixture": "demo-extensions",
+ "version": 1,
+ "description": "Recorded extension calls replayed by the demo engine at load (DEMO-HOUSE §4). The demo cannot run YAML or Python; these are the calls such code would make. Validated against design/contracts/integrations.v1.schema.json.",
+ "calls": [
+  {
+   "at": "@today 00:00",
+   "provider": "automation",
+   "service": "register_integration",
+   "data": {
+    "id": "bin_day",
+    "name": "Bin day",
+    "description": "Posts a line the evening before collection",
+    "provides": [
+     "lines"
+    ],
+    "stale_after": "36:00:00"
+   }
+  },
+  {
+   "at": "@today 17:00",
+   "provider": "automation",
+   "service": "post_line",
+   "data": {
+    "source": "x_bin_day",
+    "key": "recycling",
+    "text": "Recycling goes out tonight",
+    "show": [
+     "briefing",
+     "home"
+    ],
+    "priority": "normal",
+    "until": "@tomorrow 09:00",
+    "icon": "recycle"
+   }
+  },
+  {
+   "at": "@now-40m",
+   "provider": "flightday",
+   "service": "report_check",
+   "data": {
+    "source": "house_check",
+    "key": "porch_lights_late",
+    "status": "attention",
+    "title": "Porch string lights are on",
+    "detail": "On since 6:10 PM",
+    "since": "@now-40m",
+    "action": {
+     "label": "Turn off",
+     "domain": "switch",
+     "service": "turn_off",
+     "target": {
+      "entity_id": "switch.porch_string_lights"
+     }
+    }
+   }
+  },
+  {
+   "at": "@now-2d",
+   "provider": "flightday",
+   "service": "report_check",
+   "data": {
+    "source": "vacuum",
+    "key": "filter_due",
+    "status": "attention",
+    "title": "Robot vacuum filter",
+    "detail": "Replace in 3 days",
+    "since": "@now-2d"
+   }
+  }
+ ]
+}

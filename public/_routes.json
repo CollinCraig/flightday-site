@@ -1,0 +1,6 @@
+{
+ "version": 1,
+ "description": "Every request passes through functions/_middleware.js, which only adds no-transform to 404s.",
+ "include": ["/*"],
+ "exclude": []
+}

@@ -1,0 +1,47 @@
+Flight Day third-party attribution
+
+Third-party components and media retain their own licenses. See
+THIRD_PARTY_NOTICES.md for the complete globe.gl 2.46.2 bundle inventory,
+copyright statements and full license texts. The bundled three.js version is
+0.185.1 (revision r185). Helvetiker font data is embedded in the bundle under
+the custom MAGENTA license; public/demo/v/d1437f942b271f534af6/vendor/Helvetiker-LICENSE.txt preserves its text.
+
+Inter: Copyright (c) 2016 The Inter Project Authors
+(https://github.com/rsms/inter), SIL Open Font License 1.1.
+JetBrains Mono: Copyright 2020 The JetBrains Mono Project Authors
+(https://github.com/JetBrains/JetBrainsMono), SIL Open Font License 1.1.
+Full licenses accompany the font files.
+
+NASA Blue Marble: Next Generation: Reto Stöckli, NASA Earth Observatory.
+NASA Black Marble (2016): Joshua Stevens, using Suomi NPP VIIRS data from
+Miguel Román, NASA GSFC. NASA imagery is public domain in the United States,
+subject to NASA media usage guidelines and separately credited rights.
+Source and processing records accompany the textures in PROVENANCE.md.
+NASA does not endorse Flight Day.
+https://www.nasa.gov/nasa-brand-center/images-and-media/
+
+Liftoff audio: NASA / Lorne Mathre, NASA's SpaceX Crew-12 Live Launch Coverage,
+causeway microphone; public-domain NASA media subject to the guidelines above.
+Morning birdsong: Réveil des oiseaux by Joseph Sardin, CC0 1.0.
+Sources and processing: adjacent audio/CREDITS.md.
+Demo rain, thunderstorm, Quindar tones and the Flight Day sting are original
+project synthesis; no third-party recordings were sampled.
+
+Star data: HYG database by David Nash (astronexus), CC BY-SA 4.0, adapted:
+subset to magnitude 5.0. The HYG-derived stars poster is also CC BY-SA 4.0.
+Retain fixtures/wallpaper/NOTICE, LICENSE-DATA, PROVENANCE.md and the public
+generator. This separate data license does not relicense project code.
+https://github.com/astronexus/HYG-Database
+https://creativecommons.org/licenses/by-sa/4.0/
+
+Apple Weather and its attribution mark belong to Apple Inc. The official
+mark is used under WeatherKit attribution requirements and is excluded from
+the project code license. In-app weather attribution and legal links remain
+required when showing Apple weather data.
+https://developer.apple.com/weatherkit/#attribution-requirements
+https://weatherkit.apple.com/legal-attribution.html
+
+Flight Day names, icons and brand lockups are excluded from the project code
+license. See TRADEMARKS.md. Other images/captures require their own retained
+provenance and any depicted third-party credits; this notice does not clear
+unidentified media or missing provenance records.

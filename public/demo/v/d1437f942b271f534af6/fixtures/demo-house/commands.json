@@ -1,0 +1,194 @@
+{
+ "flightday/media/favorites": {
+  "media_player.bedroom_speaker": {
+   "items": [
+    {
+     "title": "Morning mix",
+     "media_content_type": "favorite_item_id",
+     "media_content_id": "FV:demo/1",
+     "thumbnail": null
+    },
+    {
+     "title": "Rain sounds",
+     "media_content_type": "favorite_item_id",
+     "media_content_id": "FV:demo/2",
+     "thumbnail": null
+    },
+    {
+     "title": "Dinner jazz",
+     "media_content_type": "favorite_item_id",
+     "media_content_id": "FV:demo/3",
+     "thumbnail": null
+    },
+    {
+     "title": "Demo Radio",
+     "media_content_type": "favorite_item_id",
+     "media_content_id": "FV:demo/4",
+     "thumbnail": null
+    }
+   ],
+   "source": "favorites",
+   "truncated": false
+  },
+  "media_player.kitchen_speaker": {
+   "items": [
+    {
+     "title": "Morning mix",
+     "media_content_type": "favorite_item_id",
+     "media_content_id": "FV:demo/1",
+     "thumbnail": null
+    },
+    {
+     "title": "Rain sounds",
+     "media_content_type": "favorite_item_id",
+     "media_content_id": "FV:demo/2",
+     "thumbnail": null
+    },
+    {
+     "title": "Dinner jazz",
+     "media_content_type": "favorite_item_id",
+     "media_content_id": "FV:demo/3",
+     "thumbnail": null
+    },
+    {
+     "title": "Demo Radio",
+     "media_content_type": "favorite_item_id",
+     "media_content_id": "FV:demo/4",
+     "thumbnail": null
+    }
+   ],
+   "source": "favorites",
+   "truncated": false
+  }
+ },
+ "flightday/media/browse": {
+  "media_player.bedroom_speaker": {
+   "title": "Favorites",
+   "media_class": "directory",
+   "media_content_type": "favorites",
+   "media_content_id": "",
+   "can_play": false,
+   "can_expand": true,
+   "thumbnail": null,
+   "children": [
+    {
+     "title": "Morning mix",
+     "media_content_type": "favorite_item_id",
+     "media_content_id": "FV:demo/1",
+     "thumbnail": null,
+     "media_class": "track",
+     "can_play": true,
+     "can_expand": false
+    },
+    {
+     "title": "Rain sounds",
+     "media_content_type": "favorite_item_id",
+     "media_content_id": "FV:demo/2",
+     "thumbnail": null,
+     "media_class": "track",
+     "can_play": true,
+     "can_expand": false
+    },
+    {
+     "title": "Dinner jazz",
+     "media_content_type": "favorite_item_id",
+     "media_content_id": "FV:demo/3",
+     "thumbnail": null,
+     "media_class": "track",
+     "can_play": true,
+     "can_expand": false
+    },
+    {
+     "title": "Demo Radio",
+     "media_content_type": "favorite_item_id",
+     "media_content_id": "FV:demo/4",
+     "thumbnail": null,
+     "media_class": "track",
+     "can_play": true,
+     "can_expand": false
+    }
+   ]
+  },
+  "media_player.kitchen_speaker": {
+   "title": "Favorites",
+   "media_class": "directory",
+   "media_content_type": "favorites",
+   "media_content_id": "",
+   "can_play": false,
+   "can_expand": true,
+   "thumbnail": null,
+   "children": [
+    {
+     "title": "Morning mix",
+     "media_content_type": "favorite_item_id",
+     "media_content_id": "FV:demo/1",
+     "thumbnail": null,
+     "media_class": "track",
+     "can_play": true,
+     "can_expand": false
+    },
+    {
+     "title": "Rain sounds",
+     "media_content_type": "favorite_item_id",
+     "media_content_id": "FV:demo/2",
+     "thumbnail": null,
+     "media_class": "track",
+     "can_play": true,
+     "can_expand": false
+    },
+    {
+     "title": "Dinner jazz",
+     "media_content_type": "favorite_item_id",
+     "media_content_id": "FV:demo/3",
+     "thumbnail": null,
+     "media_class": "track",
+     "can_play": true,
+     "can_expand": false
+    },
+    {
+     "title": "Demo Radio",
+     "media_content_type": "favorite_item_id",
+     "media_content_id": "FV:demo/4",
+     "thumbnail": null,
+     "media_class": "track",
+     "can_play": true,
+     "can_expand": false
+    }
+   ]
+  }
+ },
+ "flightday/vacuum/rooms": {
+  "vacuum.robot": {
+   "adapter": "demo",
+   "map": "image.robot_map",
+   "as_of": "@now-3h",
+   "rooms": [
+    {
+     "id": "1",
+     "name": "Kitchen",
+     "area_id": "kitchen"
+    },
+    {
+     "id": "2",
+     "name": "Living room",
+     "area_id": "living_room"
+    },
+    {
+     "id": "3",
+     "name": "Hallway",
+     "area_id": "hallway"
+    },
+    {
+     "id": "4",
+     "name": "Office",
+     "area_id": "office"
+    },
+    {
+     "id": "5",
+     "name": "Bedroom",
+     "area_id": "bedroom"
+    }
+   ]
+  }
+ }
+}

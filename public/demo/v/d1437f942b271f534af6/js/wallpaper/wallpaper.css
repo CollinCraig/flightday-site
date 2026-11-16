@@ -1,0 +1,22 @@
+.wallpaper-layer{position:absolute;inset:0;pointer-events:none;background:#060912 center/cover no-repeat;overflow:hidden;transition:opacity 900ms}
+.wallpaper-layer canvas{position:absolute;inset:0;width:100%;height:100%}
+.wallpaper-layer.wallpaper-night{background-color:#000;filter:brightness(.8)}
+#ambient.wallpaper-black{background:#000!important}#ambient.wallpaper-black>*{visibility:hidden}
+#ambient .ac,#ambient .ac-look{z-index:1}
+@media(prefers-reduced-motion:reduce){.wallpaper-layer{transition:none}}
+
+.wallpaper-animated{animation:wallpaper-poster-drift 70s ease-in-out infinite alternate;background-size:107% 107%}
+@keyframes wallpaper-poster-drift{from{background-position:48% 48%}to{background-position:52% 52%}}
+@media(prefers-reduced-motion:reduce){.wallpaper-animated{animation:none}}
+
+.wallpaper-night.wallpaper-poster{filter:brightness(.1)}
+
+.wallpaper-surface{position:absolute;inset:0;opacity:1;transition:opacity 900ms}
+.wallpaper-layer.wallpaper-poster .wallpaper-surface{opacity:0!important}
+@media(prefers-reduced-motion:reduce){.wallpaper-surface{transition:none}}
+
+.wallpaper-video{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.wallpaper-video img,.wallpaper-video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.wallpaper-video video{transition:opacity 900ms}
+.wallpaper-video.video-night{filter:brightness(.1)}
+@media(prefers-reduced-motion:reduce){.wallpaper-video video{transition:none}}

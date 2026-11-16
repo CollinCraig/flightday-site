@@ -1,0 +1,32 @@
+<!-- title: Smart Comfort and the thermostat · Flight Day docs -->
+<!-- description: In development. Heat, Cool, Off and Auto, manual holds and Resume, fresh air, the comfort schedule, room readings and the AI plan. Optional: it lights up when your thermostat is in Home Assistant. -->
+<h1>Smart Comfort and the thermostat</h1>
+<p class="lede">Your thermostat, with a schedule that follows your night and morning. It lights up when your thermostat is in Home Assistant. Off always stays off until you say otherwise.</p>
+<div class="chips"><span class="st st-opt">Optional</span><span class="st st-dev">In development</span></div>
+{{clip comfort}}
+
+<h2 id="modes">Heat, Cool, Off and Auto</h2>
+<ul>
+  <li>House › Thermostat has <b>Auto</b>, <b>Heat</b>, <b>Cool</b> and <b>Off</b>, plus − and +.</li>
+  <li><b>Auto</b> hands the thermostat back to Smart Comfort. It isn’t a thermostat mode.</li>
+  <li>With the thermostat Off, the setpoint shows “—” and − and + are locked: “Choose Heat or Cool to see its setpoint”.</li>
+</ul>
+
+<h2 id="hold">Manual hold and Resume</h2>
+<p>Pressing − or + starts a manual hold (“Setpoint · manual hold”). It lasts until the next period, or 1, 2 or 4 hours, as set in <b>Manual changes last</b>. <b>Resume</b> ends a hold early. A manual Off stays off until you choose <b>Resume Auto</b>.</p>
+
+<h2 id="schedule">The comfort schedule</h2>
+<p>Three temperatures: <b>Night</b> when you choose Goodnight, <b>Wake</b> ten minutes before your wake time, and <b>Day</b> from the time Day starts. Edit them in House › Thermostat, Night › Tonight or Settings. The schedule only changes the setpoint; it never turns the system on or off.</p>
+
+<h2 id="fresh-air">Fresh air</h2>
+<p>When the weather outside is right, Flight Day can suggest opening up. <b>Fresh air mode</b> starts it, <b>Close up · Auto</b> ends it and hands back to Auto, and <b>Keep open 1 h</b> extends it. You can also dismiss a suggestion: Not today, Just off, Keep off or Leave it.</p>
+
+<h2 id="automatic">Automatic mode</h2>
+<p>Smart Comfort’s automatic mode is <span class="st st-dev">In development</span>. While it learns, it watches only: “Auto is watching only. Manual Heat, Cool and Off still work.” Ending the watch never clears a manual Off.</p>
+
+<h2 id="rooms">Room readings</h2>
+<p><span class="st st-dev">In development</span> Each room shows its temperature and humidity with its age (“3 min ago”) or “Waiting for a reading”. Old readings are dimmed and marked “not counted”. Until readings arrive, the card says “Room sensors · waiting for Apple Home”.</p>
+
+<h2 id="ai-plan">The AI plan</h2>
+<p><span class="st st-dev">In development</span> An AI-made plan for the day’s temperatures, checked by the house rules before anything acts. It shows “Plan · …” with <b>Why</b> and <b>Skip today</b>. A plan shown while the system is manually Off hasn’t been applied.</p>
+<p>At night, bedroom screens say “Comfort is quiet for the night”.</p>

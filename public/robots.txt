@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://flightday.app/sitemap.xml

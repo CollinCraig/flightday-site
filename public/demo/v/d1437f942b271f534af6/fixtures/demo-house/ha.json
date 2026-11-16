@@ -1,0 +1,3229 @@
+{
+ "config": {
+  "location_name": "Demo house",
+  "latitude": 28.5244,
+  "longitude": -80.6823,
+  "elevation": 3,
+  "unit_system": "us_customary",
+  "time_zone": "America/New_York",
+  "country": "US",
+  "language": "en",
+  "version": "2026.11.1",
+  "currency": "USD"
+ },
+ "areas": [
+  {
+   "area_id": "bedroom",
+   "name": "Bedroom",
+   "floor_id": null,
+   "aliases": [],
+   "icon": null
+  },
+  {
+   "area_id": "living_room",
+   "name": "Living room",
+   "floor_id": null,
+   "aliases": [],
+   "icon": null
+  },
+  {
+   "area_id": "kitchen",
+   "name": "Kitchen",
+   "floor_id": null,
+   "aliases": [],
+   "icon": null
+  },
+  {
+   "area_id": "office",
+   "name": "Office",
+   "floor_id": null,
+   "aliases": [],
+   "icon": null
+  },
+  {
+   "area_id": "hallway",
+   "name": "Hallway",
+   "floor_id": null,
+   "aliases": [],
+   "icon": null
+  },
+  {
+   "area_id": "porch",
+   "name": "Porch",
+   "floor_id": null,
+   "aliases": [],
+   "icon": null
+  }
+ ],
+ "devices": [
+  {
+   "id": "dev_bedroom_speaker",
+   "name": "Bedroom speaker",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Smart speaker",
+   "area_id": "bedroom"
+  },
+  {
+   "id": "dev_kitchen_speaker",
+   "name": "Kitchen speaker",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Smart speaker",
+   "area_id": "kitchen"
+  },
+  {
+   "id": "dev_living_tv",
+   "name": "Living room TV",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Smart TV",
+   "area_id": "living_room"
+  },
+  {
+   "id": "dev_streamer",
+   "name": "Living room streamer",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Streaming box",
+   "area_id": "living_room"
+  },
+  {
+   "id": "dev_bedroom_lamp",
+   "name": "Bedroom lamp",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Smart bulb",
+   "area_id": "bedroom"
+  },
+  {
+   "id": "dev_bedroom_ceiling",
+   "name": "Bedroom ceiling",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Smart bulb",
+   "area_id": "bedroom"
+  },
+  {
+   "id": "dev_living_room_lamp",
+   "name": "Living room lamp",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Smart bulb",
+   "area_id": "living_room"
+  },
+  {
+   "id": "dev_living_room_ceiling",
+   "name": "Living room ceiling",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Smart bulb",
+   "area_id": "living_room"
+  },
+  {
+   "id": "dev_kitchen",
+   "name": "Kitchen",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Smart bulb",
+   "area_id": "kitchen"
+  },
+  {
+   "id": "dev_office_desk",
+   "name": "Desk light",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Smart bulb",
+   "area_id": "office"
+  },
+  {
+   "id": "dev_hallway",
+   "name": "Hallway",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Smart bulb",
+   "area_id": "hallway"
+  },
+  {
+   "id": "dev_porch_string",
+   "name": "Porch string lights",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Smart plug",
+   "area_id": "porch"
+  },
+  {
+   "id": "dev_coffee",
+   "name": "Coffee maker",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Smart plug",
+   "area_id": "kitchen"
+  },
+  {
+   "id": "dev_thermostat",
+   "name": "Hallway thermostat",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Smart thermostat",
+   "area_id": "hallway"
+  },
+  {
+   "id": "dev_bedroom_sensor",
+   "name": "Bedroom sensor",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Temperature sensor",
+   "area_id": "bedroom"
+  },
+  {
+   "id": "dev_living_room_sensor",
+   "name": "Living room sensor",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Temperature sensor",
+   "area_id": "living_room"
+  },
+  {
+   "id": "dev_office_sensor",
+   "name": "Office sensor",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Temperature sensor",
+   "area_id": "office"
+  },
+  {
+   "id": "dev_porch_sensor",
+   "name": "Porch sensor",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Outdoor sensor",
+   "area_id": "porch"
+  },
+  {
+   "id": "dev_weather",
+   "name": "Home forecast",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Forecast",
+   "area_id": null
+  },
+  {
+   "id": "dev_vacuum",
+   "name": "Robot vacuum",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Robot vacuum",
+   "area_id": "living_room"
+  },
+  {
+   "id": "dev_cam_front_door",
+   "name": "Front door camera",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Camera",
+   "area_id": "porch"
+  },
+  {
+   "id": "dev_cam_driveway",
+   "name": "Driveway camera",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Camera",
+   "area_id": null
+  },
+  {
+   "id": "dev_alarm",
+   "name": "Home alarm",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Alarm panel",
+   "area_id": "hallway"
+  },
+  {
+   "id": "dev_sams_phone",
+   "name": "Sam's phone",
+   "name_by_user": null,
+   "manufacturer": "Demo",
+   "model": "Phone",
+   "area_id": null
+  },
+  {
+   "id": "dev_flightday",
+   "name": "Flight Day",
+   "name_by_user": null,
+   "manufacturer": "Flight Day",
+   "model": "Flight Day",
+   "area_id": null
+  },
+  {
+   "id": "dev_scr_demowall",
+   "name": "Flight Day · Kitchen panel",
+   "name_by_user": null,
+   "manufacturer": "Flight Day",
+   "model": "Screen",
+   "area_id": "kitchen"
+  },
+  {
+   "id": "dev_scr_demotv",
+   "name": "Flight Day · Living room TV",
+   "name_by_user": null,
+   "manufacturer": "Flight Day",
+   "model": "Screen",
+   "area_id": "living_room"
+  },
+  {
+   "id": "dev_scr_demotab",
+   "name": "Flight Day · Bedroom iPad",
+   "name_by_user": null,
+   "manufacturer": "Flight Day",
+   "model": "Screen",
+   "area_id": "bedroom"
+  },
+  {
+   "id": "dev_scr_demomac",
+   "name": "Flight Day · Office Mac",
+   "name_by_user": null,
+   "manufacturer": "Flight Day",
+   "model": "Screen",
+   "area_id": "office"
+  },
+  {
+   "id": "dev_scr_demophone",
+   "name": "Flight Day · Sam's phone",
+   "name_by_user": null,
+   "manufacturer": "Flight Day",
+   "model": "Screen",
+   "area_id": null
+  }
+ ],
+ "entities": [
+  {
+   "entity_id": "media_player.bedroom_speaker",
+   "platform": "demo",
+   "device_id": "dev_bedroom_speaker",
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "media_player.kitchen_speaker",
+   "platform": "demo",
+   "device_id": "dev_kitchen_speaker",
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "media_player.living_room_tv",
+   "platform": "demo",
+   "device_id": "dev_living_tv",
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "remote.living_room_tv",
+   "platform": "demo",
+   "device_id": "dev_living_tv",
+   "area_id": null,
+   "name": null,
+   "original_name": "Remote",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "media_player.living_room_streamer",
+   "platform": "demo",
+   "device_id": "dev_streamer",
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "light.bedroom_lamp",
+   "platform": "demo",
+   "device_id": "dev_bedroom_lamp",
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "light.bedroom_ceiling",
+   "platform": "demo",
+   "device_id": "dev_bedroom_ceiling",
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "light.living_room_lamp",
+   "platform": "demo",
+   "device_id": "dev_living_room_lamp",
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "light.living_room_ceiling",
+   "platform": "demo",
+   "device_id": "dev_living_room_ceiling",
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "light.kitchen",
+   "platform": "demo",
+   "device_id": "dev_kitchen",
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "light.office_desk",
+   "platform": "demo",
+   "device_id": "dev_office_desk",
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "light.hallway",
+   "platform": "demo",
+   "device_id": "dev_hallway",
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "switch.porch_string_lights",
+   "platform": "demo",
+   "device_id": "dev_porch_string",
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "switch.coffee_maker",
+   "platform": "demo",
+   "device_id": "dev_coffee",
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "scene.movie_night",
+   "platform": "demo",
+   "device_id": null,
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "scene.dinner",
+   "platform": "demo",
+   "device_id": null,
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "scene.morning",
+   "platform": "demo",
+   "device_id": null,
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "climate.hallway",
+   "platform": "demo",
+   "device_id": "dev_thermostat",
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "sensor.bedroom_temperature",
+   "platform": "demo",
+   "device_id": "dev_bedroom_sensor",
+   "area_id": null,
+   "name": null,
+   "original_name": "Temperature",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "sensor.bedroom_humidity",
+   "platform": "demo",
+   "device_id": "dev_bedroom_sensor",
+   "area_id": null,
+   "name": null,
+   "original_name": "Humidity",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "sensor.living_room_temperature",
+   "platform": "demo",
+   "device_id": "dev_living_room_sensor",
+   "area_id": null,
+   "name": null,
+   "original_name": "Temperature",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "sensor.living_room_humidity",
+   "platform": "demo",
+   "device_id": "dev_living_room_sensor",
+   "area_id": null,
+   "name": null,
+   "original_name": "Humidity",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "sensor.office_temperature",
+   "platform": "demo",
+   "device_id": "dev_office_sensor",
+   "area_id": null,
+   "name": null,
+   "original_name": "Temperature",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "sensor.porch_temperature",
+   "platform": "demo",
+   "device_id": "dev_porch_sensor",
+   "area_id": null,
+   "name": null,
+   "original_name": "Temperature",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "weather.home",
+   "platform": "demo",
+   "device_id": "dev_weather",
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "calendar.family",
+   "platform": "demo",
+   "device_id": null,
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "calendar.sam",
+   "platform": "demo",
+   "device_id": null,
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "calendar.riley",
+   "platform": "demo",
+   "device_id": null,
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "todo.chores",
+   "platform": "demo",
+   "device_id": null,
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "todo.shopping_list",
+   "platform": "demo",
+   "device_id": null,
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "vacuum.robot",
+   "platform": "demo",
+   "device_id": "dev_vacuum",
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "image.robot_map",
+   "platform": "demo",
+   "device_id": "dev_vacuum",
+   "area_id": null,
+   "name": null,
+   "original_name": "Map",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "sensor.robot_battery",
+   "platform": "demo",
+   "device_id": "dev_vacuum",
+   "area_id": null,
+   "name": null,
+   "original_name": "Battery",
+   "entity_category": "diagnostic",
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "camera.front_door",
+   "platform": "demo",
+   "device_id": "dev_cam_front_door",
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "image.front_door_last_event",
+   "platform": "demo",
+   "device_id": "dev_cam_front_door",
+   "area_id": null,
+   "name": null,
+   "original_name": "Last event",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "camera.driveway",
+   "platform": "demo",
+   "device_id": "dev_cam_driveway",
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "image.driveway_last_event",
+   "platform": "demo",
+   "device_id": "dev_cam_driveway",
+   "area_id": null,
+   "name": null,
+   "original_name": "Last event",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "event.front_door_ding",
+   "platform": "demo",
+   "device_id": "dev_cam_front_door",
+   "area_id": null,
+   "name": null,
+   "original_name": "Doorbell",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "alarm_control_panel.home",
+   "platform": "demo",
+   "device_id": "dev_alarm",
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "device_tracker.sams_phone",
+   "platform": "mobile_app",
+   "device_id": "dev_sams_phone",
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "person.sam",
+   "platform": "person",
+   "device_id": null,
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "person.riley",
+   "platform": "person",
+   "device_id": null,
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "zone.home",
+   "platform": "zone",
+   "device_id": null,
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "sun.sun",
+   "platform": "sun",
+   "device_id": null,
+   "area_id": null,
+   "name": null,
+   "original_name": null,
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "switch.flightday_alarm_enabled",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Alarm enabled",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "time.flightday_wake_mon",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Wake mon",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "switch.flightday_alarm_mon",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Alarm mon",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "time.flightday_bedtime_mon",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Bedtime mon",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "time.flightday_up_by_mon",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Up by mon",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "select.flightday_crew_mon",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Crew mon",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "time.flightday_wake_tue",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Wake tue",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "switch.flightday_alarm_tue",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Alarm tue",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "time.flightday_bedtime_tue",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Bedtime tue",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "time.flightday_up_by_tue",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Up by tue",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "select.flightday_crew_tue",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Crew tue",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "time.flightday_wake_wed",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Wake wed",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "switch.flightday_alarm_wed",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Alarm wed",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "time.flightday_bedtime_wed",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Bedtime wed",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "time.flightday_up_by_wed",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Up by wed",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "select.flightday_crew_wed",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Crew wed",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "time.flightday_wake_thu",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Wake thu",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "switch.flightday_alarm_thu",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Alarm thu",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "time.flightday_bedtime_thu",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Bedtime thu",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "time.flightday_up_by_thu",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Up by thu",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "select.flightday_crew_thu",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Crew thu",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "time.flightday_wake_fri",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Wake fri",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "switch.flightday_alarm_fri",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Alarm fri",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "time.flightday_bedtime_fri",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Bedtime fri",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "time.flightday_up_by_fri",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Up by fri",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "select.flightday_crew_fri",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Crew fri",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "time.flightday_wake_sat",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Wake sat",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "switch.flightday_alarm_sat",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Alarm sat",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "time.flightday_bedtime_sat",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Bedtime sat",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "time.flightday_up_by_sat",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Up by sat",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "select.flightday_crew_sat",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Crew sat",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "time.flightday_wake_sun",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Wake sun",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "switch.flightday_alarm_sun",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Alarm sun",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "time.flightday_bedtime_sun",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Bedtime sun",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "time.flightday_up_by_sun",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Up by sun",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "select.flightday_crew_sun",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Crew sun",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "datetime.flightday_wake_override",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Wake override",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "button.flightday_clear_override",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Clear override",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "number.flightday_snooze_minutes",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Snooze minutes",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "number.flightday_snooze_window",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Snooze window",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "number.flightday_ready_lead",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Ready lead",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "number.flightday_sleep_volume",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Sleep volume",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "number.flightday_alarm_max_volume",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Alarm max volume",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "number.flightday_day_volume",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Day volume",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "number.flightday_sleep_timer",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Sleep timer",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "number.flightday_temp_night",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Temp night",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "number.flightday_temp_wake",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Temp wake",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "number.flightday_temp_day",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Temp day",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "select.flightday_sleep_sound",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Sleep sound",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "select.flightday_time_format",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Time format",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "select.flightday_briefing_hours",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Briefing hours",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "binary_sensor.flightday_sleep_mode",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Sleep mode",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "sensor.flightday_sleep_scope",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Sleep scope",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "sensor.flightday_launch_state",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Launch state",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "sensor.flightday_next_liftoff",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Next liftoff",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "sensor.flightday_last_morning",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Last morning",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "binary_sensor.flightday_problem",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Problem",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "switch.flightday_comfort_schedule",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Comfort schedule",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "time.flightday_day_starts",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Day starts",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "sensor.flightday_comfort_status",
+   "platform": "flightday",
+   "device_id": "dev_flightday",
+   "area_id": null,
+   "name": null,
+   "original_name": "Comfort status",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "sensor.flightday_screen_scr_demowall_state",
+   "platform": "flightday",
+   "device_id": "dev_scr_demowall",
+   "area_id": null,
+   "name": null,
+   "original_name": "State",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "select.flightday_screen_scr_demowall_night",
+   "platform": "flightday",
+   "device_id": "dev_scr_demowall",
+   "area_id": null,
+   "name": null,
+   "original_name": "Night",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "switch.flightday_screen_scr_demowall_alarm",
+   "platform": "flightday",
+   "device_id": "dev_scr_demowall",
+   "area_id": null,
+   "name": null,
+   "original_name": "Alarm",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "button.flightday_screen_scr_demowall_identify",
+   "platform": "flightday",
+   "device_id": "dev_scr_demowall",
+   "area_id": null,
+   "name": null,
+   "original_name": "Identify",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "sensor.flightday_screen_scr_demotv_state",
+   "platform": "flightday",
+   "device_id": "dev_scr_demotv",
+   "area_id": null,
+   "name": null,
+   "original_name": "State",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "select.flightday_screen_scr_demotv_night",
+   "platform": "flightday",
+   "device_id": "dev_scr_demotv",
+   "area_id": null,
+   "name": null,
+   "original_name": "Night",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "switch.flightday_screen_scr_demotv_alarm",
+   "platform": "flightday",
+   "device_id": "dev_scr_demotv",
+   "area_id": null,
+   "name": null,
+   "original_name": "Alarm",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "button.flightday_screen_scr_demotv_identify",
+   "platform": "flightday",
+   "device_id": "dev_scr_demotv",
+   "area_id": null,
+   "name": null,
+   "original_name": "Identify",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "sensor.flightday_screen_scr_demotab_state",
+   "platform": "flightday",
+   "device_id": "dev_scr_demotab",
+   "area_id": null,
+   "name": null,
+   "original_name": "State",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "select.flightday_screen_scr_demotab_night",
+   "platform": "flightday",
+   "device_id": "dev_scr_demotab",
+   "area_id": null,
+   "name": null,
+   "original_name": "Night",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "switch.flightday_screen_scr_demotab_alarm",
+   "platform": "flightday",
+   "device_id": "dev_scr_demotab",
+   "area_id": null,
+   "name": null,
+   "original_name": "Alarm",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "button.flightday_screen_scr_demotab_identify",
+   "platform": "flightday",
+   "device_id": "dev_scr_demotab",
+   "area_id": null,
+   "name": null,
+   "original_name": "Identify",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "sensor.flightday_screen_scr_demomac_state",
+   "platform": "flightday",
+   "device_id": "dev_scr_demomac",
+   "area_id": null,
+   "name": null,
+   "original_name": "State",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "select.flightday_screen_scr_demomac_night",
+   "platform": "flightday",
+   "device_id": "dev_scr_demomac",
+   "area_id": null,
+   "name": null,
+   "original_name": "Night",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "switch.flightday_screen_scr_demomac_alarm",
+   "platform": "flightday",
+   "device_id": "dev_scr_demomac",
+   "area_id": null,
+   "name": null,
+   "original_name": "Alarm",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "button.flightday_screen_scr_demomac_identify",
+   "platform": "flightday",
+   "device_id": "dev_scr_demomac",
+   "area_id": null,
+   "name": null,
+   "original_name": "Identify",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "sensor.flightday_screen_scr_demophone_state",
+   "platform": "flightday",
+   "device_id": "dev_scr_demophone",
+   "area_id": null,
+   "name": null,
+   "original_name": "State",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "select.flightday_screen_scr_demophone_night",
+   "platform": "flightday",
+   "device_id": "dev_scr_demophone",
+   "area_id": null,
+   "name": null,
+   "original_name": "Night",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "switch.flightday_screen_scr_demophone_alarm",
+   "platform": "flightday",
+   "device_id": "dev_scr_demophone",
+   "area_id": null,
+   "name": null,
+   "original_name": "Alarm",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  },
+  {
+   "entity_id": "button.flightday_screen_scr_demophone_identify",
+   "platform": "flightday",
+   "device_id": "dev_scr_demophone",
+   "area_id": null,
+   "name": null,
+   "original_name": "Identify",
+   "entity_category": null,
+   "disabled_by": null,
+   "hidden_by": null
+  }
+ ],
+ "states": [
+  {
+   "entity_id": "media_player.bedroom_speaker",
+   "state": "idle",
+   "attributes": {
+    "friendly_name": "Bedroom speaker",
+    "supported_features": 410125,
+    "volume_level": 0.2,
+    "is_volume_muted": false,
+    "source_list": [
+     "Favourites"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "media_player.kitchen_speaker",
+   "state": "playing",
+   "attributes": {
+    "friendly_name": "Kitchen speaker",
+    "supported_features": 410125,
+    "volume_level": 0.3,
+    "is_volume_muted": false,
+    "media_title": "Morning mix",
+    "media_artist": "Demo Radio",
+    "media_content_type": "music",
+    "media_duration": 3600,
+    "media_position": 1260,
+    "media_position_updated_at": "@now-1m"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "media_player.living_room_tv",
+   "state": "off",
+   "attributes": {
+    "friendly_name": "Living room TV",
+    "device_class": "tv",
+    "supported_features": 17293,
+    "source_list": [
+     "Streamer",
+     "Antenna"
+    ],
+    "source": "Streamer"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "remote.living_room_tv",
+   "state": "off",
+   "attributes": {
+    "friendly_name": "Living room TV remote",
+    "activity_list": [
+     "Flight Day",
+     "Streamer"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "media_player.living_room_streamer",
+   "state": "standby",
+   "attributes": {
+    "friendly_name": "Living room streamer",
+    "supported_features": 17293
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "light.bedroom_lamp",
+   "state": "off",
+   "attributes": {
+    "friendly_name": "Bedroom lamp",
+    "supported_color_modes": [
+     "color_temp"
+    ],
+    "color_mode": "color_temp",
+    "min_color_temp_kelvin": 2200,
+    "max_color_temp_kelvin": 6500
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "light.bedroom_ceiling",
+   "state": "off",
+   "attributes": {
+    "friendly_name": "Bedroom ceiling",
+    "supported_color_modes": [
+     "color_temp"
+    ],
+    "color_mode": "color_temp",
+    "min_color_temp_kelvin": 2200,
+    "max_color_temp_kelvin": 6500
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "light.living_room_lamp",
+   "state": "on",
+   "attributes": {
+    "friendly_name": "Living room lamp",
+    "supported_color_modes": [
+     "color_temp"
+    ],
+    "color_mode": "color_temp",
+    "min_color_temp_kelvin": 2200,
+    "max_color_temp_kelvin": 6500,
+    "brightness": 178,
+    "color_temp_kelvin": 2200
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "light.living_room_ceiling",
+   "state": "off",
+   "attributes": {
+    "friendly_name": "Living room ceiling",
+    "supported_color_modes": [
+     "color_temp"
+    ],
+    "color_mode": "color_temp",
+    "min_color_temp_kelvin": 2200,
+    "max_color_temp_kelvin": 6500
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "light.kitchen",
+   "state": "on",
+   "attributes": {
+    "friendly_name": "Kitchen",
+    "supported_color_modes": [
+     "color_temp"
+    ],
+    "color_mode": "color_temp",
+    "min_color_temp_kelvin": 2200,
+    "max_color_temp_kelvin": 6500,
+    "brightness": 217,
+    "color_temp_kelvin": 2200
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "light.office_desk",
+   "state": "on",
+   "attributes": {
+    "friendly_name": "Desk light",
+    "supported_color_modes": [
+     "color_temp"
+    ],
+    "color_mode": "color_temp",
+    "min_color_temp_kelvin": 2200,
+    "max_color_temp_kelvin": 6500,
+    "brightness": 255,
+    "color_temp_kelvin": 2200
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "light.hallway",
+   "state": "off",
+   "attributes": {
+    "friendly_name": "Hallway",
+    "supported_color_modes": [
+     "color_temp"
+    ],
+    "color_mode": "color_temp",
+    "min_color_temp_kelvin": 2200,
+    "max_color_temp_kelvin": 6500
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "switch.porch_string_lights",
+   "state": "on",
+   "attributes": {
+    "friendly_name": "Porch string lights"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "switch.coffee_maker",
+   "state": "off",
+   "attributes": {
+    "friendly_name": "Coffee maker"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "scene.movie_night",
+   "state": "@now-1d",
+   "attributes": {
+    "friendly_name": "Movie night",
+    "entity_id": [
+     "light.living_room_lamp",
+     "light.living_room_ceiling",
+     "light.kitchen"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "scene.dinner",
+   "state": "@now-1d",
+   "attributes": {
+    "friendly_name": "Dinner",
+    "entity_id": [
+     "light.kitchen",
+     "light.living_room_lamp"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "scene.morning",
+   "state": "@now-1d",
+   "attributes": {
+    "friendly_name": "Morning",
+    "entity_id": [
+     "light.kitchen",
+     "light.hallway"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "climate.hallway",
+   "state": "cool",
+   "attributes": {
+    "friendly_name": "Hallway thermostat",
+    "hvac_modes": [
+     "off",
+     "heat",
+     "cool"
+    ],
+    "supported_features": 385,
+    "current_temperature": 74,
+    "temperature": 73,
+    "min_temp": 50,
+    "max_temp": 90,
+    "target_temp_step": 1,
+    "hvac_action": "idle"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "sensor.bedroom_temperature",
+   "state": "72",
+   "attributes": {
+    "friendly_name": "Bedroom temperature",
+    "device_class": "temperature",
+    "unit_of_measurement": "°F",
+    "state_class": "measurement"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "sensor.bedroom_humidity",
+   "state": "51",
+   "attributes": {
+    "friendly_name": "Bedroom humidity",
+    "device_class": "humidity",
+    "unit_of_measurement": "%",
+    "state_class": "measurement"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "sensor.living_room_temperature",
+   "state": "74",
+   "attributes": {
+    "friendly_name": "Living room temperature",
+    "device_class": "temperature",
+    "unit_of_measurement": "°F",
+    "state_class": "measurement"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "sensor.living_room_humidity",
+   "state": "49",
+   "attributes": {
+    "friendly_name": "Living room humidity",
+    "device_class": "humidity",
+    "unit_of_measurement": "%",
+    "state_class": "measurement"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "sensor.office_temperature",
+   "state": "75",
+   "attributes": {
+    "friendly_name": "Office temperature",
+    "device_class": "temperature",
+    "unit_of_measurement": "°F",
+    "state_class": "measurement"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "sensor.porch_temperature",
+   "state": "79",
+   "attributes": {
+    "friendly_name": "Porch temperature",
+    "device_class": "temperature",
+    "unit_of_measurement": "°F",
+    "state_class": "measurement"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "weather.home",
+   "state": "sunny",
+   "attributes": {
+    "friendly_name": "Home",
+    "supported_features": 3,
+    "temperature": 76,
+    "apparent_temperature": 78,
+    "humidity": 62,
+    "wind_speed": 9,
+    "wind_bearing": 110,
+    "temperature_unit": "°F",
+    "wind_speed_unit": "mph",
+    "pressure_unit": "inHg",
+    "visibility_unit": "mi",
+    "precipitation_unit": "in",
+    "attribution": "Sample data"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "calendar.family",
+   "state": "off",
+   "attributes": {
+    "friendly_name": "Family"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "calendar.sam",
+   "state": "off",
+   "attributes": {
+    "friendly_name": "Sam"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "calendar.riley",
+   "state": "off",
+   "attributes": {
+    "friendly_name": "Riley"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "todo.chores",
+   "state": "3",
+   "attributes": {
+    "friendly_name": "Chores",
+    "supported_features": 87
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "todo.shopping_list",
+   "state": "2",
+   "attributes": {
+    "friendly_name": "Shopping list",
+    "supported_features": 15
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "vacuum.robot",
+   "state": "docked",
+   "attributes": {
+    "friendly_name": "Robot vacuum",
+    "supported_features": 14204,
+    "battery_level": 100,
+    "fan_speed": "Standard",
+    "fan_speed_list": [
+     "Quiet",
+     "Standard",
+     "Max"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "image.robot_map",
+   "state": "@now-3h",
+   "attributes": {
+    "friendly_name": "Robot vacuum map",
+    "url": "stills/robot-map.svg"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "sensor.robot_battery",
+   "state": "100",
+   "attributes": {
+    "friendly_name": "Robot vacuum battery",
+    "device_class": "battery",
+    "unit_of_measurement": "%"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "camera.front_door",
+   "state": "idle",
+   "attributes": {
+    "friendly_name": "Front door camera",
+    "supported_features": 2,
+    "still": "stills/front-door.svg"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "image.front_door_last_event",
+   "state": "@now-11m",
+   "attributes": {
+    "friendly_name": "Front door camera last event",
+    "url": "stills/front-door.svg",
+    "event": "person"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "camera.driveway",
+   "state": "idle",
+   "attributes": {
+    "friendly_name": "Driveway camera",
+    "supported_features": 2,
+    "still": "stills/driveway.svg"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "image.driveway_last_event",
+   "state": "@now-2h",
+   "attributes": {
+    "friendly_name": "Driveway camera last event",
+    "url": "stills/driveway.svg",
+    "event": "motion"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "event.front_door_ding",
+   "state": "@now-1d",
+   "attributes": {
+    "friendly_name": "Front door doorbell",
+    "device_class": "doorbell",
+    "event_types": [
+     "ring"
+    ],
+    "event_type": "ring"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "alarm_control_panel.home",
+   "state": "disarmed",
+   "attributes": {
+    "friendly_name": "Home alarm",
+    "supported_features": 3,
+    "code_arm_required": false
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "device_tracker.sams_phone",
+   "state": "home",
+   "attributes": {
+    "friendly_name": "Sam's phone",
+    "source_type": "gps"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "person.sam",
+   "state": "home",
+   "attributes": {
+    "friendly_name": "Sam",
+    "user_id": "demo_user_sam",
+    "device_trackers": [
+     "device_tracker.sams_phone"
+    ],
+    "id": "sam"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "person.riley",
+   "state": "home",
+   "attributes": {
+    "friendly_name": "Riley",
+    "user_id": "demo_user_riley",
+    "device_trackers": [],
+    "id": "riley"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "zone.home",
+   "state": "2",
+   "attributes": {
+    "friendly_name": "Home",
+    "latitude": 28.5244,
+    "longitude": -80.6823,
+    "radius": 100,
+    "passive": false,
+    "icon": "mdi:home"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "sun.sun",
+   "state": "above_horizon",
+   "attributes": {
+    "friendly_name": "Sun",
+    "next_rising": "@derived",
+    "next_setting": "@derived"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "switch.flightday_alarm_enabled",
+   "state": "on",
+   "attributes": {
+    "friendly_name": "Flight Day alarm enabled"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "time.flightday_wake_mon",
+   "state": "06:45:00",
+   "attributes": {
+    "friendly_name": "Flight Day wake mon"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "switch.flightday_alarm_mon",
+   "state": "on",
+   "attributes": {
+    "friendly_name": "Flight Day alarm mon"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "time.flightday_bedtime_mon",
+   "state": "22:45:00",
+   "attributes": {
+    "friendly_name": "Flight Day bedtime mon"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "time.flightday_up_by_mon",
+   "state": "00:00:00",
+   "attributes": {
+    "friendly_name": "Flight Day up by mon"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "select.flightday_crew_mon",
+   "state": "everyone",
+   "attributes": {
+    "friendly_name": "Flight Day crew mon",
+    "options": [
+     "everyone",
+     "riley",
+     "sam"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "time.flightday_wake_tue",
+   "state": "06:45:00",
+   "attributes": {
+    "friendly_name": "Flight Day wake tue"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "switch.flightday_alarm_tue",
+   "state": "on",
+   "attributes": {
+    "friendly_name": "Flight Day alarm tue"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "time.flightday_bedtime_tue",
+   "state": "22:45:00",
+   "attributes": {
+    "friendly_name": "Flight Day bedtime tue"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "time.flightday_up_by_tue",
+   "state": "00:00:00",
+   "attributes": {
+    "friendly_name": "Flight Day up by tue"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "select.flightday_crew_tue",
+   "state": "everyone",
+   "attributes": {
+    "friendly_name": "Flight Day crew tue",
+    "options": [
+     "everyone",
+     "riley",
+     "sam"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "time.flightday_wake_wed",
+   "state": "06:45:00",
+   "attributes": {
+    "friendly_name": "Flight Day wake wed"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "switch.flightday_alarm_wed",
+   "state": "on",
+   "attributes": {
+    "friendly_name": "Flight Day alarm wed"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "time.flightday_bedtime_wed",
+   "state": "22:45:00",
+   "attributes": {
+    "friendly_name": "Flight Day bedtime wed"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "time.flightday_up_by_wed",
+   "state": "00:00:00",
+   "attributes": {
+    "friendly_name": "Flight Day up by wed"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "select.flightday_crew_wed",
+   "state": "sam",
+   "attributes": {
+    "friendly_name": "Flight Day crew wed",
+    "options": [
+     "everyone",
+     "riley",
+     "sam"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "time.flightday_wake_thu",
+   "state": "06:45:00",
+   "attributes": {
+    "friendly_name": "Flight Day wake thu"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "switch.flightday_alarm_thu",
+   "state": "on",
+   "attributes": {
+    "friendly_name": "Flight Day alarm thu"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "time.flightday_bedtime_thu",
+   "state": "22:45:00",
+   "attributes": {
+    "friendly_name": "Flight Day bedtime thu"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "time.flightday_up_by_thu",
+   "state": "00:00:00",
+   "attributes": {
+    "friendly_name": "Flight Day up by thu"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "select.flightday_crew_thu",
+   "state": "everyone",
+   "attributes": {
+    "friendly_name": "Flight Day crew thu",
+    "options": [
+     "everyone",
+     "riley",
+     "sam"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "time.flightday_wake_fri",
+   "state": "06:45:00",
+   "attributes": {
+    "friendly_name": "Flight Day wake fri"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "switch.flightday_alarm_fri",
+   "state": "on",
+   "attributes": {
+    "friendly_name": "Flight Day alarm fri"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "time.flightday_bedtime_fri",
+   "state": "22:45:00",
+   "attributes": {
+    "friendly_name": "Flight Day bedtime fri"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "time.flightday_up_by_fri",
+   "state": "00:00:00",
+   "attributes": {
+    "friendly_name": "Flight Day up by fri"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "select.flightday_crew_fri",
+   "state": "everyone",
+   "attributes": {
+    "friendly_name": "Flight Day crew fri",
+    "options": [
+     "everyone",
+     "riley",
+     "sam"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "time.flightday_wake_sat",
+   "state": "08:30:00",
+   "attributes": {
+    "friendly_name": "Flight Day wake sat"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "switch.flightday_alarm_sat",
+   "state": "off",
+   "attributes": {
+    "friendly_name": "Flight Day alarm sat"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "time.flightday_bedtime_sat",
+   "state": "00:30:00",
+   "attributes": {
+    "friendly_name": "Flight Day bedtime sat"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "time.flightday_up_by_sat",
+   "state": "00:00:00",
+   "attributes": {
+    "friendly_name": "Flight Day up by sat"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "select.flightday_crew_sat",
+   "state": "everyone",
+   "attributes": {
+    "friendly_name": "Flight Day crew sat",
+    "options": [
+     "everyone",
+     "riley",
+     "sam"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "time.flightday_wake_sun",
+   "state": "08:30:00",
+   "attributes": {
+    "friendly_name": "Flight Day wake sun"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "switch.flightday_alarm_sun",
+   "state": "off",
+   "attributes": {
+    "friendly_name": "Flight Day alarm sun"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "time.flightday_bedtime_sun",
+   "state": "00:30:00",
+   "attributes": {
+    "friendly_name": "Flight Day bedtime sun"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "time.flightday_up_by_sun",
+   "state": "00:00:00",
+   "attributes": {
+    "friendly_name": "Flight Day up by sun"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "select.flightday_crew_sun",
+   "state": "everyone",
+   "attributes": {
+    "friendly_name": "Flight Day crew sun",
+    "options": [
+     "everyone",
+     "riley",
+     "sam"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "datetime.flightday_wake_override",
+   "state": "unknown",
+   "attributes": {
+    "friendly_name": "Flight Day wake override"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "button.flightday_clear_override",
+   "state": "unknown",
+   "attributes": {
+    "friendly_name": "Flight Day clear override"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "number.flightday_snooze_minutes",
+   "state": "10",
+   "attributes": {
+    "friendly_name": "Flight Day snooze minutes",
+    "min": 3,
+    "max": 20,
+    "step": 1,
+    "mode": "box",
+    "unit_of_measurement": "min"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "number.flightday_snooze_window",
+   "state": "30",
+   "attributes": {
+    "friendly_name": "Flight Day snooze window",
+    "min": 0,
+    "max": 120,
+    "step": 5,
+    "mode": "box",
+    "unit_of_measurement": "min"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "number.flightday_ready_lead",
+   "state": "45",
+   "attributes": {
+    "friendly_name": "Flight Day ready lead",
+    "min": 0,
+    "max": 120,
+    "step": 5,
+    "mode": "box",
+    "unit_of_measurement": "min"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "number.flightday_sleep_volume",
+   "state": "20",
+   "attributes": {
+    "friendly_name": "Flight Day sleep volume",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "mode": "box"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "number.flightday_alarm_max_volume",
+   "state": "30",
+   "attributes": {
+    "friendly_name": "Flight Day alarm max volume",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "mode": "box"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "number.flightday_day_volume",
+   "state": "30",
+   "attributes": {
+    "friendly_name": "Flight Day day volume",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "mode": "box"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "number.flightday_sleep_timer",
+   "state": "0",
+   "attributes": {
+    "friendly_name": "Flight Day sleep timer",
+    "min": 0,
+    "max": 240,
+    "step": 5,
+    "mode": "box",
+    "unit_of_measurement": "min"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "number.flightday_temp_night",
+   "state": "70",
+   "attributes": {
+    "friendly_name": "Flight Day temp night",
+    "min": 50,
+    "max": 90,
+    "step": 1,
+    "mode": "box",
+    "unit_of_measurement": "°F"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "number.flightday_temp_wake",
+   "state": "72",
+   "attributes": {
+    "friendly_name": "Flight Day temp wake",
+    "min": 50,
+    "max": 90,
+    "step": 1,
+    "mode": "box",
+    "unit_of_measurement": "°F"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "number.flightday_temp_day",
+   "state": "73",
+   "attributes": {
+    "friendly_name": "Flight Day temp day",
+    "min": 50,
+    "max": 90,
+    "step": 1,
+    "mode": "box",
+    "unit_of_measurement": "°F"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "select.flightday_sleep_sound",
+   "state": "Thunderstorm",
+   "attributes": {
+    "friendly_name": "Flight Day sleep sound",
+    "options": [
+     "Thunderstorm",
+     "Rain",
+     "Off"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "select.flightday_time_format",
+   "state": "12h",
+   "attributes": {
+    "friendly_name": "Flight Day time format",
+    "options": [
+     "12h",
+     "24h",
+     "both"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "select.flightday_briefing_hours",
+   "state": "2",
+   "attributes": {
+    "friendly_name": "Flight Day briefing hours",
+    "options": [
+     "1",
+     "2",
+     "3",
+     "noon"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "binary_sensor.flightday_sleep_mode",
+   "state": "off",
+   "attributes": {
+    "friendly_name": "Flight Day sleep mode"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "sensor.flightday_sleep_scope",
+   "state": "house",
+   "attributes": {
+    "friendly_name": "Flight Day sleep scope",
+    "device_class": "enum",
+    "options": [
+     "house",
+     "bedroom"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "sensor.flightday_launch_state",
+   "state": "idle",
+   "attributes": {
+    "friendly_name": "Flight Day launch state",
+    "device_class": "enum",
+    "options": [
+     "idle",
+     "countdown",
+     "ringing",
+     "snoozed",
+     "up",
+     "scrubbed"
+    ],
+    "launch": "@derived"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "sensor.flightday_next_liftoff",
+   "state": "@derived",
+   "attributes": {
+    "friendly_name": "Flight Day next liftoff",
+    "device_class": "timestamp",
+    "day": "@derived",
+    "crew": "@derived",
+    "armed": true,
+    "override": false,
+    "quiet_ready": true
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "sensor.flightday_last_morning",
+   "state": "up",
+   "attributes": {
+    "friendly_name": "Flight Day last morning",
+    "id": "@local:day-1 06:45",
+    "crew": [
+     "sam",
+     "riley"
+    ],
+    "liftoff": "@day-1 06:45",
+    "up": "@day-1 06:53",
+    "snoozes": 1,
+    "by": "scr_demotab",
+    "deadline": "@day-1 07:15"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "binary_sensor.flightday_problem",
+   "state": "off",
+   "attributes": {
+    "friendly_name": "Flight Day problem",
+    "device_class": "problem",
+    "issues": []
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "switch.flightday_comfort_schedule",
+   "state": "on",
+   "attributes": {
+    "friendly_name": "Flight Day comfort schedule"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "time.flightday_day_starts",
+   "state": "09:00:00",
+   "attributes": {
+    "friendly_name": "Flight Day day starts"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "sensor.flightday_comfort_status",
+   "state": "day",
+   "attributes": {
+    "friendly_name": "Flight Day comfort status",
+    "device_class": "enum",
+    "options": [
+     "off",
+     "night",
+     "wake",
+     "day",
+     "skipped_off",
+     "skipped_mode",
+     "skipped_unavailable",
+     "held"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "sensor.flightday_screen_scr_demowall_state",
+   "state": "day",
+   "attributes": {
+    "friendly_name": "Flight Day Kitchen panel state",
+    "device_class": "enum",
+    "options": [
+     "day",
+     "night",
+     "alarm",
+     "ambient",
+     "offline"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "select.flightday_screen_scr_demowall_night",
+   "state": "dim",
+   "attributes": {
+    "friendly_name": "Flight Day Kitchen panel night",
+    "options": [
+     "dark",
+     "dim",
+     "stay_on"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "switch.flightday_screen_scr_demowall_alarm",
+   "state": "on",
+   "attributes": {
+    "friendly_name": "Flight Day Kitchen panel alarm"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "button.flightday_screen_scr_demowall_identify",
+   "state": "unknown",
+   "attributes": {
+    "friendly_name": "Flight Day Kitchen panel identify"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "sensor.flightday_screen_scr_demotv_state",
+   "state": "day",
+   "attributes": {
+    "friendly_name": "Flight Day Living room TV state",
+    "device_class": "enum",
+    "options": [
+     "day",
+     "night",
+     "alarm",
+     "ambient",
+     "offline"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "select.flightday_screen_scr_demotv_night",
+   "state": "dark",
+   "attributes": {
+    "friendly_name": "Flight Day Living room TV night",
+    "options": [
+     "dark",
+     "dim",
+     "stay_on"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "switch.flightday_screen_scr_demotv_alarm",
+   "state": "off",
+   "attributes": {
+    "friendly_name": "Flight Day Living room TV alarm"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "button.flightday_screen_scr_demotv_identify",
+   "state": "unknown",
+   "attributes": {
+    "friendly_name": "Flight Day Living room TV identify"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "sensor.flightday_screen_scr_demotab_state",
+   "state": "day",
+   "attributes": {
+    "friendly_name": "Flight Day Bedroom iPad state",
+    "device_class": "enum",
+    "options": [
+     "day",
+     "night",
+     "alarm",
+     "ambient",
+     "offline"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "select.flightday_screen_scr_demotab_night",
+   "state": "dark",
+   "attributes": {
+    "friendly_name": "Flight Day Bedroom iPad night",
+    "options": [
+     "dark",
+     "dim",
+     "stay_on"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "switch.flightday_screen_scr_demotab_alarm",
+   "state": "on",
+   "attributes": {
+    "friendly_name": "Flight Day Bedroom iPad alarm"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "button.flightday_screen_scr_demotab_identify",
+   "state": "unknown",
+   "attributes": {
+    "friendly_name": "Flight Day Bedroom iPad identify"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "sensor.flightday_screen_scr_demomac_state",
+   "state": "day",
+   "attributes": {
+    "friendly_name": "Flight Day Office Mac state",
+    "device_class": "enum",
+    "options": [
+     "day",
+     "night",
+     "alarm",
+     "ambient",
+     "offline"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "select.flightday_screen_scr_demomac_night",
+   "state": "dim",
+   "attributes": {
+    "friendly_name": "Flight Day Office Mac night",
+    "options": [
+     "dark",
+     "dim",
+     "stay_on"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "switch.flightday_screen_scr_demomac_alarm",
+   "state": "off",
+   "attributes": {
+    "friendly_name": "Flight Day Office Mac alarm"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "button.flightday_screen_scr_demomac_identify",
+   "state": "unknown",
+   "attributes": {
+    "friendly_name": "Flight Day Office Mac identify"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "sensor.flightday_screen_scr_demophone_state",
+   "state": "day",
+   "attributes": {
+    "friendly_name": "Flight Day Sam's phone state",
+    "device_class": "enum",
+    "options": [
+     "day",
+     "night",
+     "alarm",
+     "ambient",
+     "offline"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "select.flightday_screen_scr_demophone_night",
+   "state": "dark",
+   "attributes": {
+    "friendly_name": "Flight Day Sam's phone night",
+    "options": [
+     "dark",
+     "dim",
+     "stay_on"
+    ]
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "switch.flightday_screen_scr_demophone_alarm",
+   "state": "off",
+   "attributes": {
+    "friendly_name": "Flight Day Sam's phone alarm"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  },
+  {
+   "entity_id": "button.flightday_screen_scr_demophone_identify",
+   "state": "unknown",
+   "attributes": {
+    "friendly_name": "Flight Day Sam's phone identify"
+   },
+   "last_changed": "@now-2h",
+   "last_updated": "@now-2h"
+  }
+ ],
+ "services": {
+  "notify": [
+   "mobile_app_sams_phone"
+  ],
+  "flightday": [
+   "goodnight",
+   "snooze",
+   "up",
+   "scrub",
+   "advance",
+   "back_to_bed",
+   "wake_now",
+   "set_override",
+   "test_alarm",
+   "post_line",
+   "clear_line",
+   "report_check",
+   "clear_check",
+   "register_integration"
+  ]
+ },
+ "scenes": {
+  "scene.movie_night": {
+   "name": "Movie night",
+   "states": {
+    "light.living_room_lamp": {
+     "state": "on",
+     "brightness": 64
+    },
+    "light.living_room_ceiling": {
+     "state": "off"
+    },
+    "light.kitchen": {
+     "state": "off"
+    }
+   }
+  },
+  "scene.dinner": {
+   "name": "Dinner",
+   "states": {
+    "light.kitchen": {
+     "state": "on",
+     "brightness": 140
+    },
+    "light.living_room_lamp": {
+     "state": "on",
+     "brightness": 102
+    }
+   }
+  },
+  "scene.morning": {
+   "name": "Morning",
+   "states": {
+    "light.kitchen": {
+     "state": "on",
+     "brightness": 255
+    },
+    "light.hallway": {
+     "state": "on",
+     "brightness": 178
+    }
+   }
+  }
+ }
+}
