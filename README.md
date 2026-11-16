@@ -2,7 +2,7 @@
 
 Flight Day is free and open source (Apache-2.0). It is in development. This repository contains its static website.
 
-Fully free at launch. In development, aiming for 8 Dec: web/Android and iPhone first. Apple TV, Mac and Watch are coming after launch.
+Fully free at launch. In development, aiming for 8 Dec: web/Android, iPhone and iPad first. Apple TV, Mac and Watch are coming after launch.
 
 The single planned public API is **Flight Day API 1.0**: the model and five calls, with a one-page guide and demo-house checks in development. Hub HTTP and client internals stay private. Agent control is a separate contract, planned for Labs after launch.
 
