@@ -1,6 +1,8 @@
 # Flight Day site
 
-Flight Day is in development and going open source. This repository contains its static website.
+Flight Day is free and open source (Apache-2.0). It is in development. This repository contains its static website.
+
+[Flight Day source](https://github.com/CollinCraig/flightday) · [Website source](https://github.com/CollinCraig/flightday-site)
 
 - [Source fragments](src/)
 - [Static site files](public/)
